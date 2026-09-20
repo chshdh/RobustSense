@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "phase": "V3-1",
+  "status": "frozen_before_first_test_evaluation",
+  "parent_release_lock": "reports/v2/phase_v2_6_release_lock.json",
+  "core_registry": "reports/v2/phase_v2_4_run_registry.csv",
+  "unit_output_root": "reports/v3/phase_v3_1/units",
+  "models": ["B4", "B5", "P", "P2"],
+  "folds": [0, 1, 2, 3, 4],
+  "seeds": [13, 29, 47],
+  "scenario": "natural_missingness",
+  "evaluation_population": "valid_samples_with_at_least_one_known_target",
+  "checkpoint_policy": "reuse_only_no_training_no_checkpoint_mutation",
+  "threshold_policy": "reuse_validation_derived_per_label_thresholds",
+  "confidence_scores": {
+    "primary_generic": "mean_binary_certainty",
+    "secondary_generic": "mean_normalized_threshold_margin",
+    "proposed": "p2_system_reliability"
+  },
+  "coverage_grid": [
+    0.05,
+    0.10,
+    0.15,
+    0.20,
+    0.25,
+    0.30,
+    0.35,
+    0.40,
+    0.45,
+    0.50,
+    0.55,
+    0.60,
+    0.65,
+    0.70,
+    0.75,
+    0.80,
+    0.85,
+    0.90,
+    0.95,
+    1.00
+  ],
+  "fixed_coverages": [0.80, 0.90, 0.95, 1.00],
+  "primary_metrics": [
+    "normalized_aurc_0.05_to_1.00",
+    "error_detection_auroc"
+  ],
+  "secondary_metrics": [
+    "error_detection_auprc",
+    "risk_masked_bce_at_fixed_coverage",
+    "macro_f1_at_fixed_coverage",
+    "micro_f1_at_fixed_coverage"
+  ],
+  "sample_error_definition": "at_least_one_wrong_known_label",
+  "primary_comparisons": [
+    {
+      "name": "selector_isolation",
+      "candidate": "P2/p2_system_reliability",
+      "reference": "P2/mean_binary_certainty"
+    },
+    {
+      "name": "strong_baseline",
+      "candidate": "P2/p2_system_reliability",
+      "reference": "B5/mean_binary_certainty"
+    }
+  ],
+  "aggregation": "mean_over_seeds_within_fold_then_equal_weight_mean_over_folds",
+  "test_time_model_selection_allowed": false,
+  "oracle_selector_allowed": false,
+  "inference_batch_size": 2048,
+  "documentation_language": "zh-CN"
+}

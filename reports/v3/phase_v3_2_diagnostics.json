@@ -1,0 +1,30 @@
+{
+  "interpretation": "Validation in-sample gains do not transfer consistently to held-out test users; the full feature set has the larger generalization gap and lower coefficient-sign stability.",
+  "phase": "V3-2",
+  "selector_summary": [
+    {
+      "feature_count": 49,
+      "feature_count_with_sign_agreement_at_least_0_8": 14,
+      "mean_iterations": 120.0,
+      "mean_test_error_detection_auroc": 0.7260159045797658,
+      "mean_val_in_sample_error_detection_auroc": 0.7859288597661434,
+      "mean_val_minus_test_auroc": 0.0599129551863776,
+      "median_coefficient_sign_agreement": 0.6,
+      "selector": "task_confidence_full",
+      "unit_count": 15
+    },
+    {
+      "feature_count": 30,
+      "feature_count_with_sign_agreement_at_least_0_8": 7,
+      "mean_iterations": 60.4,
+      "mean_test_error_detection_auroc": 0.7289630214567365,
+      "mean_val_in_sample_error_detection_auroc": 0.7616842637317622,
+      "mean_val_minus_test_auroc": 0.03272124227502579,
+      "median_coefficient_sign_agreement": 0.6666666666666666,
+      "selector": "task_confidence_output_only",
+      "unit_count": 15
+    }
+  ],
+  "status": "complete_posthoc_diagnostic_not_primary_model_selection",
+  "version": 1
+}

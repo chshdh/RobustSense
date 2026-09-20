@@ -1,0 +1,37 @@
+{
+  "amendment_sha256": "1be9b825ec9ea8a635df0b189d7e6a60ea823dbf5c2e556f6566767964cc5291",
+  "files": [
+    {
+      "bytes": 906,
+      "path": "configs/v3/phase_v3_1_execution_amendment.yaml",
+      "sha256": "7762067ce3640792b0c8973ca530e90a5f22e041bfcbabfcf393d7909cae67a1"
+    },
+    {
+      "bytes": 1346,
+      "path": "docs/v3/ADR-0002-V3-1\u56de\u653e\u6279\u91cf\u4fee\u6b63.md",
+      "sha256": "a474bb7948ae5d47b3607dcd1e6547211a4e051229c8c7fdd224bed0aba3933b"
+    },
+    {
+      "bytes": 1941,
+      "path": "reports/v3/phase_v3_1_protocol_lock.json",
+      "sha256": "6ccb13dc3259d31a5873a3f3b3f6b8c4d3c96c9587ef5383c439b79315019058"
+    },
+    {
+      "bytes": 2762,
+      "path": "scripts/lock_v3_phase1_execution_amendment.py",
+      "sha256": "dc57ed82b029e330a85ff8713012bfe150b001471a7775719af6f44381331ab4"
+    },
+    {
+      "bytes": 3603,
+      "path": "scripts/run_v3_phase1_amended.py",
+      "sha256": "ecf3edd5107e4e0450bc5ef1ce64aa5d802acfa352b0f17089b0a53dc6fcbe4b"
+    }
+  ],
+  "frozen_at_utc": "2026-09-19T06:25:05.372244+00:00",
+  "parent_protocol_sha256": "fb82651717076e658cf67e62ccd41ca247d29c994518945706edefcf0b635aa0",
+  "phase": "V3-1",
+  "probability_consistency_atol": 1e-06,
+  "status": "execution_amendment_frozen_before_first_successful_unit",
+  "successful_unit_count_before_amendment": 0,
+  "version": 1
+}

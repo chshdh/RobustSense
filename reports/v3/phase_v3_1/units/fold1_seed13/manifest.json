@@ -1,0 +1,86 @@
+{
+  "created_at_utc": "2026-09-19T06:27:53.639898+00:00",
+  "excluded_no_known_target_count": 0,
+  "fold": 1,
+  "model_count": 4,
+  "outputs": [
+    {
+      "bytes": 62442,
+      "path": "reports/v3/phase_v3_1/units/fold1_seed13/curves.csv",
+      "sha256": "df45f7d73c13d7c7300a24163e74fa0b4f14d5ba95cbd8bcd493cef621c79470"
+    },
+    {
+      "bytes": 6739,
+      "path": "reports/v3/phase_v3_1/units/fold1_seed13/summary.csv",
+      "sha256": "a620b2510a524c20ab0b6109ca2677e8ba5b62c067f7ee7f9247cfff674dcf39"
+    }
+  ],
+  "p2_reinference": {
+    "batch_size": 512,
+    "device": "cuda",
+    "elapsed_seconds": 2.2096395999833476,
+    "latency_ms_per_sample": 0.02974663579310395,
+    "max_abs_probability_delta_vs_frozen": 0.0
+  },
+  "phase": "V3-1",
+  "protocol_sha256": "fb82651717076e658cf67e62ccd41ca247d29c994518945706edefcf0b635aa0",
+  "sample_count": 74282,
+  "sample_count_before_known_target_filter": 74282,
+  "sample_key_sha256": "ce76c345b31dab6ea4c2f59a59d79f55109a1565601bd140a52a750e0525ba5e",
+  "seed": 13,
+  "selector_curve_count": 9,
+  "sources": [
+    {
+      "bytes": 8292814,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/predictions.parquet",
+      "sha256": "32515811a9626aabab78e96992fa0df72dc8098e68baea75892416dd6a500cdf"
+    },
+    {
+      "bytes": 945,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/thresholds.json",
+      "sha256": "88f4d139a583165d4473364200c0d32ff6183a7cca8d8f2e9d0d1b9b0945ad0b"
+    },
+    {
+      "bytes": 8309113,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/predictions.parquet",
+      "sha256": "1613adb978b3181f218132267af6b11581fc7f36b55b0e8b5716cb6eed33a755"
+    },
+    {
+      "bytes": 974,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/thresholds.json",
+      "sha256": "0c881763176df331797fdf67941d1e72e4401321548428eb93d76d4b2b59bd58"
+    },
+    {
+      "bytes": 8311218,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/predictions.parquet",
+      "sha256": "8c70bea82a13d88364b059a89e49a0691a5059891df43afb668292aee628934a"
+    },
+    {
+      "bytes": 932,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/thresholds.json",
+      "sha256": "7321b4928a503fb23bff4123802f867e21d32e5cadd7dd42eac8e77d6fe7b092"
+    },
+    {
+      "bytes": 8308608,
+      "path": "runs/v2/phase_v2_3/extrasensory-p2-fold1-seed13-v2_seed13/predictions.parquet",
+      "sha256": "55799d64eb4b670d768a32f8b9fd53879e682405ee16749e6da649f3ba29497d"
+    },
+    {
+      "bytes": 948,
+      "path": "runs/v2/phase_v2_3/extrasensory-p2-fold1-seed13-v2_seed13/thresholds.json",
+      "sha256": "5f8fda0ac705065838da8147dae2f40f587d1fba135ce830ea0d6589d3fd6bc3"
+    },
+    {
+      "bytes": 570896,
+      "path": "runs/v2/phase_v2_3/extrasensory-p2-fold1-seed13-v2_seed13/best_checkpoint.pt",
+      "sha256": "09a070c081fb2a80450332e290637d5d272c4ff76806b51cb3fc77a03b0ab48c"
+    },
+    {
+      "bytes": 4435,
+      "path": "runs/v2/phase_v2_3/extrasensory-p2-fold1-seed13-v2_seed13/resolved_config.yaml",
+      "sha256": "605e2134bc7750dcea314413c58fd3383ea363ddf7472195ebcd8b88117f541d"
+    }
+  ],
+  "status": "success",
+  "version": 1
+}

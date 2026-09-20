@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "phase": "V3-3",
+  "status": "frozen_before_first_test_evaluation",
+  "parent_acceptance": "reports/v3/phase_v3_2_acceptance.json",
+  "core_registry": "reports/v2/phase_v2_4_run_registry.csv",
+  "unit_output_root": "reports/v3/phase_v3_3/units",
+  "model": "P2",
+  "folds": [0, 1, 2, 3, 4],
+  "seeds": [13, 29, 47],
+  "fit_split": "val",
+  "selection_split": "val_grouped_oof",
+  "evaluation_split": "test",
+  "grouping_unit": "user_id",
+  "scenario": "natural_missingness",
+  "checkpoint_policy": "reuse_only_no_neural_training_no_checkpoint_mutation",
+  "risk_target": "masked_binary_cross_entropy_per_sample",
+  "feature_sets": {
+    "grouped_risk_output_compact": [
+      "mean_label_certainty",
+      "min_label_certainty",
+      "mean_label_threshold_margin",
+      "min_label_threshold_margin",
+      "predicted_positive_fraction",
+      "probability_std"
+    ],
+    "grouped_risk_full_compact_additional": [
+      "available_modality_fraction",
+      "system_reliability",
+      "mean_available_modality_reliability",
+      "min_available_modality_reliability",
+      "fusion_weight_concentration"
+    ]
+  },
+  "risk_model": {
+    "type": "standardized_ridge_regression",
+    "solver": "svd",
+    "alpha_candidates": [0.1, 1.0, 10.0, 100.0, 1000.0],
+    "grouped_cv_splits": 4,
+    "selection_metric": "oof_normalized_aurc",
+    "alpha_tie_break": "larger_alpha",
+    "feature_family_selection": "lower_oof_normalized_aurc",
+    "feature_family_tie_break": "grouped_risk_output_compact"
+  },
+  "selectors": [
+    "mean_binary_certainty",
+    "p2_system_reliability",
+    "grouped_risk_output_compact",
+    "grouped_risk_full_compact",
+    "grouped_risk_selected"
+  ],
+  "coverage_grid": [
+    0.05,
+    0.10,
+    0.15,
+    0.20,
+    0.25,
+    0.30,
+    0.35,
+    0.40,
+    0.45,
+    0.50,
+    0.55,
+    0.60,
+    0.65,
+    0.70,
+    0.75,
+    0.80,
+    0.85,
+    0.90,
+    0.95,
+    1.00
+  ],
+  "fixed_coverages": [0.80, 0.90, 0.95, 1.00],
+  "primary_metrics": [
+    "normalized_aurc_0.05_to_1.00",
+    "error_detection_auroc"
+  ],
+  "primary_comparisons": [
+    {
+      "name": "grouped_continuous_risk_gain",
+      "candidate": "P2/grouped_risk_selected",
+      "reference": "P2/mean_binary_certainty"
+    },
+    {
+      "name": "compact_sensor_increment",
+      "candidate": "P2/grouped_risk_full_compact",
+      "reference": "P2/grouped_risk_output_compact"
+    }
+  ],
+  "aggregation": "mean_over_seeds_within_fold_then_equal_weight_mean_over_folds",
+  "inference_batch_size": 512,
+  "probability_consistency_atol": 0.000001,
+  "test_time_model_selection_allowed": false,
+  "oracle_selector_allowed": false,
+  "documentation_language": "zh-CN"
+}

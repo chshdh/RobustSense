@@ -1,0 +1,280 @@
+{
+  "interpretation": "Grouped continuous-risk selection improves AURC and fixed-coverage BCE but does not improve the discrete any-label-error AUROC.",
+  "max_group_overlap_count": 0,
+  "phase": "V3-3",
+  "primary_comparisons": [
+    {
+      "candidate": "P2/grouped_risk_selected",
+      "fold_count": 5,
+      "metrics": {
+        "error_detection_auprc": {
+          "candidate_minus_reference_fold_std": 0.013003777338963232,
+          "candidate_minus_reference_mean": -0.012523365068645664,
+          "candidate_win_fold_count": 1,
+          "direction": "higher",
+          "fold_deltas": [
+            0.006440735238446349,
+            -0.028789687930248498,
+            -0.008098913443294276,
+            -0.014183993511490356,
+            -0.01798496569664154
+          ]
+        },
+        "error_detection_auroc": {
+          "candidate_minus_reference_fold_std": 0.0151476675188022,
+          "candidate_minus_reference_mean": -0.0198897788509522,
+          "candidate_win_fold_count": 0,
+          "direction": "higher",
+          "fold_deltas": [
+            -0.010091030734178275,
+            -0.042856728645418896,
+            -0.006558876450753259,
+            -0.027606077900866666,
+            -0.012336180523543905
+          ]
+        },
+        "macro_f1_0_80": {
+          "candidate_minus_reference_fold_std": 0.00806641088567494,
+          "candidate_minus_reference_mean": 0.004557639112974465,
+          "candidate_win_fold_count": 3,
+          "direction": "higher",
+          "fold_deltas": [
+            -0.0026331791368473523,
+            0.004523594003878362,
+            0.01084496615649122,
+            -0.004154794818682084,
+            0.01420760936003218
+          ]
+        },
+        "macro_f1_0_90": {
+          "candidate_minus_reference_fold_std": 0.004488005606830123,
+          "candidate_minus_reference_mean": 0.0030629118510219653,
+          "candidate_win_fold_count": 4,
+          "direction": "higher",
+          "fold_deltas": [
+            0.0002640702306970777,
+            0.004053734540768628,
+            0.008038065455849064,
+            -0.00310246783906587,
+            0.006061156866860928
+          ]
+        },
+        "macro_f1_0_95": {
+          "candidate_minus_reference_fold_std": 0.0031477811653501464,
+          "candidate_minus_reference_mean": 0.0021274914755651463,
+          "candidate_win_fold_count": 4,
+          "direction": "higher",
+          "fold_deltas": [
+            0.0018220971219898852,
+            0.002293795437643298,
+            0.006495179043920274,
+            -0.0023843027441324827,
+            0.0024106885184047577
+          ]
+        },
+        "normalized_aurc": {
+          "candidate_minus_reference_fold_std": 0.014926006995355078,
+          "candidate_minus_reference_mean": -0.005150310471245057,
+          "candidate_win_fold_count": 3,
+          "direction": "lower",
+          "fold_deltas": [
+            0.012089411990580057,
+            -0.004340958509374826,
+            -0.028744585965648883,
+            -0.0056346405906251285,
+            0.0008792207188434986
+          ]
+        },
+        "risk_masked_bce_0_80": {
+          "candidate_minus_reference_fold_std": 0.006452743898255771,
+          "candidate_minus_reference_mean": -0.005134797479765585,
+          "candidate_win_fold_count": 4,
+          "direction": "lower",
+          "fold_deltas": [
+            -0.004920590135767289,
+            -0.0015517536106325336,
+            -0.015614079021337046,
+            -0.005074591730075462,
+            0.0014870270989844059
+          ]
+        },
+        "risk_masked_bce_0_90": {
+          "candidate_minus_reference_fold_std": 0.004750986602519211,
+          "candidate_minus_reference_mean": -0.003368584607421099,
+          "candidate_win_fold_count": 4,
+          "direction": "lower",
+          "fold_deltas": [
+            -0.003523926683932199,
+            -0.0007961032617494479,
+            -0.011368180616448342,
+            -0.002003935261029488,
+            0.0008492227860539825
+          ]
+        },
+        "risk_masked_bce_0_95": {
+          "candidate_minus_reference_fold_std": 0.00324412261815106,
+          "candidate_minus_reference_mean": -0.002003591590986842,
+          "candidate_win_fold_count": 4,
+          "direction": "lower",
+          "fold_deltas": [
+            -0.002274777814281148,
+            -0.0006647567986337033,
+            -0.007495815329757072,
+            -0.00016436657766083496,
+            0.0005817585653985491
+          ]
+        }
+      },
+      "name": "grouped_continuous_risk_gain",
+      "primary_success": false,
+      "reference": "P2/mean_binary_certainty"
+    },
+    {
+      "candidate": "P2/grouped_risk_full_compact",
+      "fold_count": 5,
+      "metrics": {
+        "error_detection_auprc": {
+          "candidate_minus_reference_fold_std": 0.014770388673415171,
+          "candidate_minus_reference_mean": -0.007012669583806174,
+          "candidate_win_fold_count": 1,
+          "direction": "higher",
+          "fold_deltas": [
+            0.014770523143698089,
+            -0.007968246650946087,
+            -0.00718541913758286,
+            -0.007751168286211363,
+            -0.026929036987988653
+          ]
+        },
+        "error_detection_auroc": {
+          "candidate_minus_reference_fold_std": 0.02132883340573741,
+          "candidate_minus_reference_mean": -0.006213429759774347,
+          "candidate_win_fold_count": 1,
+          "direction": "higher",
+          "fold_deltas": [
+            0.029066572510726307,
+            -0.025584528556491626,
+            -0.008120783385429764,
+            -0.006210676570380769,
+            -0.020217732797295884
+          ]
+        },
+        "macro_f1_0_80": {
+          "candidate_minus_reference_fold_std": 0.0029127512957415223,
+          "candidate_minus_reference_mean": 0.0007583424119281367,
+          "candidate_win_fold_count": 3,
+          "direction": "higher",
+          "fold_deltas": [
+            0.0006940884991405438,
+            0.0003956942905078975,
+            0.005551569428749681,
+            -0.0006206384903046924,
+            -0.002229001668452746
+          ]
+        },
+        "macro_f1_0_90": {
+          "candidate_minus_reference_fold_std": 0.0027912673842313126,
+          "candidate_minus_reference_mean": 0.00044958204587612903,
+          "candidate_win_fold_count": 2,
+          "direction": "higher",
+          "fold_deltas": [
+            -0.00040684003046387307,
+            -0.0008868720826621379,
+            0.005185051787888306,
+            0.0004005907639846873,
+            -0.0020440202093663373
+          ]
+        },
+        "macro_f1_0_95": {
+          "candidate_minus_reference_fold_std": 0.002555266479044297,
+          "candidate_minus_reference_mean": 0.0001774189555566297,
+          "candidate_win_fold_count": 1,
+          "direction": "higher",
+          "fold_deltas": [
+            -0.0003356225963055959,
+            -0.0015331961930432625,
+            0.004578433562962947,
+            -0.00014030020872957127,
+            -0.0016822197871013689
+          ]
+        },
+        "normalized_aurc": {
+          "candidate_minus_reference_fold_std": 0.010267518575977384,
+          "candidate_minus_reference_mean": -0.00640713344791769,
+          "candidate_win_fold_count": 3,
+          "direction": "lower",
+          "fold_deltas": [
+            -0.01659389208374812,
+            0.004400228046990418,
+            -0.018047309297721026,
+            -0.002464102929496448,
+            0.0006694090243867246
+          ]
+        },
+        "risk_masked_bce_0_80": {
+          "candidate_minus_reference_fold_std": 0.004970761180716437,
+          "candidate_minus_reference_mean": -0.0021599875369572195,
+          "candidate_win_fold_count": 4,
+          "direction": "lower",
+          "fold_deltas": [
+            -0.003175626121012687,
+            -0.0048200678658514295,
+            -0.007830769353653455,
+            -0.0002152911312918726,
+            0.005241816787023346
+          ]
+        },
+        "risk_masked_bce_0_90": {
+          "candidate_minus_reference_fold_std": 0.003948950955370808,
+          "candidate_minus_reference_mean": -0.0017320953377441771,
+          "candidate_win_fold_count": 4,
+          "direction": "lower",
+          "fold_deltas": [
+            -0.0012441947697076072,
+            -0.002728276455477019,
+            -0.007660047179782692,
+            -0.00014082794652064967,
+            0.0031128696627670815
+          ]
+        },
+        "risk_masked_bce_0_95": {
+          "candidate_minus_reference_fold_std": 0.0031552460712540105,
+          "candidate_minus_reference_mean": -0.0011847210711567802,
+          "candidate_win_fold_count": 3,
+          "direction": "lower",
+          "fold_deltas": [
+            -0.00028899890830796915,
+            -0.002151039419205969,
+            -0.006087566676398648,
+            0.0003852760140860556,
+            0.0022187236340426297
+          ]
+        }
+      },
+      "name": "compact_sensor_increment",
+      "primary_success": false,
+      "reference": "P2/grouped_risk_output_compact"
+    }
+  ],
+  "selected_alpha_counts": {
+    "grouped_risk_full_compact": {
+      "0.1": 4,
+      "1.0": 2,
+      "100.0": 1,
+      "1000.0": 8
+    },
+    "grouped_risk_output_compact": {
+      "0.1": 5,
+      "1.0": 3,
+      "10.0": 2,
+      "1000.0": 5
+    }
+  },
+  "selected_family_counts": {
+    "grouped_risk_full_compact": 11,
+    "grouped_risk_output_compact": 4
+  },
+  "status": "complete_posthoc_diagnostic_not_primary_model_selection",
+  "unit_count": 15,
+  "version": 1
+}

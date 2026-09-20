@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "bytes": 1934,
+      "path": "configs/v3/phase_v3_1_plan.yaml",
+      "sha256": "79c66fa9dd247aef19570ff2f8ee0308f68059bbda66f8c8ca4f470561086106"
+    },
+    {
+      "bytes": 2873,
+      "path": "docs/v3/ADR-0001-V3-1\u9009\u62e9\u6027\u9884\u6d4b\u516c\u5e73\u5bf9\u6bd4.md",
+      "sha256": "915dada5d7f5bf3b4784fd03658572eb1195f36b2634042120d1ce4d5f22f1a5"
+    },
+    {
+      "bytes": 3728,
+      "path": "docs/v3/EXPERIMENT_PROTOCOL_V3_1.md",
+      "sha256": "06216b376e1df9faeb1d1de45035dcee7017ca5660af579f1c94e958d510b9c5"
+    },
+    {
+      "bytes": 4070,
+      "path": "reports/v2/phase_v2_6_release_lock.json",
+      "sha256": "7bacdec0a8552617992b7b5b951aa4336b7b46b7934cb7adf4ffbbaff46612a9"
+    },
+    {
+      "bytes": 5076,
+      "path": "scripts/lock_v3_phase1_protocol.py",
+      "sha256": "a89014321bca230e9d604b6a7ded670239130402c40929c331be696752bc3632"
+    },
+    {
+      "bytes": 28878,
+      "path": "scripts/run_v3_phase1.py",
+      "sha256": "1f27220e9d002318c442c71b999196971d7cfab6c4a53bffe32cf322b2b522be"
+    },
+    {
+      "bytes": 7940,
+      "path": "src/robustsense/evaluation/v3_selective.py",
+      "sha256": "f91a710df5570b04c2516dd7d6e2acf88acf1c3ede6fb0733e6a1abf6da625e6"
+    },
+    {
+      "bytes": 3188,
+      "path": "tests/unit/test_v3_selective.py",
+      "sha256": "9803bba25f83aa243cd215e34d19f068825f6d452f34cb5fa900270b56eff2e8"
+    }
+  ],
+  "frozen_at_utc": "2026-09-19T06:22:35.137716+00:00",
+  "oracle_selector_allowed": false,
+  "parent_release_sha256": "4809e638958ee02cc168392932cb0a0c74bbf165189e6909ef3a0a29e767799a",
+  "phase": "V3-1",
+  "protocol_sha256": "fb82651717076e658cf67e62ccd41ca247d29c994518945706edefcf0b635aa0",
+  "registry_success_count": 60,
+  "status": "frozen_before_first_test_evaluation",
+  "test_time_model_selection_allowed": false,
+  "v1_verified_file_count": 813,
+  "version": 1
+}

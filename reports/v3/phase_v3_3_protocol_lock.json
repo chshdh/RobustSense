@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "bytes": 2678,
+      "path": "configs/v3/phase_v3_3_plan.yaml",
+      "sha256": "5f1b562745594bb32679e3c766dd05359e25ca2402ffa1261b4c09c25866f02e"
+    },
+    {
+      "bytes": 2079,
+      "path": "docs/v3/ADR-0004-V3-3\u7528\u6237\u5206\u7ec4\u8fde\u7eed\u98ce\u9669.md",
+      "sha256": "a77ffb915451dd8a9c7b7e0958df47c0c4174ba63aedd8fee08abb8ebfa1fc12"
+    },
+    {
+      "bytes": 2501,
+      "path": "docs/v3/EXPERIMENT_PROTOCOL_V3_3.md",
+      "sha256": "500c780a914c7e1be74e48cce213c4641bd8c2a4bc0d7e37531c64feba0ea2d3"
+    },
+    {
+      "bytes": 16165,
+      "path": "reports/v3/phase_v3_2_acceptance.json",
+      "sha256": "aecf9de84bda7ec7a91fe666ee95fdd72a9a4e2a1be36880028d13d55a5d8e47"
+    },
+    {
+      "bytes": 4422,
+      "path": "scripts/lock_v3_phase3_protocol.py",
+      "sha256": "33a9a836e36f99f60d8ccee59c4cbf12dceebfeafc0bb68ccf319f1f08905b6e"
+    },
+    {
+      "bytes": 20556,
+      "path": "scripts/run_v3_phase3.py",
+      "sha256": "7814b3c19a3b00fe3931c60e664e3b4e319129cd009544f7ec2e56ce5943175a"
+    },
+    {
+      "bytes": 11594,
+      "path": "src/robustsense/evaluation/v3_grouped_risk.py",
+      "sha256": "b0ce2e50227f7e091b0d25b3e01e526b9544b12dc072d16ea87e234c66351983"
+    },
+    {
+      "bytes": 3505,
+      "path": "tests/unit/test_v3_grouped_risk.py",
+      "sha256": "fc7f2dedce204d4d8149b0a80df96b279a3496f81e87fbecda6f49d9623fb17f"
+    }
+  ],
+  "frozen_at_utc": "2026-09-19T12:25:52.542324+00:00",
+  "grouping_unit": "user_id",
+  "oracle_selector_allowed": false,
+  "parent_acceptance_sha256": "b24184c3b2ea2ddd9812d68e16755012639911f9fc2f704ec49820306cc35315",
+  "phase": "V3-3",
+  "protocol_sha256": "efb672880ee0ff1680cafed70e33ce265ddcc65e24e6b7c44c7798d6500b08df",
+  "status": "frozen_before_first_test_evaluation",
+  "successful_unit_count_before_lock": 0,
+  "test_time_model_selection_allowed": false,
+  "version": 1
+}

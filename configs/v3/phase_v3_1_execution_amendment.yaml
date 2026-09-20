@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "phase": "V3-1",
+  "status": "frozen_after_preflight_failure_before_first_successful_unit",
+  "parent_protocol_lock": "reports/v3/phase_v3_1_protocol_lock.json",
+  "scope": "p2_reinference_batch_size_only",
+  "original_inference_batch_size": 2048,
+  "amended_inference_batch_size": 512,
+  "probability_consistency_atol": 0.000001,
+  "observed_preflight_failures": [
+    {
+      "device": "cuda",
+      "batch_size": 2048,
+      "max_abs_probability_delta": 0.0000012218952178955078
+    },
+    {
+      "device": "cpu",
+      "batch_size": 2048,
+      "max_abs_probability_delta": 0.0000016391277313232422
+    }
+  ],
+  "successful_unit_count_before_amendment": 0,
+  "metrics_changed": false,
+  "coverage_grid_changed": false,
+  "confidence_scores_changed": false,
+  "primary_comparisons_changed": false,
+  "test_time_model_selection_allowed": false,
+  "documentation_language": "zh-CN"
+}

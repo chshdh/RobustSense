@@ -1,0 +1,258 @@
+{
+  "fit_split": "val",
+  "fold": 2,
+  "phase": "V3-3",
+  "run_id": "extrasensory-p2-fold2-seed13-v2_seed13",
+  "seed": 13,
+  "selected_family": "grouped_risk_full_compact",
+  "selection_split": "val_grouped_oof",
+  "selectors": {
+    "grouped_risk_full_compact": {
+      "feature_count": 11,
+      "selection": {
+        "candidates": [
+          {
+            "alpha": 0.1,
+            "oof_mse": 0.18842442854582286,
+            "oof_normalized_aurc": 0.3296394991736291
+          },
+          {
+            "alpha": 1.0,
+            "oof_mse": 0.1884235835338833,
+            "oof_normalized_aurc": 0.3296384851952089
+          },
+          {
+            "alpha": 10.0,
+            "oof_mse": 0.1884152284469083,
+            "oof_normalized_aurc": 0.32959737590842975
+          },
+          {
+            "alpha": 100.0,
+            "oof_mse": 0.18834020173305757,
+            "oof_normalized_aurc": 0.3292745472735469
+          },
+          {
+            "alpha": 1000.0,
+            "oof_mse": 0.18797575209196266,
+            "oof_normalized_aurc": 0.32866441014760506
+          }
+        ],
+        "fold_contract": [
+          {
+            "fold_index": 0,
+            "group_overlap_count": 0,
+            "train_group_count": 9,
+            "train_sample_count": 64538,
+            "validation_group_count": 3,
+            "validation_sample_count": 21870
+          },
+          {
+            "fold_index": 1,
+            "group_overlap_count": 0,
+            "train_group_count": 9,
+            "train_sample_count": 64872,
+            "validation_group_count": 3,
+            "validation_sample_count": 21536
+          },
+          {
+            "fold_index": 2,
+            "group_overlap_count": 0,
+            "train_group_count": 9,
+            "train_sample_count": 64935,
+            "validation_group_count": 3,
+            "validation_sample_count": 21473
+          },
+          {
+            "fold_index": 3,
+            "group_overlap_count": 0,
+            "train_group_count": 9,
+            "train_sample_count": 64879,
+            "validation_group_count": 3,
+            "validation_sample_count": 21529
+          }
+        ],
+        "n_splits": 4,
+        "selected_alpha": 1000.0,
+        "selected_oof_normalized_aurc": 0.32866441014760506,
+        "selection_metric": "normalized_aurc",
+        "selection_split": "val_grouped_oof",
+        "tie_break": "larger_alpha",
+        "unique_group_count": 12
+      },
+      "selector": {
+        "alpha": 1000.0,
+        "coefficients": [
+          -0.15766557988213425,
+          -0.04248033557999583,
+          -0.04017080158967282,
+          -0.007678031348708637,
+          0.007463514153172299,
+          0.11962299325508646,
+          -0.0733836813862324,
+          -0.015345249026916046,
+          0.034400801809975956,
+          -0.010789006913125917,
+          0.017313621070255778
+        ],
+        "feature_mean": [
+          0.5541265958685371,
+          0.11665917478046284,
+          0.7202557001270059,
+          0.23776463086704178,
+          0.3040027157979319,
+          0.3333980942771836,
+          0.9092792334045492,
+          0.9793435175359144,
+          0.9799832262448854,
+          0.9385098670815806,
+          0.22381214529984478
+        ],
+        "feature_names": [
+          "mean_label_certainty",
+          "min_label_certainty",
+          "mean_label_threshold_margin",
+          "min_label_threshold_margin",
+          "predicted_positive_fraction",
+          "probability_std",
+          "available_modality_fraction",
+          "system_reliability",
+          "mean_available_modality_reliability",
+          "min_available_modality_reliability",
+          "fusion_weight_concentration"
+        ],
+        "feature_scale": [
+          0.22326583964581317,
+          0.2274381679319332,
+          0.16081040871403707,
+          0.2838469506469831,
+          0.07547321748709754,
+          0.06160814962604356,
+          0.11491525101654045,
+          0.015867223167631714,
+          0.0166859973047455,
+          0.06925381597600234,
+          0.0495471371959308
+        ],
+        "intercept": 0.4397781983992605,
+        "model": "standardized_ridge_risk_selector",
+        "solver": "svd",
+        "target": "masked_bce_per_sample",
+        "version": 1
+      }
+    },
+    "grouped_risk_output_compact": {
+      "feature_count": 6,
+      "selection": {
+        "candidates": [
+          {
+            "alpha": 0.1,
+            "oof_mse": 0.18766940999741885,
+            "oof_normalized_aurc": 0.33599818588767527
+          },
+          {
+            "alpha": 1.0,
+            "oof_mse": 0.1876691849712581,
+            "oof_normalized_aurc": 0.3359995294227912
+          },
+          {
+            "alpha": 10.0,
+            "oof_mse": 0.18766699547600255,
+            "oof_normalized_aurc": 0.33600660831205253
+          },
+          {
+            "alpha": 100.0,
+            "oof_mse": 0.1876505109626326,
+            "oof_normalized_aurc": 0.3360899664475964
+          },
+          {
+            "alpha": 1000.0,
+            "oof_mse": 0.1877090750274427,
+            "oof_normalized_aurc": 0.3368678833721058
+          }
+        ],
+        "fold_contract": [
+          {
+            "fold_index": 0,
+            "group_overlap_count": 0,
+            "train_group_count": 9,
+            "train_sample_count": 64538,
+            "validation_group_count": 3,
+            "validation_sample_count": 21870
+          },
+          {
+            "fold_index": 1,
+            "group_overlap_count": 0,
+            "train_group_count": 9,
+            "train_sample_count": 64872,
+            "validation_group_count": 3,
+            "validation_sample_count": 21536
+          },
+          {
+            "fold_index": 2,
+            "group_overlap_count": 0,
+            "train_group_count": 9,
+            "train_sample_count": 64935,
+            "validation_group_count": 3,
+            "validation_sample_count": 21473
+          },
+          {
+            "fold_index": 3,
+            "group_overlap_count": 0,
+            "train_group_count": 9,
+            "train_sample_count": 64879,
+            "validation_group_count": 3,
+            "validation_sample_count": 21529
+          }
+        ],
+        "n_splits": 4,
+        "selected_alpha": 0.1,
+        "selected_oof_normalized_aurc": 0.33599818588767527,
+        "selection_metric": "normalized_aurc",
+        "selection_split": "val_grouped_oof",
+        "tie_break": "larger_alpha",
+        "unique_group_count": 12
+      },
+      "selector": {
+        "alpha": 0.1,
+        "coefficients": [
+          -0.20477682917690396,
+          -0.04386518664295812,
+          -0.01818198877540418,
+          -0.005521634432012673,
+          -0.007292912615711184,
+          0.1433137518556466
+        ],
+        "feature_mean": [
+          0.5541265958685371,
+          0.11665917478046284,
+          0.7202557001270059,
+          0.23776463086704178,
+          0.3040027157979319,
+          0.3333980942771836
+        ],
+        "feature_names": [
+          "mean_label_certainty",
+          "min_label_certainty",
+          "mean_label_threshold_margin",
+          "min_label_threshold_margin",
+          "predicted_positive_fraction",
+          "probability_std"
+        ],
+        "feature_scale": [
+          0.22326583964581317,
+          0.2274381679319332,
+          0.16081040871403707,
+          0.2838469506469831,
+          0.07547321748709754,
+          0.06160814962604356
+        ],
+        "intercept": 0.4397781983994177,
+        "model": "standardized_ridge_risk_selector",
+        "solver": "svd",
+        "target": "masked_bce_per_sample",
+        "version": 1
+      }
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "phase": "V3-4",
+  "status": "frozen_before_first_test_evaluation",
+  "parent_acceptance": "reports/v3/phase_v3_3_acceptance.json",
+  "core_registry": "reports/v2/phase_v2_4_run_registry.csv",
+  "unit_output_root": "reports/v3/phase_v3_4/units",
+  "model": "P2",
+  "folds": [0, 1, 2, 3, 4],
+  "seeds": [13, 29, 47],
+  "threshold_fit_split": "val",
+  "evaluation_split": "test",
+  "scenario": "natural_missingness",
+  "checkpoint_policy": "reuse_only_no_neural_training_no_checkpoint_mutation",
+  "policy_modes": {
+    "risk_control": {
+      "confidence_source": "v3_3_grouped_risk_selected",
+      "primary_objective": "lower_accepted_masked_bce"
+    },
+    "error_alert": {
+      "confidence_source": "mean_binary_certainty",
+      "primary_objective": "capture_any_label_error_in_rejected_samples"
+    }
+  },
+  "target_coverages": [0.80, 0.90, 0.95],
+  "threshold_rule": "validation_descending_quantile_midpoint_with_tie_overshoot_recorded",
+  "metrics": [
+    "test_coverage",
+    "coverage_absolute_error",
+    "risk_masked_bce",
+    "macro_f1",
+    "micro_f1",
+    "accepted_error_prevalence",
+    "rejected_error_precision",
+    "rejected_error_recall"
+  ],
+  "primary_hypotheses": {
+    "risk_specialization": {
+      "candidate": "risk_control",
+      "reference": "error_alert",
+      "metric": "risk_masked_bce",
+      "direction": "lower",
+      "minimum_winning_target_coverages": 2,
+      "minimum_fold_wins_per_winning_coverage": 3
+    },
+    "alert_specialization": {
+      "candidate": "error_alert",
+      "reference": "risk_control",
+      "metric": "rejected_error_recall",
+      "direction": "higher",
+      "minimum_winning_target_coverages": 2,
+      "minimum_fold_wins_per_winning_coverage": 3
+    }
+  },
+  "coverage_transfer_readiness": {
+    "metric": "mean_coverage_absolute_error",
+    "maximum_per_mode": 0.05
+  },
+  "aggregation": "mean_over_seeds_within_fold_then_equal_weight_mean_over_folds",
+  "inference_batch_size": 512,
+  "probability_consistency_atol": 0.000001,
+  "test_rank_selection_allowed": false,
+  "automatic_mode_selection_allowed": false,
+  "test_time_threshold_tuning_allowed": false,
+  "documentation_language": "zh-CN"
+}

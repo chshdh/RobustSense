@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "phase": "V3-2",
+  "status": "frozen_before_first_test_evaluation",
+  "parent_acceptance": "reports/v3/phase_v3_1_acceptance.json",
+  "core_registry": "reports/v2/phase_v2_4_run_registry.csv",
+  "unit_output_root": "reports/v3/phase_v3_2/units",
+  "model": "P2",
+  "folds": [0, 1, 2, 3, 4],
+  "seeds": [13, 29, 47],
+  "fit_split": "val",
+  "evaluation_split": "test",
+  "scenario": "natural_missingness",
+  "checkpoint_policy": "reuse_only_no_neural_training_no_checkpoint_mutation",
+  "threshold_policy": "reuse_validation_derived_per_label_thresholds",
+  "selectors": [
+    "mean_binary_certainty",
+    "p2_system_reliability",
+    "task_confidence_output_only",
+    "task_confidence_full"
+  ],
+  "output_only_features": [
+    "per_label_binary_certainty",
+    "per_label_normalized_threshold_margin"
+  ],
+  "additional_full_features": [
+    "modality_availability",
+    "fusion_weights",
+    "availability_masked_modality_reliability",
+    "system_reliability"
+  ],
+  "selector_model": {
+    "type": "standardized_logistic_regression",
+    "target": "at_least_one_wrong_known_label",
+    "regularization_c": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "class_weight": null,
+    "hyperparameter_search": false
+  },
+  "coverage_grid": [
+    0.05,
+    0.10,
+    0.15,
+    0.20,
+    0.25,
+    0.30,
+    0.35,
+    0.40,
+    0.45,
+    0.50,
+    0.55,
+    0.60,
+    0.65,
+    0.70,
+    0.75,
+    0.80,
+    0.85,
+    0.90,
+    0.95,
+    1.00
+  ],
+  "fixed_coverages": [0.80, 0.90, 0.95, 1.00],
+  "primary_metrics": [
+    "normalized_aurc_0.05_to_1.00",
+    "error_detection_auroc"
+  ],
+  "secondary_metrics": [
+    "error_detection_auprc",
+    "risk_masked_bce_at_fixed_coverage",
+    "macro_f1_at_fixed_coverage",
+    "micro_f1_at_fixed_coverage"
+  ],
+  "primary_comparisons": [
+    {
+      "name": "task_alignment_gain",
+      "candidate": "P2/task_confidence_full",
+      "reference": "P2/mean_binary_certainty"
+    },
+    {
+      "name": "sensor_feature_increment",
+      "candidate": "P2/task_confidence_full",
+      "reference": "P2/task_confidence_output_only"
+    }
+  ],
+  "aggregation": "mean_over_seeds_within_fold_then_equal_weight_mean_over_folds",
+  "inference_batch_size": 512,
+  "probability_consistency_atol": 0.000001,
+  "test_time_model_selection_allowed": false,
+  "oracle_selector_allowed": false,
+  "documentation_language": "zh-CN"
+}

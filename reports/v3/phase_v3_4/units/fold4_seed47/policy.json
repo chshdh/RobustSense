@@ -1,0 +1,87 @@
+{
+  "automatic_mode_selection": false,
+  "fold": 4,
+  "modes": [
+    "risk_control",
+    "error_alert"
+  ],
+  "phase": "V3-4",
+  "policy": "explicit_dual_objective",
+  "run_id": "extrasensory-p2-fold4-seed47-v2_multiseed",
+  "seed": 47,
+  "selected_risk_family": "grouped_risk_output_compact",
+  "threshold_details": {
+    "error_alert": {
+      "0.80": {
+        "source_split": "val",
+        "target_coverage": 0.8,
+        "threshold": 0.27201656531093055,
+        "validation_accepted_count": 52048,
+        "validation_achieved_coverage": 0.8000122965308413,
+        "validation_coverage_absolute_error": 1.229653084122706e-05,
+        "validation_sample_count": 65059
+      },
+      "0.90": {
+        "source_split": "val",
+        "target_coverage": 0.9,
+        "threshold": 0.21286141714082107,
+        "validation_accepted_count": 58554,
+        "validation_achieved_coverage": 0.9000138335971964,
+        "validation_coverage_absolute_error": 1.3833597196422076e-05,
+        "validation_sample_count": 65059
+      },
+      "0.95": {
+        "source_split": "val",
+        "target_coverage": 0.95,
+        "threshold": 0.17185251820559788,
+        "validation_accepted_count": 61807,
+        "validation_achieved_coverage": 0.9500146021303739,
+        "validation_coverage_absolute_error": 1.4602130373964073e-05,
+        "validation_sample_count": 65059
+      }
+    },
+    "risk_control": {
+      "0.80": {
+        "source_split": "val",
+        "target_coverage": 0.8,
+        "threshold": 0.3674490406241343,
+        "validation_accepted_count": 52048,
+        "validation_achieved_coverage": 0.8000122965308413,
+        "validation_coverage_absolute_error": 1.229653084122706e-05,
+        "validation_sample_count": 65059
+      },
+      "0.90": {
+        "source_split": "val",
+        "target_coverage": 0.9,
+        "threshold": 0.358875588782242,
+        "validation_accepted_count": 58554,
+        "validation_achieved_coverage": 0.9000138335971964,
+        "validation_coverage_absolute_error": 1.3833597196422076e-05,
+        "validation_sample_count": 65059
+      },
+      "0.95": {
+        "source_split": "val",
+        "target_coverage": 0.95,
+        "threshold": 0.35282378698450856,
+        "validation_accepted_count": 61807,
+        "validation_achieved_coverage": 0.9500146021303739,
+        "validation_coverage_absolute_error": 1.4602130373964073e-05,
+        "validation_sample_count": 65059
+      }
+    }
+  },
+  "threshold_source_split": "val",
+  "thresholds": {
+    "error_alert": {
+      "0.80": 0.27201656531093055,
+      "0.90": 0.21286141714082107,
+      "0.95": 0.17185251820559788
+    },
+    "risk_control": {
+      "0.80": 0.3674490406241343,
+      "0.90": 0.358875588782242,
+      "0.95": 0.35282378698450856
+    }
+  },
+  "version": 1
+}

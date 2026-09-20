@@ -1,0 +1,79 @@
+{
+  "created_at_utc": "2026-09-19T12:28:32.940873+00:00",
+  "device": "cuda",
+  "evaluation_split": "test",
+  "feature_counts": {
+    "grouped_risk_full_compact": 11,
+    "grouped_risk_output_compact": 6
+  },
+  "fit_sample_count": 95409,
+  "fit_split": "val",
+  "fitted_selector_count": 2,
+  "fold": 1,
+  "grouping_unit": "user_id",
+  "inference_batch_size": 512,
+  "max_abs_probability_delta_vs_frozen": 0.0,
+  "outputs": [
+    {
+      "bytes": 37189,
+      "path": "reports/v3/phase_v3_3/units/fold1_seed47/curves.csv",
+      "sha256": "0f0a59c569f8f8f7a4b52935d779f3da3fbeb180ac4a8f086cd503355c092891"
+    },
+    {
+      "bytes": 4130,
+      "path": "reports/v3/phase_v3_3/units/fold1_seed47/summary.csv",
+      "sha256": "1cbe5f58b5f00561c8e10f0d26c1a62d46990695302896c79c0aa92e965bdd22"
+    },
+    {
+      "bytes": 7953,
+      "path": "reports/v3/phase_v3_3/units/fold1_seed47/selectors.json",
+      "sha256": "8f8042286f0a80f259bfad1d803e7096f8a3db9ce456f5f0c3f8b79872297953"
+    }
+  ],
+  "phase": "V3-3",
+  "protocol_sha256": "efb672880ee0ff1680cafed70e33ce265ddcc65e24e6b7c44c7798d6500b08df",
+  "run_id": "extrasensory-p2-fold1-seed47-v2_multiseed",
+  "seed": 47,
+  "selected_family": "grouped_risk_output_compact",
+  "selected_family_oof_aurc": 0.4013612016687348,
+  "selection_split": "val_grouped_oof",
+  "selector_count": 5,
+  "sources": [
+    {
+      "bytes": 8311291,
+      "path": "runs/v2/phase_v2_4/extrasensory-p2-fold1-seed47-v2_multiseed/predictions.parquet",
+      "sha256": "fb9bacb9054577d3496b06c24fdfc18f5eb1bd887eab1bbeda4472dcd3d24c72"
+    },
+    {
+      "bytes": 945,
+      "path": "runs/v2/phase_v2_4/extrasensory-p2-fold1-seed47-v2_multiseed/thresholds.json",
+      "sha256": "edfc6fc1054d2f3b2d98f699fa9a117f4b763362a5dcf696e967bbe789e2e553"
+    },
+    {
+      "bytes": 2528,
+      "path": "data/processed/extrasensory/fold1/processed_manifest.json",
+      "sha256": "ff6d8c05efe7e152319e075b41e299cc5b583ceb3b086ee6f91c914a84db076f"
+    },
+    {
+      "bytes": 46907322,
+      "path": "data/processed/extrasensory/fold1/val.npz",
+      "sha256": "7a4df8172a0ba21c681acb658bd184b0a9a9ffba8c356de88d46c4862c5e97c9"
+    },
+    {
+      "bytes": 569680,
+      "path": "runs/v2/phase_v2_4/extrasensory-p2-fold1-seed47-v2_multiseed/best_checkpoint.pt",
+      "sha256": "559a267351199a18d3dcf0850018a0e1c8ae429171c2be494f720481a9bc0c92"
+    },
+    {
+      "bytes": 4635,
+      "path": "runs/v2/phase_v2_4/extrasensory-p2-fold1-seed47-v2_multiseed/resolved_config.yaml",
+      "sha256": "681dd59c4492a44c053fd77810aa38d9eb5689b256d29d85c907517e354d6523"
+    }
+  ],
+  "status": "success",
+  "test_inference_seconds": 2.194043399998918,
+  "test_sample_count": 74282,
+  "validation_inference_seconds": 2.868597000022419,
+  "validation_unique_user_count": 12,
+  "version": 1
+}
