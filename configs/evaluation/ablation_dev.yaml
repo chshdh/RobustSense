@@ -1,0 +1,25 @@
+{
+  "name": "phase5_ablation_development_screen",
+  "profile": "ablation_dev",
+  "folds": [0],
+  "seeds": [13],
+  "models": [
+    "quality-aware",
+    "ablation-a1-no-sensor-dropout",
+    "ablation-a2-no-noise",
+    "ablation-a3-no-quality",
+    "ablation-a4-no-reliability",
+    "ablation-a5-no-reliability-loss"
+  ],
+  "controlled_models": [
+    "quality-aware",
+    "ablation-a1-no-sensor-dropout",
+    "ablation-a2-no-noise",
+    "ablation-a3-no-quality",
+    "ablation-a4-no-reliability",
+    "ablation-a5-no-reliability-loss"
+  ],
+  "controlled_complete_sample_limit": 4096,
+  "suite_version": 1,
+  "status": "frozen_phase5_development_screen"
+}

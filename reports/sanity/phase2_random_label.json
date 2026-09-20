@@ -1,0 +1,15 @@
+{
+  "absolute_gap": 0.0046191545762780395,
+  "chance_mean_prevalence": 0.2222931167240886,
+  "epochs": 1,
+  "evaluation_split": "val",
+  "fold": 0,
+  "phase": 2,
+  "sample_count": 74282,
+  "seed": 13,
+  "shuffled_label_mean_average_precision": 0.21767396214781057,
+  "status": "passed",
+  "test_fold_read_for_tuning": false,
+  "tolerance": 0.15,
+  "training_labels": "deterministically_row_shuffled"
+}

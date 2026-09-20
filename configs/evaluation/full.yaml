@@ -1,0 +1,11 @@
+{
+  "name": "phase5_full_multiseed_extension",
+  "profile": "full",
+  "folds": [0, 1, 2, 3, 4],
+  "seeds": [13, 29, 47],
+  "models": ["gated", "robust-gated", "quality-aware"],
+  "controlled_models": ["gated", "robust-gated", "quality-aware"],
+  "controlled_complete_sample_limit": null,
+  "suite_version": 1,
+  "status": "deferred_until_credible_complete"
+}

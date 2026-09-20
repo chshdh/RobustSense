@@ -1,0 +1,6 @@
+{
+  "data_root": "data/raw",
+  "device": "cpu",
+  "notes": "Copy to configs/local.yaml and adjust locally; this file contains no machine-specific secrets."
+}
+

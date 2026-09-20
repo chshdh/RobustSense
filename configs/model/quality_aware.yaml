@@ -1,0 +1,15 @@
+{
+  "name": "quality-aware",
+  "hidden_dim": 128,
+  "embedding_dim": 64,
+  "quality_dim": 5,
+  "reliability_hidden_dim": 32,
+  "gate_hidden_dim": 32,
+  "classifier_hidden_dim": 128,
+  "dropout": 0.2,
+  "corruption_config": "configs/corruption/train.yaml",
+  "reliability_loss_weight": 0.1,
+  "consistency_loss_weight": 0.1,
+  "phase": 3,
+  "status": "implemented"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "mlp_early_fusion",
+  "model_id": "B2",
+  "hidden_dim": 128,
+  "latent_dim": 64,
+  "dropout": 0.2,
+  "phase": 2,
+  "status": "implemented"
+}

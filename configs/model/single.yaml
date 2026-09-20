@@ -1,0 +1,9 @@
+{
+  "name": "single",
+  "model_id": "B0",
+  "hidden_dim": 128,
+  "latent_dim": 64,
+  "dropout": 0.2,
+  "phase": 2,
+  "status": "implemented"
+}

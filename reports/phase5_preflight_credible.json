@@ -1,0 +1,107 @@
+{
+  "batch_size": 512,
+  "early_stopping_patience": 10,
+  "epochs_max": 80,
+  "estimated_training_hours": {
+    "basis": "completed same-profile epoch counts are projected when available; other models use the early-stop floor and a measured batch-size adjustment; the upper bound uses all epochs plus 15% fold variation; evaluation time is additional",
+    "early_stop_floor": 5.9062255929893634,
+    "max_epoch_upper": 29.795886318191233
+  },
+  "fallback_batch_adjustment": 1.1116165709052819,
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "free_disk_gib": 317.13280868530273,
+  "missing_timing_sources": [],
+  "planned_run_count": 60,
+  "prepared_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "profile": "credible",
+  "ready_to_launch": true,
+  "seeds": [
+    13
+  ],
+  "training_observations": {
+    "gated": {
+      "completed_epochs_mean": 11.0,
+      "mean_epoch_seconds": 15.351364772766829,
+      "projected_epoch_seconds": 15.351364772766829,
+      "source_profile": "credible"
+    },
+    "late": {
+      "completed_epochs_mean": 1.0,
+      "mean_epoch_seconds": 7.555608900031075,
+      "projected_epoch_seconds": 8.398940056553972,
+      "source_profile": "dev"
+    },
+    "linear": {
+      "completed_epochs_mean": 1.0,
+      "mean_epoch_seconds": 4.486365699907765,
+      "projected_epoch_seconds": 4.987118455158544,
+      "source_profile": "dev"
+    },
+    "mlp": {
+      "completed_epochs_mean": 1.0,
+      "mean_epoch_seconds": 4.8050704000052065,
+      "projected_epoch_seconds": 5.341395881012259,
+      "source_profile": "dev"
+    },
+    "quality-aware": {
+      "completed_epochs_mean": 21.0,
+      "mean_epoch_seconds": 90.6786450999789,
+      "projected_epoch_seconds": 90.6786450999789,
+      "source_profile": "credible"
+    },
+    "robust-gated": {
+      "completed_epochs_mean": 21.0,
+      "mean_epoch_seconds": 78.06588059517422,
+      "projected_epoch_seconds": 78.06588059517422,
+      "source_profile": "credible"
+    },
+    "single-audio": {
+      "completed_epochs_mean": 1.0,
+      "mean_epoch_seconds": 4.63486330001615,
+      "projected_epoch_seconds": 5.152190848178691,
+      "source_profile": "dev"
+    },
+    "single-location": {
+      "completed_epochs_mean": 1.0,
+      "mean_epoch_seconds": 4.417162700090557,
+      "projected_epoch_seconds": 4.910191253805381,
+      "source_profile": "dev"
+    },
+    "single-phone_acc": {
+      "completed_epochs_mean": 1.0,
+      "mean_epoch_seconds": 4.4313149999361485,
+      "projected_epoch_seconds": 4.925923184830161,
+      "source_profile": "dev"
+    },
+    "single-phone_gyro": {
+      "completed_epochs_mean": 1.0,
+      "mean_epoch_seconds": 4.302322699921206,
+      "projected_epoch_seconds": 4.782533206614365,
+      "source_profile": "dev"
+    },
+    "single-phone_state": {
+      "completed_epochs_mean": 1.0,
+      "mean_epoch_seconds": 5.126108999829739,
+      "projected_epoch_seconds": 5.698267708477439,
+      "source_profile": "dev"
+    },
+    "single-watch_acc": {
+      "completed_epochs_mean": 1.0,
+      "mean_epoch_seconds": 4.401469300035387,
+      "projected_epoch_seconds": 4.892746210250208,
+      "source_profile": "dev"
+    }
+  }
+}

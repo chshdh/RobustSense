@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "path": "configs/data/extrasensory.yaml",
+      "sha256": "fb82ab9d6468927f63f116a3df46cc1ad0b9647dc91e892eaf7cde0db25d1c34"
+    },
+    {
+      "path": "configs/model/single.yaml",
+      "sha256": "7cfd53c0a678bbe6023cc36eab518eba022c91cd3997c74f8e52cc2d07b9686e"
+    },
+    {
+      "path": "configs/model/early.yaml",
+      "sha256": "c830d95be51d8449951014c3b98a7335e42a3e3facef02f034d94bf3f250e5fe"
+    },
+    {
+      "path": "configs/model/mlp_early.yaml",
+      "sha256": "ca2c7fb2974397d5b3145c97b9d01d8fec6985c4dac6a79bd2f64d8afda4f050"
+    },
+    {
+      "path": "configs/model/late.yaml",
+      "sha256": "4a2fa4debc80c657812b4dc07f48d485f27632e3bdac7c509c5d7562fc9415f4"
+    },
+    {
+      "path": "configs/model/gated.yaml",
+      "sha256": "d787779a745af48f40b43b6343ec89e303a7d91cfff452d89491f96640f4043f"
+    },
+    {
+      "path": "configs/model/robust_gated.yaml",
+      "sha256": "a4e162747cfa830ed6b67a66d79b1f3c0821849b39adcc6c82c2de9b7e44780c"
+    },
+    {
+      "path": "configs/model/quality_aware.yaml",
+      "sha256": "2051d0486f68b09c9215191b431864daa0f665aeb9cb0de24b00b4fdf8f73097"
+    },
+    {
+      "path": "configs/corruption/train.yaml",
+      "sha256": "03afec6ed9cd9297bfcdf0d1b8cd18274aab6df587a7fd229a819d939485d535"
+    },
+    {
+      "path": "configs/corruption/eval.yaml",
+      "sha256": "d08ebc79e029884283f28f773f5f40e5545f1acaca8ea6a41c5924cf5a683e36"
+    },
+    {
+      "path": "configs/experiment/dev.yaml",
+      "sha256": "2860dd27f08e311d53afc19515a1b7b3fcfd20597543afe56b28eef869441f70"
+    },
+    {
+      "path": "configs/experiment/ablation_dev.yaml",
+      "sha256": "a1ac15e5f7c49a3a1f5a01f3dc9fff4e55173f2aa338c3466db57941bb8a0d22"
+    },
+    {
+      "path": "configs/experiment/credible.yaml",
+      "sha256": "fa1fcede9e8c0807e7fbb06dc0a2eaf8f72e24b1a8ade198a22d381b68d10c17"
+    },
+    {
+      "path": "configs/experiment/full.yaml",
+      "sha256": "d1b8c3abe702d0ba597048e458551f14f1f66e6e5927be7afbcd5a45331ab704"
+    },
+    {
+      "path": "configs/experiment/phase5_plan.yaml",
+      "sha256": "f7474c71fd617d9f3aede703738fe9bad50406a87e24f1c8a6790ae05d80a807"
+    },
+    {
+      "path": "configs/evaluation/dev.yaml",
+      "sha256": "9eacea78a7f524bd3f78bfa1da7ff5e6bbc97d8d93e9099fde5fb02d9c29a765"
+    },
+    {
+      "path": "configs/evaluation/ablation_dev.yaml",
+      "sha256": "7574538a2767bfa0c1af4fd3fa8fab24ba6fd30110176d5a48e6e1a7c5504652"
+    },
+    {
+      "path": "configs/evaluation/credible.yaml",
+      "sha256": "85136d983c39d2b9642d633331c55b449d1dcafad9b25ef2a580911a2d522a55"
+    },
+    {
+      "path": "configs/evaluation/full.yaml",
+      "sha256": "fb39479e546412a4227476dda329a029e773e08aeebc22244ca0edab5595fe72"
+    }
+  ],
+  "frozen_on": "2026-09-10",
+  "plan": "configs\\experiment\\phase5_plan.yaml",
+  "protocol_sha256": "91a4e5fd7547ecf347d7fb3d7ee101d7389ac71f77386d4301e1bc1ec8929a7b",
+  "version": 1
+}

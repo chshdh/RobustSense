@@ -1,0 +1,10 @@
+{
+  "name": "late_fusion",
+  "model_id": "B3",
+  "aggregation": "availability_masked_mean",
+  "hidden_dim": 128,
+  "latent_dim": 64,
+  "dropout": 0.2,
+  "phase": 2,
+  "status": "implemented"
+}

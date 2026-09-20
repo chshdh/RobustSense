@@ -1,0 +1,11 @@
+{
+  "dataset": "synthetic",
+  "seed": 13,
+  "n_users": 10,
+  "samples_per_user": 12,
+  "unknown_label_probability": 0.18,
+  "missing_modality_probability": 0.16,
+  "output_path": "data/processed/synthetic_dev.npz",
+  "manifest_dir": "data/manifests"
+}
+

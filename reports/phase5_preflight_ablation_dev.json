@@ -1,0 +1,32 @@
+{
+  "batch_size": 1024,
+  "early_stopping_patience": 3,
+  "epochs_max": 3,
+  "estimated_training_hours": {
+    "basis": "measured fold-0 dev epochs; upper bound adds 25% for smaller batches and fold variation; evaluation time is additional",
+    "early_stop_floor": 0.4078683579992503,
+    "max_epoch_upper": 0.5098354474990628
+  },
+  "folds": [
+    0
+  ],
+  "free_disk_gib": 318.24222564697266,
+  "missing_timing_sources": [],
+  "observed_dev_epoch_seconds": {
+    "ablation-a1-no-sensor-dropout": 81.57367159985006,
+    "ablation-a2-no-noise": 81.57367159985006,
+    "ablation-a3-no-quality": 81.57367159985006,
+    "ablation-a4-no-reliability": 81.57367159985006,
+    "ablation-a5-no-reliability-loss": 81.57367159985006,
+    "quality-aware": 81.57367159985006
+  },
+  "planned_run_count": 6,
+  "prepared_folds": [
+    0
+  ],
+  "profile": "ablation_dev",
+  "ready_to_launch": true,
+  "seeds": [
+    13
+  ]
+}

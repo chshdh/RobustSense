@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "name": "phase5_frozen_protocol",
+  "frozen_on": "2026-09-10",
+  "status": "frozen_before_phase5_test_runs",
+  "data_config": "configs/data/extrasensory.yaml",
+  "labels": [
+    "SITTING",
+    "LYING_DOWN",
+    "OR_standing",
+    "FIX_walking",
+    "OR_exercise",
+    "BICYCLING",
+    "SLEEPING",
+    "EATING",
+    "TALKING",
+    "COMPUTER_WORK",
+    "LOC_home",
+    "LOC_main_workplace",
+    "OR_indoors",
+    "OR_outside",
+    "IN_A_CAR"
+  ],
+  "threshold_rule": "per_label_f1_on_validation_grid_only",
+  "test_threshold_reuse": "same_validation_thresholds_for_every_test_scenario",
+  "scenario_config": "configs/corruption/eval.yaml",
+  "profiles": {
+    "ablation_dev": {
+      "experiment_config": "configs/experiment/ablation_dev.yaml",
+      "evaluation_config": "configs/evaluation/ablation_dev.yaml",
+      "evaluation_suite": "full",
+      "models": [
+        "quality-aware",
+        "ablation-a1-no-sensor-dropout",
+        "ablation-a2-no-noise",
+        "ablation-a3-no-quality",
+        "ablation-a4-no-reliability",
+        "ablation-a5-no-reliability-loss"
+      ]
+    },
+    "credible": {
+      "experiment_config": "configs/experiment/credible.yaml",
+      "evaluation_config": "configs/evaluation/credible.yaml",
+      "evaluation_suite": "full",
+      "models": [
+        "single-phone_acc",
+        "single-phone_gyro",
+        "single-watch_acc",
+        "single-location",
+        "single-audio",
+        "single-phone_state",
+        "linear",
+        "mlp",
+        "late",
+        "gated",
+        "robust-gated",
+        "quality-aware"
+      ]
+    },
+    "full": {
+      "experiment_config": "configs/experiment/full.yaml",
+      "evaluation_config": "configs/evaluation/full.yaml",
+      "evaluation_suite": "full",
+      "models": ["gated", "robust-gated", "quality-aware"],
+      "requires_complete_profile": "credible"
+    }
+  },
+  "ablations": [
+    {"id": "A0", "model": "quality-aware", "change": "complete proposed model"},
+    {"id": "A1", "model": "ablation-a1-no-sensor-dropout", "change": "disable Sensor Dropout only"},
+    {"id": "A2", "model": "ablation-a2-no-noise", "change": "disable noise augmentation only"},
+    {"id": "A3", "model": "ablation-a3-no-quality", "change": "remove explicit quality features only"},
+    {"id": "A4", "model": "ablation-a4-no-reliability", "change": "remove ReliabilityNet and use content-only gate"},
+    {"id": "A5", "model": "ablation-a5-no-reliability-loss", "change": "set reliability auxiliary loss weight to zero"}
+  ],
+  "protocol_files": [
+    "configs/data/extrasensory.yaml",
+    "configs/model/single.yaml",
+    "configs/model/early.yaml",
+    "configs/model/mlp_early.yaml",
+    "configs/model/late.yaml",
+    "configs/model/gated.yaml",
+    "configs/model/robust_gated.yaml",
+    "configs/model/quality_aware.yaml",
+    "configs/corruption/train.yaml",
+    "configs/corruption/eval.yaml",
+    "configs/experiment/dev.yaml",
+    "configs/experiment/ablation_dev.yaml",
+    "configs/experiment/credible.yaml",
+    "configs/experiment/full.yaml",
+    "configs/experiment/phase5_plan.yaml",
+    "configs/evaluation/dev.yaml",
+    "configs/evaluation/ablation_dev.yaml",
+    "configs/evaluation/credible.yaml",
+    "configs/evaluation/full.yaml"
+  ]
+}

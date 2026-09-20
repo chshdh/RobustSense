@@ -1,0 +1,18 @@
+{
+  "checksum_scope": "locally_observed_reference_not_official",
+  "created_at": "2026-09-10",
+  "archives": [
+    {
+      "filename": "ExtraSensory.per_uuid_features_labels.zip",
+      "source_url": "http://extrasensory.ucsd.edu/data/primary_data_files/ExtraSensory.per_uuid_features_labels.zip",
+      "bytes": 225374973,
+      "sha256": "412d307bdf54a60dff81a705c2f25833889a46dca64a184e3b588ad99c69cb56"
+    },
+    {
+      "filename": "cv5Folds.zip",
+      "source_url": "http://extrasensory.ucsd.edu/data/cv5Folds.zip",
+      "bytes": 10803,
+      "sha256": "66183635452d8c1b250b570fba3000296bf29e4d54eda6af270d2b4f5a3b9ee6"
+    }
+  ]
+}

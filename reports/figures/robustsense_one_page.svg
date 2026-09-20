@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">RobustSense 一页项目视觉摘要</title>
+  <desc id="desc">展示项目问题、六个传感器模态、质量感知融合流程、五折实验结果以及结论边界。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08131f"/>
+      <stop offset="1" stop-color="#111b32"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#33d6c5"/>
+      <stop offset="1" stop-color="#6fa8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#02060b" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#60d9d0"/>
+    </marker>
+    <style>
+      text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #eef5ff; }
+      .muted { fill: #9eb0c9; }
+      .kicker { fill: #60d9d0; font-size: 20px; font-weight: 700; letter-spacing: 2px; }
+      .section { font-size: 28px; font-weight: 700; }
+      .body { font-size: 20px; }
+      .small { font-size: 17px; }
+      .metric { font-size: 46px; font-weight: 800; }
+      .label { font-size: 18px; fill: #b9c9dd; }
+      .card { fill: #13243a; stroke: #29415d; stroke-width: 1.5; }
+      .node { fill: #182e47; stroke: #3b647e; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="0" y="0" width="14" height="1000" fill="url(#accent)"/>
+
+  <text x="70" y="82" class="kicker">鲁棒多模态上下文识别</text>
+  <text x="70" y="145" font-size="52" font-weight="800">RobustSense</text>
+  <text x="410" y="145" font-size="30" font-weight="500" fill="#b7c9e5">缺失与污染模态下的质量感知传感器融合</text>
+  <text x="70" y="190" class="body muted">核心问题：当部分传感器掉线或数据质量下降时，如何让模型继续稳定完成 15 标签上下文识别？</text>
+
+  <rect x="70" y="230" width="480" height="278" rx="18" class="card" filter="url(#shadow)"/>
+  <text x="105" y="278" class="section">数据与任务</text>
+  <text x="105" y="319" class="body">ExtraSensory 官方预计算特征</text>
+  <text x="105" y="360" class="metric" fill="#69e0d2">60</text>
+  <text x="205" y="360" class="label">名用户</text>
+  <text x="315" y="360" class="metric" fill="#7db0ff">377,346</text>
+  <text x="315" y="392" class="label">条分钟级记录</text>
+  <text x="105" y="432" class="body">177 个特征 · 6 个模态 · 15 个非互斥标签</text>
+  <text x="105" y="468" class="small muted">用户级五折｜未知标签掩码｜预处理仅拟合训练用户</text>
+
+  <rect x="585" y="230" width="945" height="278" rx="18" class="card" filter="url(#shadow)"/>
+  <text x="620" y="278" class="section">模型链路</text>
+  <g transform="translate(620,312)">
+    <rect x="0" y="0" width="154" height="76" rx="12" class="node"/>
+    <text x="77" y="31" text-anchor="middle" class="body">六路特征</text>
+    <text x="77" y="57" text-anchor="middle" class="small muted">+ 特征掩码</text>
+    <line x1="164" y1="38" x2="208" y2="38" stroke="#60d9d0" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="220" y="0" width="145" height="76" rx="12" class="node"/>
+    <text x="292" y="32" text-anchor="middle" class="body">独立编码器</text>
+    <text x="292" y="58" text-anchor="middle" class="small muted">64 维 hᵢ</text>
+    <line x1="375" y1="38" x2="419" y2="38" stroke="#60d9d0" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="431" y="0" width="160" height="76" rx="12" class="node"/>
+    <text x="511" y="31" text-anchor="middle" class="body">质量 + 可靠度</text>
+    <text x="511" y="57" text-anchor="middle" class="small muted">qᵢ + rᵢ</text>
+    <line x1="601" y1="38" x2="645" y2="38" stroke="#60d9d0" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="657" y="0" width="145" height="76" rx="12" class="node"/>
+    <text x="729" y="31" text-anchor="middle" class="body">掩码门控</text>
+    <text x="729" y="57" text-anchor="middle" class="small muted">权重 wᵢ</text>
+    <line x1="812" y1="38" x2="856" y2="38" stroke="#60d9d0" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="868" y="0" width="137" height="76" rx="12" class="node"/>
+    <text x="936" y="31" text-anchor="middle" class="body">分类器</text>
+    <text x="936" y="57" text-anchor="middle" class="small muted">15 概率</text>
+
+    <rect x="0" y="112" width="1005" height="56" rx="12" fill="#102b35" stroke="#245963"/>
+    <text x="502" y="147" text-anchor="middle" class="body" fill="#7fe8da">训练增强：模态丢弃 + 高斯噪声 + 偏置漂移 + 尺度误差</text>
+  </g>
+
+  <rect x="70" y="540" width="1460" height="278" rx="18" class="card" filter="url(#shadow)"/>
+  <text x="105" y="590" class="section">五折注册结果</text>
+  <text x="1495" y="590" text-anchor="end" class="small muted">60/60 个可信运行成功 · 种子 13</text>
+
+  <g transform="translate(105,628)">
+    <text x="0" y="0" class="label">受控完整 Macro-F1</text>
+    <rect x="0" y="25" width="340" height="22" rx="11" fill="#273950"/>
+    <rect x="0" y="25" width="319" height="22" rx="11" fill="#587da9"/>
+    <text x="355" y="44" class="body">Gated 0.5995</text>
+    <rect x="0" y="67" width="340" height="22" rx="11" fill="#273950"/>
+    <rect x="0" y="67" width="322" height="22" rx="11" fill="#60d9d0"/>
+    <text x="355" y="86" class="body" font-weight="700">Robust Gated 0.6043</text>
+    <rect x="0" y="109" width="340" height="22" rx="11" fill="#273950"/>
+    <rect x="0" y="109" width="321" height="22" rx="11" fill="#8d83d8"/>
+    <text x="355" y="128" class="body">Quality-Aware 0.6022</text>
+  </g>
+
+  <g transform="translate(625,628)">
+    <text x="0" y="0" class="label">自然缺失 Macro-F1</text>
+    <rect x="0" y="25" width="340" height="22" rx="11" fill="#273950"/>
+    <rect x="0" y="25" width="317" height="22" rx="11" fill="#587da9"/>
+    <text x="355" y="44" class="body">Gated 0.5670</text>
+    <rect x="0" y="67" width="340" height="22" rx="11" fill="#273950"/>
+    <rect x="0" y="67" width="322" height="22" rx="11" fill="#60d9d0"/>
+    <text x="355" y="86" class="body">Robust Gated 0.5757</text>
+    <rect x="0" y="109" width="340" height="22" rx="11" fill="#273950"/>
+    <rect x="0" y="109" width="323" height="22" rx="11" fill="#8d83d8"/>
+    <text x="355" y="128" class="body" font-weight="700">Quality-Aware 0.5781</text>
+  </g>
+
+  <g transform="translate(1160,625)">
+    <text x="0" y="0" class="label">随机移除 3 个模态</text>
+    <text x="0" y="62" class="metric" fill="#8d83d8">9.45%</text>
+    <text x="0" y="94" class="small muted">Quality-Aware 相对下降</text>
+    <text x="0" y="133" class="body">Gated：12.87%</text>
+    <text x="0" y="165" class="body">Robust Gated：10.33%</text>
+  </g>
+
+  <rect x="70" y="850" width="710" height="102" rx="16" fill="#102b35" stroke="#245963"/>
+  <text x="102" y="888" class="kicker">支持的结论</text>
+  <text x="102" y="923" class="body">故障增强降低模态缺失退化；质量建模取得最佳自然缺失结果。</text>
+
+  <rect x="820" y="850" width="710" height="102" rx="16" fill="#2b2136" stroke="#5d4771"/>
+  <text x="852" y="888" font-size="20" font-weight="700" fill="#d7a9ff">必须保留的边界</text>
+  <text x="852" y="923" class="body">可靠度随污染下降，但门控权重不是经过校准的可靠度解释。</text>
+
+  <text x="70" y="982" class="small muted">五折、单种子描述性结果｜预计算特征离线评估｜不构成最先进性能或实时部署声明</text>
+</svg>

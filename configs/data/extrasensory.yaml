@@ -1,0 +1,57 @@
+{
+  "dataset": "extrasensory",
+  "raw_dir": "data/raw",
+  "extracted_dir": "data/extracted",
+  "interim_dir": "data/interim",
+  "processed_dir": "data/processed",
+  "manifest_dir": "data/manifests",
+  "report_dir": "reports/data_audit",
+  "feature_archive": "ExtraSensory.per_uuid_features_labels.zip",
+  "fold_archive": "cv5Folds.zip",
+  "feature_source_url": "http://extrasensory.ucsd.edu/data/primary_data_files/ExtraSensory.per_uuid_features_labels.zip",
+  "fold_source_url": "http://extrasensory.ucsd.edu/data/cv5Folds.zip",
+  "timestamp_column": "timestamp",
+  "label_prefix": "label:",
+  "metadata_columns": ["label_source"],
+  "labels": [
+    "SITTING",
+    "LYING_DOWN",
+    "OR_standing",
+    "FIX_walking",
+    "OR_exercise",
+    "BICYCLING",
+    "SLEEPING",
+    "EATING",
+    "TALKING",
+    "COMPUTER_WORK",
+    "LOC_home",
+    "LOC_main_workplace",
+    "OR_indoors",
+    "OR_outside",
+    "IN_A_CAR"
+  ],
+  "modalities": {
+    "phone_acc": ["^raw_acc:"],
+    "phone_gyro": ["^proc_gyro:"],
+    "watch_acc": ["^watch_acceleration:"],
+    "location": ["^location:", "^location_quick_features:"],
+    "audio": ["^audio_naive:", "^audio_properties:"],
+    "phone_state": ["^discrete:"]
+  },
+  "ignored_feature_patterns": [
+    "^raw_magnet:",
+    "^watch_heading:",
+    "^lf_measurements:"
+  ],
+  "expected_user_count": 60,
+  "expected_sample_count_range": [250000, 450000],
+  "audit_chunk_size": 25000,
+  "preprocessing": {
+    "method": "median_iqr",
+    "outlier_threshold": 4.0,
+    "clip_value": 20.0,
+    "minimum_observed_fraction": 0.01
+  },
+  "phase": 2,
+  "status": "audited_and_ready"
+}

@@ -1,0 +1,21 @@
+{
+  "figure": "reports\\figures\\ablation.png",
+  "folds": [
+    0
+  ],
+  "profile": "ablation_dev",
+  "research_conclusion": false,
+  "seeds": [
+    13
+  ],
+  "source_run_ids": [
+    "extrasensory-quality-aware-fold0-seed13-ablation_dev",
+    "extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev",
+    "extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev",
+    "extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev",
+    "extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev",
+    "extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev"
+  ],
+  "status": "complete_development_screen",
+  "table": "reports\\tables\\phase5_ablation_dev.csv"
+}

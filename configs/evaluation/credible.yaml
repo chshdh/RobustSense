@@ -1,0 +1,30 @@
+{
+  "name": "phase5_credible",
+  "profile": "credible",
+  "folds": [0, 1, 2, 3, 4],
+  "seeds": [13],
+  "models": [
+    "single-phone_acc",
+    "single-phone_gyro",
+    "single-watch_acc",
+    "single-location",
+    "single-audio",
+    "single-phone_state",
+    "linear",
+    "mlp",
+    "late",
+    "gated",
+    "robust-gated",
+    "quality-aware"
+  ],
+  "controlled_models": [
+    "mlp",
+    "late",
+    "gated",
+    "robust-gated",
+    "quality-aware"
+  ],
+  "controlled_complete_sample_limit": null,
+  "suite_version": 1,
+  "status": "frozen_phase5"
+}

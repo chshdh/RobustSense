@@ -1,0 +1,8 @@
+{
+  "name": "linear_early_fusion",
+  "model_id": "B1",
+  "implementation": "torch_linear",
+  "phase": 2,
+  "status": "implemented",
+  "phase0_legacy_model_name": "early"
+}

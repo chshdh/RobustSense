@@ -1,0 +1,10 @@
+{
+  "drop_random_k": [1, 2, 3],
+  "gaussian_sigma": [0.25, 0.5, 1.0, 2.0],
+  "bias": [0.25, 0.5, 1.0],
+  "scale": [0.5, 0.75, 1.25, 1.5],
+  "scenario_seed": 13,
+  "drop_random_masks_per_k": 5,
+  "dev_complete_sample_limit": 4096,
+  "status": "implemented_phase_4"
+}

@@ -1,0 +1,10 @@
+model_id,model_name,test_sample_count,parameter_count,macro_f1,micro_f1,mean_average_precision,profile,fold,seed,source_run
+B0,single-phone_acc,65022,16271,0.46261206859214277,0.6082975131742693,0.4355239623674468,dev,0,13,runs/extrasensory-single-phone_acc-fold0-seed13-dev
+B0,single-phone_gyro,64925,16271,0.40574599687702734,0.5444947209653092,0.3494064548871714,dev,0,13,runs/extrasensory-single-phone_gyro-fold0-seed13-dev
+B0,single-watch_acc,43119,21391,0.4918097736355971,0.6172671651937458,0.45984137532016595,dev,0,13,runs/extrasensory-single-watch_acc-fold0-seed13-dev
+B0,single-location,55523,13967,0.4390218813270895,0.5586865204456026,0.418395542579218,dev,0,13,runs/extrasensory-single-location-fold0-seed13-dev
+B0,single-audio,64348,16783,0.44859851357575836,0.6306033686628832,0.4117646180736212,dev,0,13,runs/extrasensory-single-audio-fold0-seed13-dev
+B0,single-phone_state,65059,18319,0.4525730784194963,0.6157138203034761,0.42504196815188783,dev,0,13,runs/extrasensory-single-phone_state-fold0-seed13-dev
+B1,linear,65059,5415,0.5293056599103646,0.6837631542323709,0.5173700947931869,dev,0,13,runs/extrasensory-linear-fold0-seed13-dev
+B2,mlp,65059,55695,0.5684356724355656,0.703956321469187,0.5777631024601203,dev,0,13,runs/extrasensory-mlp-fold0-seed13-dev
+B3,late,65059,103002,0.5708724261167647,0.7075379707686531,0.5675657310293519,dev,0,13,runs/extrasensory-late-fold0-seed13-dev
