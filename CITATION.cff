@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "RobustSense：面向缺失与污染模态上下文感知的质量感知多源传感器融合"
+message: "发布前将与项目所有者共同确定最终引用元数据。"
+type: software
+version: 0.1.0
+date-released: 2026-09-10
+authors:
+  - name: "RobustSense 项目贡献者"

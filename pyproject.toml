@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robustsense"
+version = "0.1.0"
+description = "Quality-aware multi-source sensor fusion under missing and corrupted modalities"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "RobustSense contributors" }]
+dependencies = [
+  "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+ml = ["torch>=2.2", "scikit-learn>=1.4", "PyYAML>=6.0"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+demo = ["streamlit>=1.36", "plotly>=5.22", "pandas>=2.2", "pyarrow>=16"]
+report = ["matplotlib>=3.8", "seaborn>=0.13", "pandas>=2.2", "pyarrow>=16"]
+
+[project.scripts]
+robustsense = "robustsense.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
