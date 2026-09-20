@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "phase": "V4-1",
+  "status": "frozen_before_any_candidate_test_evaluation",
+  "reason": "first_training_attempt_failed_initial_equivalence_gate_before_run_artifacts_or_test_access",
+  "attempts": [
+    {
+      "attempt": 1,
+      "observed_weight_max_abs_delta": 0.000000059604644775390625,
+      "observed_logit_max_abs_delta": 0.00000286102294921875,
+      "correction": "replace_einsum_fusion_with_p2_multiply_then_sum_reduction_order"
+    },
+    {
+      "attempt": 2,
+      "observed_weight_max_abs_delta": 0.000000059604644775390625,
+      "observed_logit_max_abs_delta": 0.000003814697265625,
+      "cause": "gpu_2d_vs_3d_linear_kernel_roundoff"
+    }
+  ],
+  "final_equivalence_gate": {
+    "probability_max_abs_delta": 0.000001,
+    "label_weight_max_abs_delta": 0.000001,
+    "logit_diagnostic_max_abs_delta": 0.00001
+  },
+  "scientific_protocol_changed": false,
+  "success_criteria_changed": false,
+  "training_hyperparameters_changed": false,
+  "successful_candidate_units_before_amendment": 0,
+  "candidate_test_evaluations_before_amendment": 0
+}

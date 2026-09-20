@@ -1,0 +1,15 @@
+{
+  "name": "label-conditioned-reliability-fusion",
+  "model_id": "P2-LC",
+  "hidden_dim": 128,
+  "embedding_dim": 64,
+  "quality_dim": 5,
+  "reliability_hidden_dim": 32,
+  "utility_hidden_dim": 32,
+  "classifier_hidden_dim": 128,
+  "dropout": 0.2,
+  "beta_init": 1.0,
+  "epsilon": 0.000001,
+  "initialization": "exact_matching_p2_checkpoint_expansion",
+  "trainable_scope": "label_conditioned_utility_nets_only"
+}

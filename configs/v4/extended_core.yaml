@@ -1,0 +1,24 @@
+{
+  "profile": "v4_label_conditioned_extended",
+  "models": ["P2-LC"],
+  "folds": [0, 1, 2, 3, 4],
+  "seeds": [29],
+  "complete_subset": "all_six_modalities_naturally_available",
+  "scenario_seed": 2404,
+  "scenario_group_size": 8,
+  "exhaustive_mask_count": 63,
+  "mixed_failure_count": 60,
+  "persistent_episode_lengths": [5, 15, 30],
+  "persistent_faults": ["drop", "gaussian_sigma_2"],
+  "persistent_target_modalities": [
+    "phone_acc", "phone_gyro", "watch_acc", "location", "audio", "phone_state"
+  ],
+  "max_gap_seconds": 90,
+  "calibration_bins": 10,
+  "fault_detection_threshold": 0.5,
+  "recovery_tolerance": 0.05,
+  "bootstrap_repeats": 2000,
+  "bootstrap_seed": 2404,
+  "store_extended_per_sample_predictions": false,
+  "status": "frozen_before_first_candidate_test_evaluation"
+}

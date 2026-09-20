@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "phase": "V4-1",
+  "status": "frozen_before_first_candidate_test_evaluation",
+  "final_model_optimization": true,
+  "parent_acceptance": "reports/v3/phase_v3_4_acceptance.json",
+  "baseline_registry": "reports/v2/phase_v2_4_run_registry.csv",
+  "baseline_model": "P2",
+  "candidate_model": "P2-LC",
+  "model_config": "configs/v4/label_conditioned_fusion.yaml",
+  "data_config": "configs/data/extrasensory.yaml",
+  "corruption_config": "configs/v2/corruption/train.yaml",
+  "run_root": "runs/v4/phase_v4_1",
+  "folds": [0, 1, 2, 3, 4],
+  "seeds": [13, 29, 47],
+  "training": {
+    "warm_start": "matching_fold_seed_p2_checkpoint",
+    "initial_probability_equivalence_atol": 0.000001,
+    "initial_weight_equivalence_atol": 0.000001,
+    "initial_logit_diagnostic_atol": 0.00001,
+    "trainable_scope": "utility_nets_only",
+    "loss": "masked_weighted_bce_with_logits",
+    "corrupted_training_view": true,
+    "clean_consistency_view": false,
+    "epochs": 30,
+    "batch_size": 512,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 5.0,
+    "pos_weight_cap": 20.0,
+    "early_stopping_patience": 6,
+    "early_stopping_metric": "validation_macro_f1_at_0_5",
+    "epoch_zero_checkpoint_allowed": true,
+    "device": "auto"
+  },
+  "threshold_grid": [
+    0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50,
+    0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95
+  ],
+  "threshold_source_split": "val",
+  "evaluation_split": "test",
+  "primary_metric": "natural_missingness_macro_f1",
+  "primary_success": {
+    "minimum_absolute_mean_gain_vs_p2": 0.010,
+    "minimum_winning_fold_count": 3
+  },
+  "safety_gates": {
+    "minimum_micro_f1_delta": -0.005,
+    "maximum_masked_bce_delta": 0.005,
+    "maximum_parameter_count_relative_increase": 0.25,
+    "maximum_latency_relative_increase": 0.50
+  },
+  "aggregation": "mean_over_seeds_within_fold_then_equal_weight_mean_over_folds",
+  "test_time_model_selection_allowed": false,
+  "test_time_threshold_tuning_allowed": false,
+  "further_model_versions_after_this_phase": false,
+  "documentation_language": "zh-CN"
+}

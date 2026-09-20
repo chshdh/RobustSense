@@ -1,0 +1,75 @@
+{
+  "files": [
+    {
+      "bytes": 415,
+      "path": "configs/v4/label_conditioned_fusion.yaml",
+      "sha256": "8f3253c2bfaa7ccd3e2751430a20ed3ab9499e9d7287fd78479c122d4f1f4606"
+    },
+    {
+      "bytes": 2126,
+      "path": "configs/v4/phase_v4_1_plan.yaml",
+      "sha256": "add57a8f648b13c0345e90c5adf9faeab4550ed6ea28b64d30a3e6843020ba74"
+    },
+    {
+      "bytes": 1078,
+      "path": "configs/v4/phase_v4_1_execution_amendment.yaml",
+      "sha256": "214a59a8c5478f40cfede0c3dd800898a3fce629cf71d1d3c8358eb37f5aaad3"
+    },
+    {
+      "bytes": 794,
+      "path": "configs/v4/extended_core.yaml",
+      "sha256": "feee3703a992021835aac7b09253f19a30f2cc63336fbec5d6b116c6e3fc2136"
+    },
+    {
+      "bytes": 1418,
+      "path": "docs/v4/ADR-0001-V4-1\u6807\u7b7e\u7ea7\u53ef\u9760\u878d\u5408.md",
+      "sha256": "c5e9326db423ac1d640b34c82a7889ca384d28c4dd10901a4444e91e9a399c98"
+    },
+    {
+      "bytes": 1924,
+      "path": "docs/v4/EXPERIMENT_PROTOCOL_V4_1.md",
+      "sha256": "8caadf3333ae73e30be8cc59fcc9d179102031e5fbe94f6b7d47f6321ad9e214"
+    },
+    {
+      "bytes": 9455,
+      "path": "reports/v3/phase_v3_4_acceptance.json",
+      "sha256": "8d130a725c71ae81d101b586d4ecb43cdf9342c022d5c20d6eed5de305c175bf"
+    },
+    {
+      "bytes": 5405,
+      "path": "scripts/lock_v4_phase1_protocol.py",
+      "sha256": "f1ddc116961e3af1a442b448c13f08af3e2acbe20a4a752a5f535126b46cea48"
+    },
+    {
+      "bytes": 33454,
+      "path": "scripts/run_v4_phase1.py",
+      "sha256": "dd8390451db99a620bfbeb992ec1a7e7646876c71dad6ee750d16f9d50504e5f"
+    },
+    {
+      "bytes": 3074,
+      "path": "scripts/run_v4_phase1_parallel.py",
+      "sha256": "995792ca7313b9e1f4dcb528e9b075fa8c03f0a88de393915922965179b66f81"
+    },
+    {
+      "bytes": 10273,
+      "path": "src/robustsense/models/v4_label_fusion.py",
+      "sha256": "3167016d0a761c62cec0db8e0cf1bc8f7b4fa4f77f49d22e14dffaaf770981fb"
+    },
+    {
+      "bytes": 3790,
+      "path": "tests/unit/test_v4_label_fusion.py",
+      "sha256": "7904557322496b5e539ee3f953bf1ffe35e0cbbf649ce9bb876e7848a312051c"
+    }
+  ],
+  "final_model_optimization": true,
+  "frozen_at_utc": "2026-09-19T14:01:39.275931+00:00",
+  "further_model_versions_allowed": false,
+  "parent_acceptance_sha256": "ebb0e7726d72c348aa66c05a63746be31f7004bad6c3da06488ac4a6975163e0",
+  "phase": "V4-1",
+  "protocol_sha256": "1f64aabe1ade4c424a6728bcfb3f28dfa82ce114f7e98f18f3d47ebf734e6ba4",
+  "status": "frozen_before_first_candidate_test_evaluation",
+  "successful_candidate_unit_count_before_lock": 0,
+  "test_time_model_selection_allowed": false,
+  "test_time_threshold_tuning_allowed": false,
+  "version": 1
+}

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "phase": "V4-1",
+  "status": "execution_compatibility_correction_after_first_candidate_test",
+  "affected_units": [
+    "fold0_seed13", "fold1_seed13", "fold2_seed13", "fold3_seed13", "fold4_seed13"
+  ],
+  "cause": "seed13_p2_runs_were_verified_reuses_from_v2_3_so_registry_and_source_resolved_protocol_hashes_intentionally_differ",
+  "allowed_source_contract": {
+    "seed": 13,
+    "source_phase": "V2-3",
+    "source_variant": "P2",
+    "registry_status": "success",
+    "registry_reason_prefix": "reused_contract_verified:"
+  },
+  "model_changed": false,
+  "training_changed": false,
+  "test_metrics_changed": false,
+  "success_criteria_changed": false
+}
