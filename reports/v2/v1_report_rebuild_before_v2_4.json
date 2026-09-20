@@ -1,0 +1,11 @@
+{
+  "artifact_count": 31,
+  "checked_at_utc": "2026-09-18T12:22:18.934719+00:00",
+  "initial_rebuild_changed_count": 0,
+  "initial_rebuild_changes": [],
+  "phase": "V2-0",
+  "repeat_rebuild_changed_count": 0,
+  "repeat_rebuild_changes": [],
+  "status": "passed",
+  "version": 1
+}

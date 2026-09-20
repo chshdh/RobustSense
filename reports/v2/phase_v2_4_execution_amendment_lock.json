@@ -1,0 +1,38 @@
+{
+  "amendment_sha256": "802b40efe005d09fb97c907a04e144c680a7ac75219c1286867053c1a5b56957",
+  "files": [
+    {
+      "bytes": 906,
+      "path": "configs/v2/phase_v2_4_execution_amendment.yaml",
+      "sha256": "82e8aba002c9e7edc064c9d722ed1cc2dac3c8e727b305e3aa2b0f7cdf21d116"
+    },
+    {
+      "bytes": 1894,
+      "path": "docs/v2/ADR-0006-V2-4\u53cc\u4efb\u52a1\u5e76\u884c\u8c03\u5ea6.md",
+      "sha256": "7ed734c9dfa645fd98f98c9de1fadf80526f0d12d038c7666aec4e9543f8b604"
+    },
+    {
+      "bytes": 6377,
+      "path": "reports/v2/phase_v2_4_protocol_lock.json",
+      "sha256": "e85f248ba5c66106c0e236ff9d8bc39755fec9fd2e2be7751aeac8e124b99fa9"
+    },
+    {
+      "bytes": 2337,
+      "path": "scripts/lock_v2_phase4_execution_amendment.py",
+      "sha256": "c9cf1a0ae3c0c6aa79a683f0b764f622a758c65a38f55da6b0c66fc42436b316"
+    },
+    {
+      "bytes": 14377,
+      "path": "scripts/run_v2_phase4_parallel.py",
+      "sha256": "f08f0ce08099815910b43b6cce629d06cd8dcdf7d1189acc57bd218e0318ed70"
+    }
+  ],
+  "frozen_at_utc": "2026-09-18T13:18:18.438008+00:00",
+  "kind": "execution_only_parallelism_amendment",
+  "max_parallel_units": 2,
+  "metric_values_used": false,
+  "parent_protocol_sha256": "35035f18ccb129c1f3b5d8b70f724d9059bf4f5d433259ba586b477d30bd9d34",
+  "phase": "V2-4",
+  "status": "frozen_before_parallel_launch",
+  "version": 1
+}

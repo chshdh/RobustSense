@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "phase": "V2-6",
+  "status": "internal_release_candidate",
+  "parent_protocol_lock": "reports/v2/phase_v2_5_protocol_lock.json",
+  "demo_acceptance": "reports/v2/phase_v2_5_acceptance.json",
+  "demo_health": "reports/v2/phase_v2_5_streamlit_health.json",
+  "core_success_required": 60,
+  "extended_success_required": 60,
+  "v1_verified_file_count_required": 813,
+  "demo_gif": "reports/v2/demo_v2_walkthrough.gif",
+  "documentation_language": "zh-CN",
+  "ppt_required": false,
+  "environment_recreation_required": false,
+  "public_release_blockers": [
+    "choose_code_license",
+    "complete_real_author_metadata"
+  ]
+}

@@ -1,0 +1,4100 @@
+{
+  "baseline": "RobustSense V1 Phase 7 accepted state",
+  "content_sha256": "1c6278235f1687f962d426b134498d7884009db2005b386e6330304e3f23952f",
+  "credible_runs": {
+    "expected": 60,
+    "status": "passed",
+    "validated": 60
+  },
+  "file_count": 813,
+  "files": [
+    {
+      "bytes": 266,
+      "path": "configs/corruption/eval.yaml",
+      "sha256": "d08ebc79e029884283f28f773f5f40e5545f1acaca8ea6a41c5924cf5a683e36"
+    },
+    {
+      "bytes": 442,
+      "path": "configs/corruption/train.yaml",
+      "sha256": "03afec6ed9cd9297bfcdf0d1b8cd18274aab6df587a7fd229a819d939485d535"
+    },
+    {
+      "bytes": 1607,
+      "path": "configs/data/extrasensory.yaml",
+      "sha256": "fb82ab9d6468927f63f116a3df46cc1ad0b9647dc91e892eaf7cde0db25d1c34"
+    },
+    {
+      "bytes": 652,
+      "path": "configs/evaluation/ablation_dev.yaml",
+      "sha256": "7574538a2767bfa0c1af4fd3fa8fab24ba6fd30110176d5a48e6e1a7c5504652"
+    },
+    {
+      "bytes": 554,
+      "path": "configs/evaluation/credible.yaml",
+      "sha256": "85136d983c39d2b9642d633331c55b449d1dcafad9b25ef2a580911a2d522a55"
+    },
+    {
+      "bytes": 561,
+      "path": "configs/evaluation/dev.yaml",
+      "sha256": "9eacea78a7f524bd3f78bfa1da7ff5e6bbc97d8d93e9099fde5fb02d9c29a765"
+    },
+    {
+      "bytes": 359,
+      "path": "configs/evaluation/full.yaml",
+      "sha256": "fb39479e546412a4227476dda329a029e773e08aeebc22244ca0edab5595fe72"
+    },
+    {
+      "bytes": 479,
+      "path": "configs/experiment/ablation_dev.yaml",
+      "sha256": "a1ac15e5f7c49a3a1f5a01f3dc9fff4e55173f2aa338c3466db57941bb8a0d22"
+    },
+    {
+      "bytes": 469,
+      "path": "configs/experiment/credible.yaml",
+      "sha256": "fa1fcede9e8c0807e7fbb06dc0a2eaf8f72e24b1a8ade198a22d381b68d10c17"
+    },
+    {
+      "bytes": 409,
+      "path": "configs/experiment/dev.yaml",
+      "sha256": "2860dd27f08e311d53afc19515a1b7b3fcfd20597543afe56b28eef869441f70"
+    },
+    {
+      "bytes": 492,
+      "path": "configs/experiment/full.yaml",
+      "sha256": "d1b8c3abe702d0ba597048e458551f14f1f66e6e5927be7afbcd5a45331ab704"
+    },
+    {
+      "bytes": 3259,
+      "path": "configs/experiment/phase5_plan.yaml",
+      "sha256": "f7474c71fd617d9f3aede703738fe9bad50406a87e24f1c8a6790ae05d80a807"
+    },
+    {
+      "bytes": 172,
+      "path": "configs/model/early.yaml",
+      "sha256": "c830d95be51d8449951014c3b98a7335e42a3e3facef02f034d94bf3f250e5fe"
+    },
+    {
+      "bytes": 182,
+      "path": "configs/model/gated.yaml",
+      "sha256": "d787779a745af48f40b43b6343ec89e303a7d91cfff452d89491f96640f4043f"
+    },
+    {
+      "bytes": 193,
+      "path": "configs/model/late.yaml",
+      "sha256": "4a2fa4debc80c657812b4dc07f48d485f27632e3bdac7c509c5d7562fc9415f4"
+    },
+    {
+      "bytes": 153,
+      "path": "configs/model/mlp_early.yaml",
+      "sha256": "ca2c7fb2974397d5b3145c97b9d01d8fec6985c4dac6a79bd2f64d8afda4f050"
+    },
+    {
+      "bytes": 366,
+      "path": "configs/model/quality_aware.yaml",
+      "sha256": "2051d0486f68b09c9215191b431864daa0f665aeb9cb0de24b00b4fdf8f73097"
+    },
+    {
+      "bytes": 245,
+      "path": "configs/model/robust_gated.yaml",
+      "sha256": "a4e162747cfa830ed6b67a66d79b1f3c0821849b39adcc6c82c2de9b7e44780c"
+    },
+    {
+      "bytes": 143,
+      "path": "configs/model/single.yaml",
+      "sha256": "7cfd53c0a678bbe6023cc36eab518eba022c91cd3997c74f8e52cc2d07b9686e"
+    },
+    {
+      "bytes": 19317,
+      "path": "data/manifests/extrasensory_data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 21583,
+      "path": "data/manifests/extrasensory_schema_manifest.json",
+      "sha256": "ccb50e1116e83532c7f8e41c37f5a55e587981dbaad3fb1798849036f1fd2b4d"
+    },
+    {
+      "bytes": 3076,
+      "path": "data/manifests/extrasensory_split_fold0.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 3076,
+      "path": "data/manifests/extrasensory_split_fold1.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 3076,
+      "path": "data/manifests/extrasensory_split_fold2.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 3076,
+      "path": "data/manifests/extrasensory_split_fold3.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 3076,
+      "path": "data/manifests/extrasensory_split_fold4.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 1067,
+      "path": "data/manifests/synthetic_data_manifest.json",
+      "sha256": "c0058d57bf5692173b831abd49554b605b9dfce612073d26277f47eb898fb8c9"
+    },
+    {
+      "bytes": 363,
+      "path": "data/manifests/synthetic_split_fold0.json",
+      "sha256": "b5c683a9ae3267c5adc03257c55f7bd80719b5eccd23e0b455122b2e797eed9f"
+    },
+    {
+      "bytes": 1933,
+      "path": "data/processed/extrasensory/fold0/preprocessor.json",
+      "sha256": "f76952b22e877075adf7ff7eb9c0facdb62c5fcd63647881b4a5eba95ad3ec6e"
+    },
+    {
+      "bytes": 2529,
+      "path": "data/processed/extrasensory/fold0/processed_manifest.json",
+      "sha256": "009be539d9bca48aba109e73fc14276e663664d3f4ab014e83800661e334ef7c"
+    },
+    {
+      "bytes": 1933,
+      "path": "data/processed/extrasensory/fold1/preprocessor.json",
+      "sha256": "d5386396008c204f5dfc1e733b08c90e0ab28498c06112fcce1c65767ef058c4"
+    },
+    {
+      "bytes": 2528,
+      "path": "data/processed/extrasensory/fold1/processed_manifest.json",
+      "sha256": "ff6d8c05efe7e152319e075b41e299cc5b583ceb3b086ee6f91c914a84db076f"
+    },
+    {
+      "bytes": 1933,
+      "path": "data/processed/extrasensory/fold2/preprocessor.json",
+      "sha256": "94bbb1f2a10d17ac6cd9078bdf8cebd9beb4cf26d40b89a6e411c27885465202"
+    },
+    {
+      "bytes": 2534,
+      "path": "data/processed/extrasensory/fold2/processed_manifest.json",
+      "sha256": "78d426647ade35640b2d5704ae8a7cb026aba1a09459b847cd03276c4d2a4312"
+    },
+    {
+      "bytes": 1933,
+      "path": "data/processed/extrasensory/fold3/preprocessor.json",
+      "sha256": "149e5ae0dffd658a09178dd24a86f76aac93a5b85977b4dfb47302f417573e40"
+    },
+    {
+      "bytes": 2535,
+      "path": "data/processed/extrasensory/fold3/processed_manifest.json",
+      "sha256": "655e4fbefd0d6e5284115e21acee1f7645fbb7c574e86911b98774c441a6e06c"
+    },
+    {
+      "bytes": 1933,
+      "path": "data/processed/extrasensory/fold4/preprocessor.json",
+      "sha256": "7e81947f71b391b46d772b1ae1abe2c80ea944fd417ff79cae1d07240d5da64a"
+    },
+    {
+      "bytes": 2535,
+      "path": "data/processed/extrasensory/fold4/processed_manifest.json",
+      "sha256": "4ba9f3883590308f81cb93d4b0d1afad1170988424f8ce15c9d6c0a5a9fe6ac9"
+    },
+    {
+      "bytes": 4225,
+      "path": "docs/EXPERIMENT_PROTOCOL.md",
+      "sha256": "0f8c62ca87837caae62fced2a3a302373d1abbb9c7d8318d5c8acde1bb55cb25"
+    },
+    {
+      "bytes": 4511,
+      "path": "docs/PHASE5_REPORT.md",
+      "sha256": "6cfb5ae86b3bf45810f9198ee9d2181014cc309fb3d83e61366302776dcfa26f"
+    },
+    {
+      "bytes": 3301,
+      "path": "docs/PHASE6_REPORT.md",
+      "sha256": "164abe99f17939dead6f50fe1f6f0b6cdf53367da26ee9dac05229bdd420f77a"
+    },
+    {
+      "bytes": 3713,
+      "path": "docs/PHASE7_REPORT.md",
+      "sha256": "31c071f2156ecbf924446531a9c67e0b04e17e7485dab55515a05b1eefe7453a"
+    },
+    {
+      "bytes": 8672,
+      "path": "README.md",
+      "sha256": "e7d611ab2c10e9c04bc89a5b30757767f2a02bdb6fcba118ad79ddbc4fa749e0"
+    },
+    {
+      "bytes": 3497,
+      "path": "reports/audit_report.md",
+      "sha256": "2e1767d1c3fadc62115c3620e8ec36488a8cc872197a6983a8e20aa096dd4ad0"
+    },
+    {
+      "bytes": 1371,
+      "path": "reports/data_audit/audit_report.md",
+      "sha256": "67ddeb83ba5433a0600700f098dbde5eb663907994f2116b293a8cadc87a5872"
+    },
+    {
+      "bytes": 839,
+      "path": "reports/data_audit/dataset_summary.json",
+      "sha256": "bb72218d16c679e10ac91c1aefa5647e1657bd38b75c29bc0fff122eb224bd07"
+    },
+    {
+      "bytes": 18751,
+      "path": "reports/data_audit/feature_schema.csv",
+      "sha256": "f78edf84f7337c78c2663c585e4b0c5b48c3cd06768d9e8783c7d063abc0f8e7"
+    },
+    {
+      "bytes": 4334,
+      "path": "reports/data_audit/label_by_fold.csv",
+      "sha256": "abb42a28838675dd5884ea3c4b933ad212fd9d9002026f5c0748e867cd974ef4"
+    },
+    {
+      "bytes": 105972,
+      "path": "reports/data_audit/label_cooccurrence.png",
+      "sha256": "f1a3ed9ab1b67e07e2e408013a7b62141daff783be52f3ed8c942bf384030810"
+    },
+    {
+      "bytes": 908,
+      "path": "reports/data_audit/label_prevalence.csv",
+      "sha256": "e120b2a30e71e69a3572e90d43e26d422eae75b7df9831168cdc8583da8262b7"
+    },
+    {
+      "bytes": 50851,
+      "path": "reports/data_audit/modality_coavailability.png",
+      "sha256": "095b2c6a04cbba4622415d7f2f2cd83da03c8c66a134457a884b1399479dfa0b"
+    },
+    {
+      "bytes": 615,
+      "path": "reports/data_audit/modality_missingness.csv",
+      "sha256": "8b1d260e131d9440a25d01fe93153a6503bebb137ba0acfe4ed7aa95aa82fa1f"
+    },
+    {
+      "bytes": 4992,
+      "path": "reports/data_audit/user_sample_counts.csv",
+      "sha256": "7562d16d52fad3a80b10bb1e51f6797f58476bdffcbeb4115f6a020782a62f9b"
+    },
+    {
+      "bytes": 32114,
+      "path": "reports/figures/ablation.png",
+      "sha256": "d853784e031b10c747690e9f71396e80c40ec8e07e59cd47ba64e67fc2fbe356"
+    },
+    {
+      "bytes": 45715,
+      "path": "reports/figures/architecture_progression.png",
+      "sha256": "edfb139cd3b2c2bdcd6b5f3ed37056d3c41a28545588a98cb2e2a06ddaf40c9b"
+    },
+    {
+      "bytes": 61747,
+      "path": "reports/figures/clean_performance.png",
+      "sha256": "17d312d23f4417dc33d575c2d96346f83cc23bd08d0734d9a3838feef42a1fac"
+    },
+    {
+      "bytes": 48455,
+      "path": "reports/figures/drop_each_modality_heatmap.png",
+      "sha256": "c134cfcb7413f24475095dd20bbb98bad478ec08624d8654f73c44e9fb2314e7"
+    },
+    {
+      "bytes": 87850,
+      "path": "reports/figures/f1_vs_missing_modalities.png",
+      "sha256": "5b56fa70b01d910848571e686e6015411f18d40387722c49f8ba81a582e9bd4b"
+    },
+    {
+      "bytes": 79424,
+      "path": "reports/figures/gate_weight_vs_noise.png",
+      "sha256": "578f6962cd71ecf4563d24c3ed4b226b9666aba654c810b6c3070c1b3c178a96"
+    },
+    {
+      "bytes": 64980,
+      "path": "reports/figures/label_prevalence.png",
+      "sha256": "810db016340a7dc4ed1b9929801b39b4a2259499ad23b2961fa37c0ee8b8eff3"
+    },
+    {
+      "bytes": 39762,
+      "path": "reports/figures/modality_missingness.png",
+      "sha256": "0d073e1fc8b1c14da69ac3045711d13c54496edeb545ba995a8b3c6b2494d1cc"
+    },
+    {
+      "bytes": 65349,
+      "path": "reports/figures/model_overview.png",
+      "sha256": "39bdeacaf7a2bf507e6ac02d5cc3623e6b5a4616cb21a4df053759c6da88029a"
+    },
+    {
+      "bytes": 161412,
+      "path": "reports/figures/natural_missingness_by_available_count.png",
+      "sha256": "291528c0fa1ab3333f6f2010a89dbd0b9d65bea31b0cf0bc2462bd2bb939bf74"
+    },
+    {
+      "bytes": 145361,
+      "path": "reports/figures/noise_robustness_curves.png",
+      "sha256": "73a83c8cb27cea7281069f7cc2c40b6c7b41171dc2e8f28e5d0b246f12714c92"
+    },
+    {
+      "bytes": 96129,
+      "path": "reports/figures/per_label_f1.png",
+      "sha256": "943f08f93eb8aae6187830ee6a096ce9eea6f10340c85f6a01b3f2d03d8c4b6c"
+    },
+    {
+      "bytes": 56724,
+      "path": "reports/figures/reliability_vs_noise.png",
+      "sha256": "1fd4dc18fa2f380bd311a5e7ec1980bb5570cb9a29742e6faa363f95b0ca04a6"
+    },
+    {
+      "bytes": 3010,
+      "path": "reports/phase5_protocol_lock.json",
+      "sha256": "51ca028146337717bc38a2213abf151198a8eaaa71070e5d140767dba487d5ae"
+    },
+    {
+      "bytes": 9808,
+      "path": "reports/readme_source_map.csv",
+      "sha256": "0ea4949861a75a2d885cb8c90777a9524b09aef90de0d76d7e44a3b358fb25bf"
+    },
+    {
+      "bytes": 12203,
+      "path": "reports/run_attempts.csv",
+      "sha256": "c16677566a213fefe68749c4200ba467ff393bef69ba06d886394bc905f9afb9"
+    },
+    {
+      "bytes": 4031,
+      "path": "reports/run_completeness.json",
+      "sha256": "ec93cb69320bccb6b7cbe549d05bde40b2c98acbe4df6cf21ca09eddaf3821ef"
+    },
+    {
+      "bytes": 42756,
+      "path": "reports/run_registry.csv",
+      "sha256": "a8c767b1d88531381b2a55b3c0485eb92f35c10044a0b7786aa6f7e00f5a7c9c"
+    },
+    {
+      "bytes": 82742,
+      "path": "reports/source_map.csv",
+      "sha256": "b9e1ac98ce7d72dae68d77781db60285c8d597b2c5e67501823dd9b8134f778e"
+    },
+    {
+      "bytes": 10737,
+      "path": "reports/tables/aggregate_performance.csv",
+      "sha256": "3dc0df65f6bd6d7a6b398a5a9251b83cf4fe4a9db2b41c28f9389f3d84fd15ce"
+    },
+    {
+      "bytes": 7485604,
+      "path": "reports/tables/controlled_per_label.csv",
+      "sha256": "fd74692db54068f467406d8f72a25556e66083c39cff7f4075ed554c6836ae16"
+    },
+    {
+      "bytes": 15499,
+      "path": "reports/tables/e1_clean_performance.csv",
+      "sha256": "47bc7fbf4b9135bf16befbcfead87d4508b0ba46b28ad3545ac024e7c7eb34e6"
+    },
+    {
+      "bytes": 40150,
+      "path": "reports/tables/e2_natural_by_available_count.csv",
+      "sha256": "c1196036eab29391327b7915ed4e66a8de6652822edb20f9d0c4ec3bbf3bfc85"
+    },
+    {
+      "bytes": 8946,
+      "path": "reports/tables/e2_natural_missingness.csv",
+      "sha256": "c0f1bd75959492987ea36866fd00198423add4b2428b14ec54a51dce8d56958f"
+    },
+    {
+      "bytes": 45708,
+      "path": "reports/tables/e3_drop_each_modality.csv",
+      "sha256": "6bd050c1620d4932b9c82f0c225a81d3056690f24a1b85687d8b805013bc1bf9"
+    },
+    {
+      "bytes": 122682,
+      "path": "reports/tables/e4_drop_random_k.csv",
+      "sha256": "4ef909209a970b8b6ba6ac879d96a0fffb6445038d1320ef9ea68e4f6cd5640a"
+    },
+    {
+      "bytes": 180835,
+      "path": "reports/tables/e5_gaussian_noise.csv",
+      "sha256": "a36e2c308ec3ee80c9cae54062a8698424782a72ee1c2600a427fad29c371976"
+    },
+    {
+      "bytes": 311422,
+      "path": "reports/tables/e6_bias_scale.csv",
+      "sha256": "0df413669608aaafa753188b4c1831e3635b985717a85e1cc024574344a77813"
+    },
+    {
+      "bytes": 1804851,
+      "path": "reports/tables/e7_quality_response.csv",
+      "sha256": "33e59df82f42e7abc7fca41a987fbcbb50ef7a3c91cf3f2931e879200116d357"
+    },
+    {
+      "bytes": 42865,
+      "path": "reports/tables/e7_response_correlations.csv",
+      "sha256": "7a537e5aa8a34c3c33699b212ab56c2ca64fa6eb4d5152f2b181670c8ecab63c"
+    },
+    {
+      "bytes": 6015,
+      "path": "reports/tables/e8_efficiency.csv",
+      "sha256": "e9098a446767c50fad0dc6ab7a8dd61a9ae26cbe6b77284af4d79e16ac074d5d"
+    },
+    {
+      "bytes": 1188,
+      "path": "reports/tables/phase5_ablation_dev.csv",
+      "sha256": "0ddfd8338415d43bbddadaadd4d0cbadaeb20229fcc30ca4495c1c6f10c6c408"
+    },
+    {
+      "bytes": 49335,
+      "path": "reports/tables/robustness_auc.csv",
+      "sha256": "8816b23ed8c67b312717cf7fd942d2ee0e0f2dc2d9ed660678cb396a79ee8249"
+    },
+    {
+      "bytes": 14037,
+      "path": "reports/technical_report.md",
+      "sha256": "1177f787efa310e66bb9d460cbca05d3c3a6042b4f8ef95d0741e33c246882b6"
+    },
+    {
+      "bytes": 574795,
+      "path": "runs/extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev/best_checkpoint.pt",
+      "sha256": "f53f6bf08958cea325b5cab306e192d0ce513d489f45fb17a5164b6f7bee9eb8"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev/environment.json",
+      "sha256": "8dc66fe9671ab64157d8ea548b4f406adbd81658bc40648c716f12f4f4b293b8"
+    },
+    {
+      "bytes": 1480,
+      "path": "runs/extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev/evaluation_manifest.json",
+      "sha256": "4e5d343b6e519972810b6fc521ddf870e8f4d9baf39033c5a4db740982ace92a"
+    },
+    {
+      "bytes": 3737,
+      "path": "runs/extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev/resolved_config.yaml",
+      "sha256": "204d2cec7616bec2b614afb21e794d370047798b5ec1f2d07e04da8a50dfca64"
+    },
+    {
+      "bytes": 523,
+      "path": "runs/extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev/run_summary.md",
+      "sha256": "9242397f41b6872fced8b25e5755e7306573c683022638e71c0687d56d0e87bd"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9026,
+      "path": "runs/extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev/test_metrics.json",
+      "sha256": "36b4f5f21f8e29ae14a0ba9387b80e88f21eed31e390c418f67516825fe2c781"
+    },
+    {
+      "bytes": 948,
+      "path": "runs/extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev/thresholds.json",
+      "sha256": "c10f09c9411735a92604b2a4ebde626458c6d9ea66af48b74e195bb6e75e28be"
+    },
+    {
+      "bytes": 491,
+      "path": "runs/extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev/train_log.csv",
+      "sha256": "0f76d04f22ee205ff0dbe49302b62f26b7f6bb00a91525f4f0415e620e943dff"
+    },
+    {
+      "bytes": 8777,
+      "path": "runs/extrasensory-ablation-a1-no-sensor-dropout-fold0-seed13-ablation_dev/val_metrics.json",
+      "sha256": "3bd9ccbe0f7e0516d1b74254929f405b40994bb6eace7d410a9b6222ecb1cb43"
+    },
+    {
+      "bytes": 574795,
+      "path": "runs/extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev/best_checkpoint.pt",
+      "sha256": "b331ed0954f669d940afda7e8d077ab24d4fa6b7df255e56a4dfa736209ced33"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev/environment.json",
+      "sha256": "645be42edf0fbb53aaada2e43c27144171fe3eec83d012ae261add40d62e4ef1"
+    },
+    {
+      "bytes": 1462,
+      "path": "runs/extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev/evaluation_manifest.json",
+      "sha256": "bbadd39941bf981666af3942cbc85627dc512025a0eaa8a495f4a45bb8f467c5"
+    },
+    {
+      "bytes": 3701,
+      "path": "runs/extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev/resolved_config.yaml",
+      "sha256": "fb147abc058a11a511bc358b84d5fa72005d8cd2e57e364f64a2806bb4de2610"
+    },
+    {
+      "bytes": 505,
+      "path": "runs/extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev/run_summary.md",
+      "sha256": "ec73e437ff0cf891d7c3f930bdb73b75a867f51921b482b2e722678e85d60494"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9000,
+      "path": "runs/extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev/test_metrics.json",
+      "sha256": "628f63ebfa361a3034645d126bdfd6d90d8ed7eca6b7f1aae696f3821d455904"
+    },
+    {
+      "bytes": 929,
+      "path": "runs/extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev/thresholds.json",
+      "sha256": "ffe622e7e3c6fd2d9e043c423e06d39b811d70de5adc4dc34888718e1fa6265a"
+    },
+    {
+      "bytes": 489,
+      "path": "runs/extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev/train_log.csv",
+      "sha256": "594764cb2cab1c03a0828374dd6f3b3539c2e7f02a770edd8afab2b4660ec5f4"
+    },
+    {
+      "bytes": 8791,
+      "path": "runs/extrasensory-ablation-a2-no-noise-fold0-seed13-ablation_dev/val_metrics.json",
+      "sha256": "ed21deb83547574c732a3831b6b18df6be4504aaceed7567264d6b497c9fb12c"
+    },
+    {
+      "bytes": 567115,
+      "path": "runs/extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev/best_checkpoint.pt",
+      "sha256": "9d0a27d1fdb25237cca5dea95a1d76a230e6cef82d12f993be9592cf06a8ff49"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev/environment.json",
+      "sha256": "821da1669d2b0481e26b86fb497ae2ee1dae23ec82e4f57cf341266b0bf9a891"
+    },
+    {
+      "bytes": 1466,
+      "path": "runs/extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev/evaluation_manifest.json",
+      "sha256": "6bceb5696be38f38e6c2f368dad1613f3cb7bc0af77639dd92a13693da2223ca"
+    },
+    {
+      "bytes": 3696,
+      "path": "runs/extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev/resolved_config.yaml",
+      "sha256": "55a5f233045c8568ccc28e6ba3a15aedfc89828d5343b493e9caf439b074b6ea"
+    },
+    {
+      "bytes": 509,
+      "path": "runs/extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev/run_summary.md",
+      "sha256": "5b0b37a014c2960910a59ae451b323b0022451f6c60660a2fd51153c899a7334"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9009,
+      "path": "runs/extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev/test_metrics.json",
+      "sha256": "34c4e82c8d2b223098619282c17e26c94f3fa26c41c738f10248fab4d47aee74"
+    },
+    {
+      "bytes": 917,
+      "path": "runs/extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev/thresholds.json",
+      "sha256": "8ba456139b2997e8b2e2730afa9cf0da2784e3b00d3eeafa1f16eb17f00f2348"
+    },
+    {
+      "bytes": 486,
+      "path": "runs/extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev/train_log.csv",
+      "sha256": "4b4e1b94dd5ab48dbb98e78b0f0f423c52177925864a03fd97d1007e098d7e46"
+    },
+    {
+      "bytes": 8798,
+      "path": "runs/extrasensory-ablation-a3-no-quality-fold0-seed13-ablation_dev/val_metrics.json",
+      "sha256": "6926ce4d5f68fac07acfb4cb45e8b428a3c641318edce81d56d8d4d885a9283c"
+    },
+    {
+      "bytes": 506259,
+      "path": "runs/extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev/best_checkpoint.pt",
+      "sha256": "bff5aeab385127f9ef976a3bf1cf7c645f5530699bd6798559614cbda71bad3b"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev/environment.json",
+      "sha256": "cc995d20a3c3b4f54f853c3da596a2a6e6197e2536d440e8e1b996e2f32a08a4"
+    },
+    {
+      "bytes": 1474,
+      "path": "runs/extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev/evaluation_manifest.json",
+      "sha256": "53e49bfdd2a04d02e4053cf5b312ce2a4b66e8e3b951692d76d247fffd924cf9"
+    },
+    {
+      "bytes": 3708,
+      "path": "runs/extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev/resolved_config.yaml",
+      "sha256": "9b4112676d1f76b1499cad176d139baec86c3a4fc8409aa27df00d907c32ca98"
+    },
+    {
+      "bytes": 517,
+      "path": "runs/extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev/run_summary.md",
+      "sha256": "853d586423fdd652a5cd8af5cd290aeef446d9864b8814fb4197336ac261f66e"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 8996,
+      "path": "runs/extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev/test_metrics.json",
+      "sha256": "d600fe3a6c9a00a2e5cc348198d996e5fbb1cb2e41b0670d3816d61c202b255a"
+    },
+    {
+      "bytes": 912,
+      "path": "runs/extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev/thresholds.json",
+      "sha256": "09ed7177659f07af38d96478b303af4f8ad604517e040c5fa156585dfd4fca03"
+    },
+    {
+      "bytes": 437,
+      "path": "runs/extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev/train_log.csv",
+      "sha256": "d45cbb2eeded95d5f3db0ad770cae29cbbad421402594238a2891a89d547e4de"
+    },
+    {
+      "bytes": 8778,
+      "path": "runs/extrasensory-ablation-a4-no-reliability-fold0-seed13-ablation_dev/val_metrics.json",
+      "sha256": "7b16fc08e974376b7845e6984bb166da4777d7f38689df73bbb8bb7162750372"
+    },
+    {
+      "bytes": 574795,
+      "path": "runs/extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev/best_checkpoint.pt",
+      "sha256": "4e88a05d7a8f0527eec6bc3dbdb3af05e9d1919d95eb758e8d8beccde4ebad5f"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev/environment.json",
+      "sha256": "f56624560bb8f836d81042631363b266177fea7a42c188d45f373a34f062d190"
+    },
+    {
+      "bytes": 1484,
+      "path": "runs/extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev/evaluation_manifest.json",
+      "sha256": "dcd9f24660d96a210aa097bc2b6383222d31812c3bb121c084464f7c76af652b"
+    },
+    {
+      "bytes": 3723,
+      "path": "runs/extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev/resolved_config.yaml",
+      "sha256": "a62c0c28b289a84d761c268acafa35bbef562ee1da5d32ae4ed3f9b5ceacace8"
+    },
+    {
+      "bytes": 527,
+      "path": "runs/extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev/run_summary.md",
+      "sha256": "dfd4192427e270c59cdec8ffabd38ebf7c8ae06185ffdaa0c89937c4e63e5f97"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9019,
+      "path": "runs/extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev/test_metrics.json",
+      "sha256": "654a8b5aadd5916a772bb8eaa6f34353a59274e802d3ceba89cf44e1c83d42d2"
+    },
+    {
+      "bytes": 975,
+      "path": "runs/extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev/thresholds.json",
+      "sha256": "6c8567fca8f35ed18540b9348ce6e6e2fbd5a5f2c351fc8de9d00b220e9295ba"
+    },
+    {
+      "bytes": 436,
+      "path": "runs/extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev/train_log.csv",
+      "sha256": "45303e84ab08f00df2bee0df5521be38b4f0105f3ccc494000ff77e1dd032642"
+    },
+    {
+      "bytes": 8775,
+      "path": "runs/extrasensory-ablation-a5-no-reliability-loss-fold0-seed13-ablation_dev/val_metrics.json",
+      "sha256": "57ee48a7ad240f39df473615cd26e71a3b0c015bb69a38af926fe9d5c78aad89"
+    },
+    {
+      "bytes": 506195,
+      "path": "runs/extrasensory-gated-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "d91c63134d62a8ddf04f0ef84ef0515d2a500ac1217488ef4a479f4e2d01992f"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-gated-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-gated-fold0-seed13-credible/environment.json",
+      "sha256": "3b60582248dd66d0fcc9f687716830778248677cf6452c88ea6c012b27e88226"
+    },
+    {
+      "bytes": 1421,
+      "path": "runs/extrasensory-gated-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "b7ed28c038dd2c9f1a9c0f374ea67216767ba610264c4001435d9d419b7650c0"
+    },
+    {
+      "bytes": 3457,
+      "path": "runs/extrasensory-gated-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "f621745daed5a941375cf48e548838b92c130192f20c14c4f6a2b6bb1d7a240c"
+    },
+    {
+      "bytes": 456,
+      "path": "runs/extrasensory-gated-fold0-seed13-credible/run_summary.md",
+      "sha256": "5bed28478bf83f0bb8835b6b44f2700c134dbfbccaeaee7e97172c809c6760f2"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-gated-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 8995,
+      "path": "runs/extrasensory-gated-fold0-seed13-credible/test_metrics.json",
+      "sha256": "31cea51756d91fe092d41c404039d04369e7aefbeb13432f90210ea2364f9ddd"
+    },
+    {
+      "bytes": 916,
+      "path": "runs/extrasensory-gated-fold0-seed13-credible/thresholds.json",
+      "sha256": "b2ab702aa7d21f40e22b31ff47a2546c50194e1455e78474d2eed33231a01f15"
+    },
+    {
+      "bytes": 1091,
+      "path": "runs/extrasensory-gated-fold0-seed13-credible/train_log.csv",
+      "sha256": "b0265719b462dc4100ee2df705a7e8859103cf385506236fc3bdc7fd348f3379"
+    },
+    {
+      "bytes": 8763,
+      "path": "runs/extrasensory-gated-fold0-seed13-credible/val_metrics.json",
+      "sha256": "9101f8665dea04c08a886ec70fd6bb23fc5ffe58518b0157653fc810a9dedb4e"
+    },
+    {
+      "bytes": 506195,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "76a2f1faf84ca681b8630149628deeda2252f0e2f72d5b8df993356329f94e2d"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/environment.json",
+      "sha256": "a5ce273fe3fd3fa13c198b8500fbff0b89129b72cd0b67931d0f0cd53ce9b8c2"
+    },
+    {
+      "bytes": 1421,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "bdfbcc9794742f1f10bc021b2acd91a27791efa3376cc81cc91a5a41b9e7d6a6"
+    },
+    {
+      "bytes": 3459,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "8a6ef597879cf3a920bacdc37790e852689d695c5b6a6a7b39cd5c42e8c565fc"
+    },
+    {
+      "bytes": 456,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/run_summary.md",
+      "sha256": "2115d3928f36e8dd030d49d00fc01b94bbd17cdae6827c72e87ed48551d7bf8e"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 8991,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/test_metrics.json",
+      "sha256": "889652a227d2b90a91eecb4c3b0c4d81ff90a6c96b2bc2dde09f2bf93f1510e2"
+    },
+    {
+      "bytes": 945,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/thresholds.json",
+      "sha256": "88f4d139a583165d4473364200c0d32ff6183a7cca8d8f2e9d0d1b9b0945ad0b"
+    },
+    {
+      "bytes": 1792,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/train_log.csv",
+      "sha256": "909246e956f26e8554819439d8c12b53fd278f66ced9b6af9b9af77dc12d232d"
+    },
+    {
+      "bytes": 8788,
+      "path": "runs/extrasensory-gated-fold1-seed13-credible/val_metrics.json",
+      "sha256": "47ef1939dad892fb9c0bc4c1b710367268e29f05cbb415c720f93deabdf200c2"
+    },
+    {
+      "bytes": 506195,
+      "path": "runs/extrasensory-gated-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "95a2c44ce71fba8114a2051f5a0fe95127616d9c113ebf5b748b15bc21eebfeb"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-gated-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-gated-fold2-seed13-credible/environment.json",
+      "sha256": "b53c9fa45117af96ce2fbb381e05060d8086ff2ca630f63b24f1ee5eff3e77e1"
+    },
+    {
+      "bytes": 1421,
+      "path": "runs/extrasensory-gated-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "d82164f947e7adb016d3f3ff2f3c4d7b7628a688048501a71fa9819c8874bb3b"
+    },
+    {
+      "bytes": 3456,
+      "path": "runs/extrasensory-gated-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "95029be2ce9ab97e94fdb01d5ef6c802635d80e33f86fede8ccf44c17a500974"
+    },
+    {
+      "bytes": 456,
+      "path": "runs/extrasensory-gated-fold2-seed13-credible/run_summary.md",
+      "sha256": "e988eb07c924e416f7f0f41eefe5b2d60f359b124f0c4ebe446345c2944b1fbd"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-gated-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 8998,
+      "path": "runs/extrasensory-gated-fold2-seed13-credible/test_metrics.json",
+      "sha256": "4a55b1f0ecddc57a982659d2a2401e49c1860c4a608622fb7d68b621f96bbe1c"
+    },
+    {
+      "bytes": 943,
+      "path": "runs/extrasensory-gated-fold2-seed13-credible/thresholds.json",
+      "sha256": "e660ae6980de3f19d83a8c4363f8701fbd66f0446788cafb4a404e7fbfa23bc8"
+    },
+    {
+      "bytes": 1360,
+      "path": "runs/extrasensory-gated-fold2-seed13-credible/train_log.csv",
+      "sha256": "d3e3005cb24a1ce60b1737f1ba300a6389157cdbbd9837a64b00f60b9eb8800e"
+    },
+    {
+      "bytes": 8793,
+      "path": "runs/extrasensory-gated-fold2-seed13-credible/val_metrics.json",
+      "sha256": "a55500fcdd637050a79d02db28dfb1b719312532d14957b516b4ebc97c23b40c"
+    },
+    {
+      "bytes": 506195,
+      "path": "runs/extrasensory-gated-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "f04b928d4d9607c77dc27f50bf4dfbc9f3620136c78595e01211cc324116abc6"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-gated-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-gated-fold3-seed13-credible/environment.json",
+      "sha256": "41d0767641590b24cb1e93470c74173f278decf9c67b1edd4060469000cd7c32"
+    },
+    {
+      "bytes": 1421,
+      "path": "runs/extrasensory-gated-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "3f5fd43c80be1b986d78cd2329a1ae2aaf501615a42c61133967f10c296b8d21"
+    },
+    {
+      "bytes": 3458,
+      "path": "runs/extrasensory-gated-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "9edff0fb7a956c0e033b35b2c04e825811c7a514b08e48a851b17a0d9d134470"
+    },
+    {
+      "bytes": 456,
+      "path": "runs/extrasensory-gated-fold3-seed13-credible/run_summary.md",
+      "sha256": "d04beee381eadc131ad25b7a2909f82a8fce1245276f46a52ee06175e1f2998d"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-gated-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 8993,
+      "path": "runs/extrasensory-gated-fold3-seed13-credible/test_metrics.json",
+      "sha256": "026d2cb022580a1a3bd7a6b9d01fe128e2995f457aa66eab09e90f218b5b5a61"
+    },
+    {
+      "bytes": 936,
+      "path": "runs/extrasensory-gated-fold3-seed13-credible/thresholds.json",
+      "sha256": "434457a8cf5f78cd119cd86383371c3d568b8d023547faec49fa89ba5cbdfdde"
+    },
+    {
+      "bytes": 1888,
+      "path": "runs/extrasensory-gated-fold3-seed13-credible/train_log.csv",
+      "sha256": "1b403aab19ff95acd89a1a25cb83b03f14e75b53975f085f94a045f7776470d0"
+    },
+    {
+      "bytes": 8777,
+      "path": "runs/extrasensory-gated-fold3-seed13-credible/val_metrics.json",
+      "sha256": "305eacc81d00c572c223cf012ccc9fa4e292cadcbb163d89cd479b4d48efb154"
+    },
+    {
+      "bytes": 506195,
+      "path": "runs/extrasensory-gated-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "a404a4329fe75577d7a807473ef89d51ddd00b80cd3b1105d5b227eac1377521"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-gated-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-gated-fold4-seed13-credible/environment.json",
+      "sha256": "96a5edf2b2423dc26553c3c1716bbb040d44ea9862be1b9b79627c5bd31cef2a"
+    },
+    {
+      "bytes": 1421,
+      "path": "runs/extrasensory-gated-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "1bd6fb9fbfec20a465e819a7726ee86f7eb15549feb57b691b30ca1a96191070"
+    },
+    {
+      "bytes": 3457,
+      "path": "runs/extrasensory-gated-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "099cc44968facea33ccef20754f0dbdd1571f222a28859ce2b57ae7b63c444c3"
+    },
+    {
+      "bytes": 456,
+      "path": "runs/extrasensory-gated-fold4-seed13-credible/run_summary.md",
+      "sha256": "78c83563cde2e7575653818e67dd7a00e314426508535bc32851e9a277562ab5"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-gated-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 8982,
+      "path": "runs/extrasensory-gated-fold4-seed13-credible/test_metrics.json",
+      "sha256": "007189af4175ffe6cad98c348ad99ef5cd9bf4dfc3d1a5416033bd25a9354c56"
+    },
+    {
+      "bytes": 924,
+      "path": "runs/extrasensory-gated-fold4-seed13-credible/thresholds.json",
+      "sha256": "c197c4928a0c8f32c1d4817fcf7dbf95ee734a57c312c2f9e7ee066a7082dd5a"
+    },
+    {
+      "bytes": 1352,
+      "path": "runs/extrasensory-gated-fold4-seed13-credible/train_log.csv",
+      "sha256": "cfd6e1692f9b32ab86f48b6c4d51b315843fec452800a8ca429a7f5ba0ba2c98"
+    },
+    {
+      "bytes": 8784,
+      "path": "runs/extrasensory-gated-fold4-seed13-credible/val_metrics.json",
+      "sha256": "d9429089f8ca41ee5dcce627e97f7e20fb06597e0e85dd684e9c037c7a95ea38"
+    },
+    {
+      "bytes": 432003,
+      "path": "runs/extrasensory-late-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "937349bd7d73b2e09dcd485e75b95326b7a834e04e247d057857a6099af60c0f"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-late-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-late-fold0-seed13-credible/environment.json",
+      "sha256": "e9774186bc4ece8a3eb090fa8fff98a6adfda2fcc8a4fc7e10a058326bc842e7"
+    },
+    {
+      "bytes": 1418,
+      "path": "runs/extrasensory-late-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "74c0047a2b237c0853c9f2062109c40a85574489a07c603e15e6478d80af2cd9"
+    },
+    {
+      "bytes": 2630,
+      "path": "runs/extrasensory-late-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "be47b69436da54c9b8f036f0964409924c4d755a4342bc39a7ba3d4c80ccbeca"
+    },
+    {
+      "bytes": 346,
+      "path": "runs/extrasensory-late-fold0-seed13-credible/run_summary.md",
+      "sha256": "277d120de0eda8e79a78d1ed415827695e5dd5a54499e2ce5f02003d61da6d3a"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-late-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 8981,
+      "path": "runs/extrasensory-late-fold0-seed13-credible/test_metrics.json",
+      "sha256": "7e72b387e369300a39b78402947d630c57b2a4ab35df7ee15c8d5486e867674f"
+    },
+    {
+      "bytes": 914,
+      "path": "runs/extrasensory-late-fold0-seed13-credible/thresholds.json",
+      "sha256": "81eec3a1991a94e16ed5f6153101a8b45670af34304cb868adefbc81a2ba6562"
+    },
+    {
+      "bytes": 1267,
+      "path": "runs/extrasensory-late-fold0-seed13-credible/train_log.csv",
+      "sha256": "b5855a3400daab685476585a9284edfa9a8511b07c94b200264839d331c57cf6"
+    },
+    {
+      "bytes": 8796,
+      "path": "runs/extrasensory-late-fold0-seed13-credible/val_metrics.json",
+      "sha256": "b69e6be2bfcf0eab8360e77cc642dc5c05a0d00667aa0da56794610b44fd6075"
+    },
+    {
+      "bytes": 432003,
+      "path": "runs/extrasensory-late-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "d1205dcc46375ce8473dd181c56ad4f1e8e5064ca2401850b0d1df8d0022c312"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-late-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-late-fold1-seed13-credible/environment.json",
+      "sha256": "63e66177d1111b6bebce79591545c4f7ed1b9b9dfec8095bffc7879efd17f367"
+    },
+    {
+      "bytes": 1419,
+      "path": "runs/extrasensory-late-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "0a3cd6becf1c22d33138c427d70cadbeef86cde6fd740428b4a98a3570479a76"
+    },
+    {
+      "bytes": 2632,
+      "path": "runs/extrasensory-late-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "12c4c9dbc4dacdfb377771e7d736b542b2490bd77f9fd658f5b0079b37b66d69"
+    },
+    {
+      "bytes": 346,
+      "path": "runs/extrasensory-late-fold1-seed13-credible/run_summary.md",
+      "sha256": "3f227cdfa5b631bff93414f66c0243ae14f74066c2cef9bc5c31e0e457ca1c91"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-late-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 8980,
+      "path": "runs/extrasensory-late-fold1-seed13-credible/test_metrics.json",
+      "sha256": "0a51a4e32b2b03adab58fc2e59ed700f2e1ee36ba5a76ab883bd8417338d0bb7"
+    },
+    {
+      "bytes": 930,
+      "path": "runs/extrasensory-late-fold1-seed13-credible/thresholds.json",
+      "sha256": "546ba0d782a4e8319d64b28991210d73f4d21fc9d3255873c8f68fbf7af216ba"
+    },
+    {
+      "bytes": 1506,
+      "path": "runs/extrasensory-late-fold1-seed13-credible/train_log.csv",
+      "sha256": "653ce1f219e671c354ad4f7aacb66dea80c54f2712ae3aa227474280bff8561c"
+    },
+    {
+      "bytes": 8796,
+      "path": "runs/extrasensory-late-fold1-seed13-credible/val_metrics.json",
+      "sha256": "712b023a355fe4a87a5317380cc8f13cada6a55093e34c45e645ad71f30fad50"
+    },
+    {
+      "bytes": 432003,
+      "path": "runs/extrasensory-late-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "d1f0e8bf00f448f120b62dde277900f10fb295b92f42ee431577c36b51ed12af"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-late-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-late-fold2-seed13-credible/environment.json",
+      "sha256": "949e179c56ce05e20955be734db71b5c5ce7ccfd7d91855f073faaa1f444c55f"
+    },
+    {
+      "bytes": 1419,
+      "path": "runs/extrasensory-late-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "177b725f8e79fc14d4463e7593de9856e71d569638ab9c8197a08c0f9590b139"
+    },
+    {
+      "bytes": 2629,
+      "path": "runs/extrasensory-late-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "9b2bd6eb552cab9105b9a2f3c028aaedfe1230e0a19f994d59ad01a09831f6cc"
+    },
+    {
+      "bytes": 346,
+      "path": "runs/extrasensory-late-fold2-seed13-credible/run_summary.md",
+      "sha256": "2f5bc9e617dd0227abcc40c428ce1b84fd54fa080ec8603427895823fb2a8e62"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-late-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 8968,
+      "path": "runs/extrasensory-late-fold2-seed13-credible/test_metrics.json",
+      "sha256": "b1581f62f5dbe65420382098509f7533310de834061ff63d75846a21be15ad19"
+    },
+    {
+      "bytes": 946,
+      "path": "runs/extrasensory-late-fold2-seed13-credible/thresholds.json",
+      "sha256": "af87eba4561b8031f4c7953c21e699cbb54092d56ec88c0a999d8d33ef185c75"
+    },
+    {
+      "bytes": 821,
+      "path": "runs/extrasensory-late-fold2-seed13-credible/train_log.csv",
+      "sha256": "644a3b294bece03dbd2b3b97a03bdaa96e0b617e30f31d006641c2b6e0540348"
+    },
+    {
+      "bytes": 8804,
+      "path": "runs/extrasensory-late-fold2-seed13-credible/val_metrics.json",
+      "sha256": "43015da9cedab11026d35ac36704ac57238d5bb6bafd97e9ae8f8f0c0a43d713"
+    },
+    {
+      "bytes": 432003,
+      "path": "runs/extrasensory-late-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "cd8a4c6b4509cea62fb5b6fbd9788f0cf425389541c9ba3af3630a6c937c964c"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-late-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-late-fold3-seed13-credible/environment.json",
+      "sha256": "998239af8602482cc248c4f97baaf7a6bddfbed02dcbce420f2f4a0992afaf0c"
+    },
+    {
+      "bytes": 1418,
+      "path": "runs/extrasensory-late-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "7fc081a7c39168fd2c244665d4d398e3368ce047fca755b3f6cb3c6e21b89b8c"
+    },
+    {
+      "bytes": 2631,
+      "path": "runs/extrasensory-late-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "130c83e8ef973cbc7f9f128506426ac9c83712e4585a5c3b50420b7fdd9c9975"
+    },
+    {
+      "bytes": 346,
+      "path": "runs/extrasensory-late-fold3-seed13-credible/run_summary.md",
+      "sha256": "24df305e87d9c404dcbe126ad023d7e72477f3e4a7cbbae3defebd8b1b1b3d1b"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-late-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 8986,
+      "path": "runs/extrasensory-late-fold3-seed13-credible/test_metrics.json",
+      "sha256": "6ccb0fd43dd0502e08854fa871bb3fb6bea65a3a0fa064c5245c53daf9827224"
+    },
+    {
+      "bytes": 948,
+      "path": "runs/extrasensory-late-fold3-seed13-credible/thresholds.json",
+      "sha256": "7d1859c20894953f92d7bbda92a2ffe9480d9a0aee04fc8d973c5cc0994cbfc1"
+    },
+    {
+      "bytes": 1264,
+      "path": "runs/extrasensory-late-fold3-seed13-credible/train_log.csv",
+      "sha256": "b6d878b52893c66d6eff1ed62ada3ada6f1a7a6f4295916eaf279469f166d2f5"
+    },
+    {
+      "bytes": 8768,
+      "path": "runs/extrasensory-late-fold3-seed13-credible/val_metrics.json",
+      "sha256": "a3f108e9645dd46ba519ae22031e24bce119d47c50b6ca4b82083c459e7b7e32"
+    },
+    {
+      "bytes": 432003,
+      "path": "runs/extrasensory-late-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "3e8e9b3f8f5d19b95aaa47b5f4b40afb8c5299b72f84e9c23ff404a8871721ff"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-late-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-late-fold4-seed13-credible/environment.json",
+      "sha256": "e6383b61dde4c2b461db136b15c426760022a13f0b4410d45723090b7b92ef5f"
+    },
+    {
+      "bytes": 1419,
+      "path": "runs/extrasensory-late-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "6563d4bcfca0a1925e30263155b74fc83fc46497af65e6dc26bda95792a4a0d4"
+    },
+    {
+      "bytes": 2630,
+      "path": "runs/extrasensory-late-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "5a17b25f9908836e3ecc3c547cc9a631d07cdf315515912fff4759a26fa7af32"
+    },
+    {
+      "bytes": 346,
+      "path": "runs/extrasensory-late-fold4-seed13-credible/run_summary.md",
+      "sha256": "a9a60a21ff0ef994a22518e495146576a08463901ae7077e92709c4fd451c3a1"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-late-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 8984,
+      "path": "runs/extrasensory-late-fold4-seed13-credible/test_metrics.json",
+      "sha256": "14df42cde1e2cbc8a6c329a1e736312fbc4596c310612d523e55cdba65a816a4"
+    },
+    {
+      "bytes": 928,
+      "path": "runs/extrasensory-late-fold4-seed13-credible/thresholds.json",
+      "sha256": "7a05e07d1edd52814c7155e90c7b7d7909953b4ec36dd7e5c8446ecb2f970de1"
+    },
+    {
+      "bytes": 773,
+      "path": "runs/extrasensory-late-fold4-seed13-credible/train_log.csv",
+      "sha256": "c078f2d1a44aa83446107bcf1b20f279a31d84f31ee6efdaaa00548dcd978531"
+    },
+    {
+      "bytes": 8785,
+      "path": "runs/extrasensory-late-fold4-seed13-credible/val_metrics.json",
+      "sha256": "3b1deea41be5ddb2700fde253ec192473c9ed77632242383b52827fc133e969d"
+    },
+    {
+      "bytes": 24485,
+      "path": "runs/extrasensory-linear-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "86976eae261c1f61eb7b58a1e65a1fc45e87c9bd7c06296ff0a851c13d8a21d5"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-linear-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-linear-fold0-seed13-credible/environment.json",
+      "sha256": "78e5831aaf75be1fe5e9fb972ee62dd4562bd55603b3f12d1bcd50591730d4d1"
+    },
+    {
+      "bytes": 1422,
+      "path": "runs/extrasensory-linear-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "fc16b82a131870f576b6c006ba503cac6e412567ec03c575f8bdf8b809bdafa8"
+    },
+    {
+      "bytes": 2607,
+      "path": "runs/extrasensory-linear-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "c8147c5a0cd8ddc4cbfebc978062c7333ecd98a14feb76179606c2e11a339d84"
+    },
+    {
+      "bytes": 348,
+      "path": "runs/extrasensory-linear-fold0-seed13-credible/run_summary.md",
+      "sha256": "edeac4ca304c0dcaec2cee30636717667f498675fdd911f27b9d5859e4134e32"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-linear-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 8987,
+      "path": "runs/extrasensory-linear-fold0-seed13-credible/test_metrics.json",
+      "sha256": "ed0313e3449d16a2eaca56c9bd1f7e96445dee3f46d90b568d00975d62ee98a5"
+    },
+    {
+      "bytes": 928,
+      "path": "runs/extrasensory-linear-fold0-seed13-credible/thresholds.json",
+      "sha256": "0eb07eb138ec381a06a678438e9f9747a7468eaec8b5c9cd592bc41ed12693e3"
+    },
+    {
+      "bytes": 1290,
+      "path": "runs/extrasensory-linear-fold0-seed13-credible/train_log.csv",
+      "sha256": "9a4222c64ced1b9f6b49b02e798f9998af62759145bed5d8baf03743f0f9827b"
+    },
+    {
+      "bytes": 8773,
+      "path": "runs/extrasensory-linear-fold0-seed13-credible/val_metrics.json",
+      "sha256": "9cb8ac29cb0ad733c4511acb470b3ad3d59121c266faa764803903625e546277"
+    },
+    {
+      "bytes": 24485,
+      "path": "runs/extrasensory-linear-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "c47df94a6d43c4fafe58cdebf173988f5365dd1dfc255d1efb087cd61fb33967"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-linear-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-linear-fold1-seed13-credible/environment.json",
+      "sha256": "8dbc0a441391cbd84c8ca84a58c1cbdb8800888202008b0c906c9d69ac6a469e"
+    },
+    {
+      "bytes": 1422,
+      "path": "runs/extrasensory-linear-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "27340a39e2f59574108553a5b0d33e3009f71c122a756105e048dc2674ec1bd1"
+    },
+    {
+      "bytes": 2609,
+      "path": "runs/extrasensory-linear-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "43fc83c85f4afc774f64aab79ef0c16d07d8b542a49f375486925313ec6fc7ae"
+    },
+    {
+      "bytes": 348,
+      "path": "runs/extrasensory-linear-fold1-seed13-credible/run_summary.md",
+      "sha256": "87e2c0d8f8f885b1a62108123a82a3241d681189161dfdb9bae182b771089cc8"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-linear-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 8995,
+      "path": "runs/extrasensory-linear-fold1-seed13-credible/test_metrics.json",
+      "sha256": "fdb34bf1b67592cc0c4a0e03a99a17636299c58397baabb17f34cf5029d3ce71"
+    },
+    {
+      "bytes": 945,
+      "path": "runs/extrasensory-linear-fold1-seed13-credible/thresholds.json",
+      "sha256": "61eae3ab0b77dae323ecad736b97ae936c81cc643b4c79366f1d6db377e268a1"
+    },
+    {
+      "bytes": 1117,
+      "path": "runs/extrasensory-linear-fold1-seed13-credible/train_log.csv",
+      "sha256": "e7e782430142dc95f3aac90c5f06444dc1c117cd5686163ded0e7073281b21aa"
+    },
+    {
+      "bytes": 8790,
+      "path": "runs/extrasensory-linear-fold1-seed13-credible/val_metrics.json",
+      "sha256": "facef9bc26a271f0c796c9bdd8fc300cd8f1baf91754e740c0430148aa474817"
+    },
+    {
+      "bytes": 24485,
+      "path": "runs/extrasensory-linear-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "e1ba54623c8fce78ca5dca05fc2e6ac7875afd19cd6f17c4c54598dc1887eb0e"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-linear-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-linear-fold2-seed13-credible/environment.json",
+      "sha256": "835182f644a4846ec72ee46a8222a94982bc7ca1661a74c0f835d88aed059156"
+    },
+    {
+      "bytes": 1422,
+      "path": "runs/extrasensory-linear-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "64dccc8d648ed7346bc498ae7741e1ed9db47a87fcc37251258174e8634830ce"
+    },
+    {
+      "bytes": 2606,
+      "path": "runs/extrasensory-linear-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "4a0718f5532c85f477e5f4340182479639792a11207feed2d372bae3f0e32aff"
+    },
+    {
+      "bytes": 348,
+      "path": "runs/extrasensory-linear-fold2-seed13-credible/run_summary.md",
+      "sha256": "3fde38cff7091000587b3830894a3acc24409fbde3561a6566057f2f891678ad"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-linear-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 8995,
+      "path": "runs/extrasensory-linear-fold2-seed13-credible/test_metrics.json",
+      "sha256": "af6a8b9d76cfa5352d10f8b689440720a98db647a06612df627ddd7785b6f086"
+    },
+    {
+      "bytes": 932,
+      "path": "runs/extrasensory-linear-fold2-seed13-credible/thresholds.json",
+      "sha256": "cc87390319bd6eb202cfe041be696344d9da9092cb5b4b9a640ae66dc533af27"
+    },
+    {
+      "bytes": 825,
+      "path": "runs/extrasensory-linear-fold2-seed13-credible/train_log.csv",
+      "sha256": "7e47d113392e50ce3474574a0770064bdb1fb26925104619c56f01be33617bf8"
+    },
+    {
+      "bytes": 8794,
+      "path": "runs/extrasensory-linear-fold2-seed13-credible/val_metrics.json",
+      "sha256": "210007e1d7e4806b3ae2466062ed7e4f103ab75801076a2452f5dcd5a155c73d"
+    },
+    {
+      "bytes": 24485,
+      "path": "runs/extrasensory-linear-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "35a76876e7e7ab14ca0af221efdd4a9d8a9297788d27e2ad75585d7d7e9c989e"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-linear-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-linear-fold3-seed13-credible/environment.json",
+      "sha256": "3513dec89ceb1ba02135e3852df197db144fd39ae675251c8797333cb80562c7"
+    },
+    {
+      "bytes": 1422,
+      "path": "runs/extrasensory-linear-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "1129cd934a0d76262e9f5bc6e98beffee8f82a17ea2cc2c6ee7b438af758d22f"
+    },
+    {
+      "bytes": 2608,
+      "path": "runs/extrasensory-linear-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "4bf1b3adb2183a2ca589910a14097a08ef3301e5aaba4c8ba1e601e0fb14eddb"
+    },
+    {
+      "bytes": 348,
+      "path": "runs/extrasensory-linear-fold3-seed13-credible/run_summary.md",
+      "sha256": "09ce55a515690fdb5f569447dd8a09c6fca17a34dc261dab4c0c9d5f8eafeea5"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-linear-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 8996,
+      "path": "runs/extrasensory-linear-fold3-seed13-credible/test_metrics.json",
+      "sha256": "c8d2c43368e4cf048a650c99e303157d9e6eb06c9a317fb9f1c31f036bc6b63b"
+    },
+    {
+      "bytes": 929,
+      "path": "runs/extrasensory-linear-fold3-seed13-credible/thresholds.json",
+      "sha256": "5fdb17cd2e74f27921eb558e275334d6b6455e55d5c192bc5af6a81fecd59456"
+    },
+    {
+      "bytes": 815,
+      "path": "runs/extrasensory-linear-fold3-seed13-credible/train_log.csv",
+      "sha256": "ff4b25954eca41e292fa384d1f1963529cfae3b46f646f36bf8e365715e10470"
+    },
+    {
+      "bytes": 8781,
+      "path": "runs/extrasensory-linear-fold3-seed13-credible/val_metrics.json",
+      "sha256": "8bcc10f3ba4f2964ebcc06433d8818b17b88cb2c235ef462aa749b58bd0e9f58"
+    },
+    {
+      "bytes": 24485,
+      "path": "runs/extrasensory-linear-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "d55c42ff8075f4c6fb3d025cd9e28a33b97e334a848e4e8dabc3845c23f4535c"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-linear-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-linear-fold4-seed13-credible/environment.json",
+      "sha256": "84e15f05ba70e09eec78c74424e761d3db7b2a666ce46d3e991ad154a4a6e157"
+    },
+    {
+      "bytes": 1422,
+      "path": "runs/extrasensory-linear-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "128ad94dba04b1240f146a2e9d725e61113610ece567af83f9cf853e75e9dc3f"
+    },
+    {
+      "bytes": 2607,
+      "path": "runs/extrasensory-linear-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "2a9a93c9186773661f272a72154930a346a5893ce7dc39e0d19cecc04120753e"
+    },
+    {
+      "bytes": 348,
+      "path": "runs/extrasensory-linear-fold4-seed13-credible/run_summary.md",
+      "sha256": "5eeaa05f7e4c95eddaf5f78ab1088056d577981600d9465373ad70ed02567d9d"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-linear-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 8967,
+      "path": "runs/extrasensory-linear-fold4-seed13-credible/test_metrics.json",
+      "sha256": "a5dc6cc60c3d3a02fb25a8a93485ddc28b20d9bcd5e6601d871fa7ed245958fa"
+    },
+    {
+      "bytes": 943,
+      "path": "runs/extrasensory-linear-fold4-seed13-credible/thresholds.json",
+      "sha256": "695032341ea0d6bfb382ac4600e432c39ddeb7690ab242e8a7ed04c17a7e02ef"
+    },
+    {
+      "bytes": 1363,
+      "path": "runs/extrasensory-linear-fold4-seed13-credible/train_log.csv",
+      "sha256": "8e2fac5d9e48ffa1adf609dc27a743559fe1587057a128a704f124f96bd89794"
+    },
+    {
+      "bytes": 8795,
+      "path": "runs/extrasensory-linear-fold4-seed13-credible/val_metrics.json",
+      "sha256": "219f0b9b7f8586dc1f6ece1d6d5659df472cd1198c264f11473e3bb29d1523c8"
+    },
+    {
+      "bytes": 227453,
+      "path": "runs/extrasensory-mlp-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "19e8654b4c2b1a01b17bc1a120bc846c94853fce8e5f5873ffc59fff20fa2f65"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-mlp-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-mlp-fold0-seed13-credible/environment.json",
+      "sha256": "d733d1c7dc0e0f0479723a00e5855e7e43922ec8d575fc6c40c730f72a759fb2"
+    },
+    {
+      "bytes": 1417,
+      "path": "runs/extrasensory-mlp-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "26f00718f1b8303d867bce6ef358af56a1cfe8a23ff92e1b063b622bded1709f"
+    },
+    {
+      "bytes": 2583,
+      "path": "runs/extrasensory-mlp-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "9ac53268fa596865233b65f14802145735dccce126007bd70dc9c527f1199d7e"
+    },
+    {
+      "bytes": 343,
+      "path": "runs/extrasensory-mlp-fold0-seed13-credible/run_summary.md",
+      "sha256": "0dc28c4794718fe913f9fcc3ae1bd7bae14bc5e796c9c9e96645eac21a75616d"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-mlp-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 8989,
+      "path": "runs/extrasensory-mlp-fold0-seed13-credible/test_metrics.json",
+      "sha256": "8dae58d898d4a98a44e4ad6ea66bc0a318ec9dc451850baae9700db3aa14d691"
+    },
+    {
+      "bytes": 973,
+      "path": "runs/extrasensory-mlp-fold0-seed13-credible/thresholds.json",
+      "sha256": "48cafc41354891bbceefc2161887b12c1fe50d7574b87827209a654145cfdf42"
+    },
+    {
+      "bytes": 1669,
+      "path": "runs/extrasensory-mlp-fold0-seed13-credible/train_log.csv",
+      "sha256": "e2f92f4fa0b7fe90c02b6c63a7fc9f4719dbf0af9cc8968868e46cd8883db011"
+    },
+    {
+      "bytes": 8791,
+      "path": "runs/extrasensory-mlp-fold0-seed13-credible/val_metrics.json",
+      "sha256": "6168d1041643500894dea388457dee54c71f428290833bc1fb4ef102fe04e22d"
+    },
+    {
+      "bytes": 227453,
+      "path": "runs/extrasensory-mlp-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "fba562b82040f9673c6378aaef600002944d1a7e19409d40c5f6a973fb9615c3"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-mlp-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-mlp-fold1-seed13-credible/environment.json",
+      "sha256": "8af516796b8ff05d21cc0ef698c3a868dc6cfa496963d72a5de2df23dc7aa42d"
+    },
+    {
+      "bytes": 1416,
+      "path": "runs/extrasensory-mlp-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "d563c84901f8b06f3998853ed850b11abcf7d543acbba066296f1813e75134ef"
+    },
+    {
+      "bytes": 2585,
+      "path": "runs/extrasensory-mlp-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "fbc59a117b8c5cc154ee795b854ae5f92098c12749e182431344a9f8723a77da"
+    },
+    {
+      "bytes": 343,
+      "path": "runs/extrasensory-mlp-fold1-seed13-credible/run_summary.md",
+      "sha256": "7fb3ea518b5d28bea8552be417194ebcee7901d0ce0f26bdf578bd25d37cc5c7"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-mlp-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 8990,
+      "path": "runs/extrasensory-mlp-fold1-seed13-credible/test_metrics.json",
+      "sha256": "cb89a81b7dffbd0dd3b10a55f4ddce3e789980dc4b351efb83ef8956ea31e6cb"
+    },
+    {
+      "bytes": 959,
+      "path": "runs/extrasensory-mlp-fold1-seed13-credible/thresholds.json",
+      "sha256": "9098a1c002ff6b3c02b0a811693ed92d153a4991ed89615c98ccf2c2d473bed0"
+    },
+    {
+      "bytes": 1071,
+      "path": "runs/extrasensory-mlp-fold1-seed13-credible/train_log.csv",
+      "sha256": "2881b4a0cdaf4f359f4013d1c6680df5ccf25b3e772e0e59ac9ba40ee8218f3e"
+    },
+    {
+      "bytes": 8779,
+      "path": "runs/extrasensory-mlp-fold1-seed13-credible/val_metrics.json",
+      "sha256": "117e8aba873328ec9e1e33c5b2387f19427059981106b3a14b249f4867e34a90"
+    },
+    {
+      "bytes": 227453,
+      "path": "runs/extrasensory-mlp-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "c555864bd5bbcd16b61cc988c205df649c3066a428d9fb493d360ea4eb362641"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-mlp-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-mlp-fold2-seed13-credible/environment.json",
+      "sha256": "afddfce84b85a3a4f68c785193ebd821a816f5f27bf5113be5144c14fb8a87f4"
+    },
+    {
+      "bytes": 1417,
+      "path": "runs/extrasensory-mlp-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "ab407ed5b69f086ec47869d3f17dae8e00656c1e6bd8ac3225c081c3cbac3a18"
+    },
+    {
+      "bytes": 2582,
+      "path": "runs/extrasensory-mlp-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "9271ecf8e2986a013427fc09445c9038962177d7415927bcfc061004c0cc6404"
+    },
+    {
+      "bytes": 343,
+      "path": "runs/extrasensory-mlp-fold2-seed13-credible/run_summary.md",
+      "sha256": "4ba01c3b7c5494366cd76e54ea0df60a7cf63f3a741c09f089b25e4f91ea21f9"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-mlp-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 8974,
+      "path": "runs/extrasensory-mlp-fold2-seed13-credible/test_metrics.json",
+      "sha256": "416392b695b10855b462e2e08056b756531ff616b06724fa30c1c701ea4bf2c6"
+    },
+    {
+      "bytes": 930,
+      "path": "runs/extrasensory-mlp-fold2-seed13-credible/thresholds.json",
+      "sha256": "d5bf3004e9f01d05d52fe33139f57300a03fca25d4a0a86442eb594a35cabd7b"
+    },
+    {
+      "bytes": 827,
+      "path": "runs/extrasensory-mlp-fold2-seed13-credible/train_log.csv",
+      "sha256": "e13e1284e728769a494e50626e34f09d1178336106eeb2a84bc51de4aa0eabe9"
+    },
+    {
+      "bytes": 8786,
+      "path": "runs/extrasensory-mlp-fold2-seed13-credible/val_metrics.json",
+      "sha256": "0c78b3cf37fd3b02fcf28196d247b1f6c80585ec324473acc834d66f1fdae7ff"
+    },
+    {
+      "bytes": 227453,
+      "path": "runs/extrasensory-mlp-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "5bfe53abb28fe330ec1354caff6faf349a82c2d1e8f520e6a920e99d27a51459"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-mlp-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-mlp-fold3-seed13-credible/environment.json",
+      "sha256": "9065ffa0a77e54f7227b2a9015e427c09d7d00532308d9ed7eae9614b8df5ae5"
+    },
+    {
+      "bytes": 1417,
+      "path": "runs/extrasensory-mlp-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "a4d4330e0e2d5174670eef331a67495a03df73c60c1db6e7e543d5b4ea96895f"
+    },
+    {
+      "bytes": 2584,
+      "path": "runs/extrasensory-mlp-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "b4c6bd86febbdd6d0b6a67bc18abe99b93110964b50192553fc73526a4e116a2"
+    },
+    {
+      "bytes": 343,
+      "path": "runs/extrasensory-mlp-fold3-seed13-credible/run_summary.md",
+      "sha256": "d3c0515dc28f45759914973c428204532420a3064f0046461df30f30de02d69a"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-mlp-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 8987,
+      "path": "runs/extrasensory-mlp-fold3-seed13-credible/test_metrics.json",
+      "sha256": "49d262f1cebbadddfac53e513b3039f6275d45e74cfeae60d43d793fae609f53"
+    },
+    {
+      "bytes": 975,
+      "path": "runs/extrasensory-mlp-fold3-seed13-credible/thresholds.json",
+      "sha256": "1b4136471a3911a995b1d42adc7b0a6f27a12230ccd65e004f7868122fd1170b"
+    },
+    {
+      "bytes": 1732,
+      "path": "runs/extrasensory-mlp-fold3-seed13-credible/train_log.csv",
+      "sha256": "c4314543b9a01303f2dce39553cd52e6f6924590514fcb382631480f38ab8c66"
+    },
+    {
+      "bytes": 8780,
+      "path": "runs/extrasensory-mlp-fold3-seed13-credible/val_metrics.json",
+      "sha256": "03a77dfe6710bb6e97a3ab8cc0e1b6f0d33b359f63656d42e282631bdb2dd00b"
+    },
+    {
+      "bytes": 227453,
+      "path": "runs/extrasensory-mlp-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "e4b803e37aed1fa976fd58a997401f7520c1e9e47bdeeaafc643eec128a59270"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-mlp-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-mlp-fold4-seed13-credible/environment.json",
+      "sha256": "9a274dd4282985b6ea3f54a27f47cd79239d004b4ada1c371d6336cc2731d77d"
+    },
+    {
+      "bytes": 1417,
+      "path": "runs/extrasensory-mlp-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "7a0461de2174f12560277d60952070e06deeda3cc3b31f19bcb5bb508462f87a"
+    },
+    {
+      "bytes": 2583,
+      "path": "runs/extrasensory-mlp-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "e1056128e954652105d47bf52b64aa9ae1baf73eb5c5d84618ff62999b269f43"
+    },
+    {
+      "bytes": 343,
+      "path": "runs/extrasensory-mlp-fold4-seed13-credible/run_summary.md",
+      "sha256": "b2ac44857d05dbb28156297a301459b541cb74f24981a078d67f85d33ea28e85"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-mlp-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 8961,
+      "path": "runs/extrasensory-mlp-fold4-seed13-credible/test_metrics.json",
+      "sha256": "d34a5fa5b9e9b3752d8cd8fc3ff90901f6e37101e9bb485a4e515051d9acfd39"
+    },
+    {
+      "bytes": 969,
+      "path": "runs/extrasensory-mlp-fold4-seed13-credible/thresholds.json",
+      "sha256": "a6476c2aebaa95c3525e8238082db29c7e7cf7d0a10027638d57a9ae40fee58c"
+    },
+    {
+      "bytes": 888,
+      "path": "runs/extrasensory-mlp-fold4-seed13-credible/train_log.csv",
+      "sha256": "bcd6531bffd0659e71b912c455076dea5149cfdeaa89b3234955563690311407"
+    },
+    {
+      "bytes": 8782,
+      "path": "runs/extrasensory-mlp-fold4-seed13-credible/val_metrics.json",
+      "sha256": "2dc2e32cc9138c6950188c6d61654970ce3cc2e602ca50ca45e9fd5a3beec645"
+    },
+    {
+      "bytes": 574795,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-ablation_dev/best_checkpoint.pt",
+      "sha256": "a23c0b15fb2c35cf0e6bf38a45a6d8ab5a27722a9237eb6d720fe8577f24de79"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-ablation_dev/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-ablation_dev/environment.json",
+      "sha256": "8b02078bb34afac63d607d396e69dbbacf7096f70cfd6399f072b513255fac57"
+    },
+    {
+      "bytes": 1448,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-ablation_dev/evaluation_manifest.json",
+      "sha256": "af411021ea7b70b2041c2e51b2177b608de70000f78521723138d5cbc5b9b6ae"
+    },
+    {
+      "bytes": 3669,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-ablation_dev/resolved_config.yaml",
+      "sha256": "540dc0cdf25c6d6215ff8a9c3c29afd4f88eccca2bdc2e61a092e53955393998"
+    },
+    {
+      "bytes": 491,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-ablation_dev/run_summary.md",
+      "sha256": "21656eb127bcf98de516c1f505e0ca775ddbc0eb627717b70df095cb367721e6"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-ablation_dev/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 8998,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-ablation_dev/test_metrics.json",
+      "sha256": "af62cbdf6e8df5f43a14d0d2e4b90a4dbd075696b429362895089f50a9932a73"
+    },
+    {
+      "bytes": 915,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-ablation_dev/thresholds.json",
+      "sha256": "50244765ab9cad571ac1c21403aae645e8124181bd797610177b521a8501dd91"
+    },
+    {
+      "bytes": 488,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-ablation_dev/train_log.csv",
+      "sha256": "a94f24d8f5fc1c299d4e9a251a10fca233dca1712509b64b4684ee0fde1a1973"
+    },
+    {
+      "bytes": 8784,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-ablation_dev/val_metrics.json",
+      "sha256": "be3b46b8837fb8602b3cf929bba7d582786c9b119e1826fbd0432f9532d1fcb1"
+    },
+    {
+      "bytes": 574795,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "222188fe1e8bcc50680dea7a83adbcc9a1a3ec08f610423edba6fdc58e667c38"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-credible/environment.json",
+      "sha256": "8ae05116b28b7a215e3d5e38b7ca426e6b0cb8f5c176ed76f9d415412eed557a"
+    },
+    {
+      "bytes": 1437,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "1b6be88b2bebe4027fdeec52520ed8fa319fae1a2ba392f45a28e80e8018e0d7"
+    },
+    {
+      "bytes": 3679,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "a4ffc0312dce72be0d497dec634f138630a09020f6fee48837c02750a264b6e3"
+    },
+    {
+      "bytes": 472,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-credible/run_summary.md",
+      "sha256": "1199b2ee71df8e116555e510b9b8575ac3eb0da9aa22333bbb8cec589c50639e"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9001,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-credible/test_metrics.json",
+      "sha256": "5a69d666e2cffd9687de5a18af4e47fced73c27144af3ebb96b782bdda436af4"
+    },
+    {
+      "bytes": 974,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-credible/thresholds.json",
+      "sha256": "1acee9bcc5facb94c2e9cef13f7e8f6794569e206294191c7422fb7967e17ffa"
+    },
+    {
+      "bytes": 2664,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-credible/train_log.csv",
+      "sha256": "7456f8ea838e7f6ddc020e4610ffcad99f573d314b86a1655f325583605be5f7"
+    },
+    {
+      "bytes": 8772,
+      "path": "runs/extrasensory-quality-aware-fold0-seed13-credible/val_metrics.json",
+      "sha256": "c230956f5416460b5682c6e71b5088164b7fab18fd23b5985e82f172feb16cbe"
+    },
+    {
+      "bytes": 574795,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "9be410978aacaaf43d00b1b4bc10c84578e259f06d39b7db597c05d7045548d5"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/environment.json",
+      "sha256": "54ec68032c8f55b55ddb1344f29597e54be8007cd261feb575c8fa4c8fd0642f"
+    },
+    {
+      "bytes": 1437,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "c75242312b3e9ba644b659cbbd833a67a875e5e733a06dc497da352cbf892f07"
+    },
+    {
+      "bytes": 3681,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "bd80d6541c8f9264655e17fbc44f940486823cd3d913273eae1925c64b9428ea"
+    },
+    {
+      "bytes": 472,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/run_summary.md",
+      "sha256": "8f23e30b12bcc6db8fc4ab011270a5275c1d787e6a8a8e2cfed289afd979a6f2"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 8999,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/test_metrics.json",
+      "sha256": "86efdbba63600327904fec5e5ad1a9a8cb946858dd39f4005904ed841c1c6f9a"
+    },
+    {
+      "bytes": 932,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/thresholds.json",
+      "sha256": "7321b4928a503fb23bff4123802f867e21d32e5cadd7dd42eac8e77d6fe7b092"
+    },
+    {
+      "bytes": 3506,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/train_log.csv",
+      "sha256": "30fee0af26e3ae8a178834071138fc78d680a8e3da00b20857d5dfc714777d31"
+    },
+    {
+      "bytes": 8785,
+      "path": "runs/extrasensory-quality-aware-fold1-seed13-credible/val_metrics.json",
+      "sha256": "1e17af12bd60ba36ec54e7315692f94b734dfcf915140217b360c4790bba0ad8"
+    },
+    {
+      "bytes": 574795,
+      "path": "runs/extrasensory-quality-aware-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "c14d6b021bc758feb5847f58abf45f5d2559cf28f1a3e2fbf2e0e68e162d1ff9"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-quality-aware-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-quality-aware-fold2-seed13-credible/environment.json",
+      "sha256": "247cafe18bfbecc763eb365213b70d5ee740a84196b72acbe431cb7b8c9f886d"
+    },
+    {
+      "bytes": 1436,
+      "path": "runs/extrasensory-quality-aware-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "4a1045982d53400448279df957d2b94100f3808388df652e797deed1eb748114"
+    },
+    {
+      "bytes": 3678,
+      "path": "runs/extrasensory-quality-aware-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "8167c96405ba8b34acb31383e5f92423726825c68ad8d2c686d32186bd5aeeb4"
+    },
+    {
+      "bytes": 472,
+      "path": "runs/extrasensory-quality-aware-fold2-seed13-credible/run_summary.md",
+      "sha256": "32ae676e5344872cf9bb0c77c9effd8b42e4da8dca702297acc19da57caaa464"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-quality-aware-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 8997,
+      "path": "runs/extrasensory-quality-aware-fold2-seed13-credible/test_metrics.json",
+      "sha256": "49f21a354cc6f9c5efd16c5cfedccf0843fef94f4cadec2107150209448b81a9"
+    },
+    {
+      "bytes": 942,
+      "path": "runs/extrasensory-quality-aware-fold2-seed13-credible/thresholds.json",
+      "sha256": "3df3315b3f16acfce3a62a3da636b990e73a0f566ab4e20294c90ed996c8af5c"
+    },
+    {
+      "bytes": 2171,
+      "path": "runs/extrasensory-quality-aware-fold2-seed13-credible/train_log.csv",
+      "sha256": "74daa96f26fdd9c3446c68d8e7fc3dc3511c508a7bcb66bf5931e2b8aeedccde"
+    },
+    {
+      "bytes": 8792,
+      "path": "runs/extrasensory-quality-aware-fold2-seed13-credible/val_metrics.json",
+      "sha256": "6e8bac8f0be62f93f44d5f152672c4ead3bc3cbbed7958dadf0206b090d8e82d"
+    },
+    {
+      "bytes": 574795,
+      "path": "runs/extrasensory-quality-aware-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "e825eb387e5e868f3eaeffc2d14bd98c4178de096e781318997c388f567b3cf3"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-quality-aware-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-quality-aware-fold3-seed13-credible/environment.json",
+      "sha256": "89692d488b426434c663e7a1448a1d8be5e7bd93d0fc7e4f345bc51c2b17d8af"
+    },
+    {
+      "bytes": 1437,
+      "path": "runs/extrasensory-quality-aware-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "35c665bf6be35279de4c7eb2a628a46eb16a1db0d413649cc386ecbae67f049e"
+    },
+    {
+      "bytes": 3680,
+      "path": "runs/extrasensory-quality-aware-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "4ada1663706f792a51d712dee5510f5f704b5f36551f8a979bd027aa645d717c"
+    },
+    {
+      "bytes": 472,
+      "path": "runs/extrasensory-quality-aware-fold3-seed13-credible/run_summary.md",
+      "sha256": "a38cf8926eb7e3c10ad732f0ab8031b8fdf7a6a91be46550c7eb0fc6700cde21"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-quality-aware-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 9000,
+      "path": "runs/extrasensory-quality-aware-fold3-seed13-credible/test_metrics.json",
+      "sha256": "6e104c28a348c5e30b65895ae57d542716c3f2dc0f038ac4851b822da4d64ea2"
+    },
+    {
+      "bytes": 961,
+      "path": "runs/extrasensory-quality-aware-fold3-seed13-credible/thresholds.json",
+      "sha256": "cf4e28e50dc63981f2489bb9f325486f67083fb745b9366fac3762512ca16167"
+    },
+    {
+      "bytes": 7995,
+      "path": "runs/extrasensory-quality-aware-fold3-seed13-credible/train_log.csv",
+      "sha256": "d9dac2eda3b5da6afe22986168ae87d8e5204e4ad030c8bedcc0bc5f4c5c6b9f"
+    },
+    {
+      "bytes": 8762,
+      "path": "runs/extrasensory-quality-aware-fold3-seed13-credible/val_metrics.json",
+      "sha256": "7867286a08c0cefa42c025534848c8e9f9d59bbf25d3bf31b5234be1a0510c1c"
+    },
+    {
+      "bytes": 574795,
+      "path": "runs/extrasensory-quality-aware-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "a0aa0244a34d508794977a497743d9dcc9969c0c2fccab5f6b5e5b81faa6e3fe"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-quality-aware-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-quality-aware-fold4-seed13-credible/environment.json",
+      "sha256": "27e16130784aa528af947d064bcf29c3b585c365c2c4271bf097965f98935b17"
+    },
+    {
+      "bytes": 1436,
+      "path": "runs/extrasensory-quality-aware-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "265553093ebbbd6323ad52cf34c8dc3d2e26e2f978a83d8b867aaa0e79c2f82b"
+    },
+    {
+      "bytes": 3679,
+      "path": "runs/extrasensory-quality-aware-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "e783472d2fcf815be63b7e24f44316dec39411466e855075ee6e3abd5bb1cb4f"
+    },
+    {
+      "bytes": 472,
+      "path": "runs/extrasensory-quality-aware-fold4-seed13-credible/run_summary.md",
+      "sha256": "5b3befcbde2aecb278cd1bb4f99a92a983a59be683c8ea5d86038af0e986b3fe"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-quality-aware-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 8964,
+      "path": "runs/extrasensory-quality-aware-fold4-seed13-credible/test_metrics.json",
+      "sha256": "15c656b517d328c60951562eaf9c415d77bccd1ee445f146b015a45ea44fd0d9"
+    },
+    {
+      "bytes": 958,
+      "path": "runs/extrasensory-quality-aware-fold4-seed13-credible/thresholds.json",
+      "sha256": "7db992618989e11516634a8ff68aca0e4624db14e5468914b585b2e9f88e7194"
+    },
+    {
+      "bytes": 1571,
+      "path": "runs/extrasensory-quality-aware-fold4-seed13-credible/train_log.csv",
+      "sha256": "f7008f9f9e643c244645a4fa54146126eda06a47e0ad6c1168ac334ad3a91694"
+    },
+    {
+      "bytes": 8767,
+      "path": "runs/extrasensory-quality-aware-fold4-seed13-credible/val_metrics.json",
+      "sha256": "2898a1e078663eab647461d99149feb2315b18c4fc276039141818ef6677335a"
+    },
+    {
+      "bytes": 506195,
+      "path": "runs/extrasensory-robust-gated-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "5d263e03e3c5f247587eaaec4c7e22921dac369d774f71e54bfccd708e1d8539"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-robust-gated-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-robust-gated-fold0-seed13-credible/environment.json",
+      "sha256": "6684cc1a7012425b541deb80519d4d65957383fcad5c025d773106567a83963f"
+    },
+    {
+      "bytes": 1435,
+      "path": "runs/extrasensory-robust-gated-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "b2a9fcfc6fbc29bd61caccada753bb6609ec0193a1baa6278adb50277272afbc"
+    },
+    {
+      "bytes": 3543,
+      "path": "runs/extrasensory-robust-gated-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "846cd1ea89ca6d598f61106c0967a1f36de8163956f755afb33873bae94b1cd5"
+    },
+    {
+      "bytes": 470,
+      "path": "runs/extrasensory-robust-gated-fold0-seed13-credible/run_summary.md",
+      "sha256": "ec1fdc85ff9fa4737ff88d6c145d36292aa085c26f87da63321bb0afae2df456"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-robust-gated-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9005,
+      "path": "runs/extrasensory-robust-gated-fold0-seed13-credible/test_metrics.json",
+      "sha256": "d27a100dc8b567c8939d731460b683ad7ecf16a87dcf167ad60c7813e577388b"
+    },
+    {
+      "bytes": 944,
+      "path": "runs/extrasensory-robust-gated-fold0-seed13-credible/thresholds.json",
+      "sha256": "78c3f4c2b13fb86a80e4c1c859cdc9f8eacf2118e49ddc59a485681fc26110cc"
+    },
+    {
+      "bytes": 1955,
+      "path": "runs/extrasensory-robust-gated-fold0-seed13-credible/train_log.csv",
+      "sha256": "d4c20aae016899f15e2ba705204a47b38589b7d260b4b7f8f10c424f75107bc8"
+    },
+    {
+      "bytes": 8788,
+      "path": "runs/extrasensory-robust-gated-fold0-seed13-credible/val_metrics.json",
+      "sha256": "8e14ceda582f791d06075097e98e821659bd747ab48b38f4938026fb17e5b3cb"
+    },
+    {
+      "bytes": 506195,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "2cfd5e8352d406e18b1fd282ea1a5d0e7ff16bbc965c3f832479c377cbde00f8"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/environment.json",
+      "sha256": "d376e9d075f86dbc99d32eb27f765f369fda9c9244642d3d06244752b698ac67"
+    },
+    {
+      "bytes": 1435,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "6e50671ac1145314ec547015bf1f8894f46029fd93752dbbf85fa9e95dbafc7b"
+    },
+    {
+      "bytes": 3545,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "76054767ffe99ee2510d5d443fc798720cd939587f59e26b4d6269ff202a79bb"
+    },
+    {
+      "bytes": 470,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/run_summary.md",
+      "sha256": "0b54e69c6e225392d2edb04ba84a68034c7558cd5444e97e3e0cb324859ca6f5"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 9001,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/test_metrics.json",
+      "sha256": "3b1a453caddae625c819ba824452afb4df44afe51c8bbd035311a728d53ad3a3"
+    },
+    {
+      "bytes": 974,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/thresholds.json",
+      "sha256": "0c881763176df331797fdf67941d1e72e4401321548428eb93d76d4b2b59bd58"
+    },
+    {
+      "bytes": 2563,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/train_log.csv",
+      "sha256": "1cd68b413abd163881d7459233d165a8791d5d28e7c3aa03b37bc96abe40db17"
+    },
+    {
+      "bytes": 8780,
+      "path": "runs/extrasensory-robust-gated-fold1-seed13-credible/val_metrics.json",
+      "sha256": "d85621062a1772bdc0da4a7e5ea30ae967f14023d465f7824f61545d7c5f750a"
+    },
+    {
+      "bytes": 506195,
+      "path": "runs/extrasensory-robust-gated-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "1ce21a1555c8de7c7396b648c89668bf7b23fe1f129bcd0192e573a0be2b2fc0"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-robust-gated-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-robust-gated-fold2-seed13-credible/environment.json",
+      "sha256": "5b32f21ad9e740877582540248252ecf9d193c60f45bfc69ed791ce794dd613d"
+    },
+    {
+      "bytes": 1435,
+      "path": "runs/extrasensory-robust-gated-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "d1f94bf25fa59744d84942c02f7ebac4b431662004f091068e65f67c7fa57cbc"
+    },
+    {
+      "bytes": 3542,
+      "path": "runs/extrasensory-robust-gated-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "885451ffbdc6c48b2195ac141d49028baa9f6e3e81c76f2bdc8e52fe7dc3680e"
+    },
+    {
+      "bytes": 470,
+      "path": "runs/extrasensory-robust-gated-fold2-seed13-credible/run_summary.md",
+      "sha256": "1c142abdbfd9f5f496cf5481edf911290f0b1600ea0d3396ec1c08b693acbd82"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-robust-gated-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 9004,
+      "path": "runs/extrasensory-robust-gated-fold2-seed13-credible/test_metrics.json",
+      "sha256": "d9da7cf5c032735014a8cb8305e7d18287dbff894ce922809e59f41bec2ba0fe"
+    },
+    {
+      "bytes": 901,
+      "path": "runs/extrasensory-robust-gated-fold2-seed13-credible/thresholds.json",
+      "sha256": "eb1688f6d816494afe96f23ac222937ca0f90d9d73156abe949c1864dee28f49"
+    },
+    {
+      "bytes": 2042,
+      "path": "runs/extrasensory-robust-gated-fold2-seed13-credible/train_log.csv",
+      "sha256": "7084dabe4d1f72dfa7bcca1e9bcd60e41ad3d1e9c6dc7dfc5fe4c80c0773b6a9"
+    },
+    {
+      "bytes": 8776,
+      "path": "runs/extrasensory-robust-gated-fold2-seed13-credible/val_metrics.json",
+      "sha256": "d5848ae3f8109fcdf3f4bda3c29fb402078f9420ff8950eb1525e44553ca6cb2"
+    },
+    {
+      "bytes": 506195,
+      "path": "runs/extrasensory-robust-gated-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "698f927ecb880aa7f5c7310216627f1bb010c82c9713f08f73c53d26050311aa"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-robust-gated-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-robust-gated-fold3-seed13-credible/environment.json",
+      "sha256": "b8e383194f4541dc120771bf5fc1d4d249893d68180e30cdb646f720686663f7"
+    },
+    {
+      "bytes": 1435,
+      "path": "runs/extrasensory-robust-gated-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "4c2b536a01c0dc94db263522cf5fba698579fe0bb3a91b52ec0183e759574598"
+    },
+    {
+      "bytes": 3544,
+      "path": "runs/extrasensory-robust-gated-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "175dc45397044533f0bae0b8b0b16629164665e7d98026051ac9989828599434"
+    },
+    {
+      "bytes": 470,
+      "path": "runs/extrasensory-robust-gated-fold3-seed13-credible/run_summary.md",
+      "sha256": "d643f91465e1a32b99e7c21ebe34256660fc948bac6856634f4db828c9b486f2"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-robust-gated-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 8997,
+      "path": "runs/extrasensory-robust-gated-fold3-seed13-credible/test_metrics.json",
+      "sha256": "492d110e9f4f1d21ddfee443503bd2d065db3d42861f544ef0b07b978b5f3506"
+    },
+    {
+      "bytes": 936,
+      "path": "runs/extrasensory-robust-gated-fold3-seed13-credible/thresholds.json",
+      "sha256": "54ad97621029cd6ef19b4eafcae6ef141d4a3c2004e947f510da3ba3b83b204a"
+    },
+    {
+      "bytes": 3188,
+      "path": "runs/extrasensory-robust-gated-fold3-seed13-credible/train_log.csv",
+      "sha256": "6659fc299e8f56156f967eb3fd4dc36075ff08ccc89f1c949b680175700ab4ab"
+    },
+    {
+      "bytes": 8762,
+      "path": "runs/extrasensory-robust-gated-fold3-seed13-credible/val_metrics.json",
+      "sha256": "f41077403e31e677543e83584412f5c4e0a848504697b80d7c6b88b9d0682683"
+    },
+    {
+      "bytes": 506195,
+      "path": "runs/extrasensory-robust-gated-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "79ebc09b862f5b117c35fcf9177e083fcf9a45bf776222c1ec3f701e91649756"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-robust-gated-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-robust-gated-fold4-seed13-credible/environment.json",
+      "sha256": "5ff99d50bc3cd6f91c4e70f1c1dea3331966262746544c5053cf01f4f08dd0ec"
+    },
+    {
+      "bytes": 1435,
+      "path": "runs/extrasensory-robust-gated-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "3e0b246148333935ea6782810d4f32d3cfe3ac56afb84f3ab38bc874a7f20576"
+    },
+    {
+      "bytes": 3543,
+      "path": "runs/extrasensory-robust-gated-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "cf08a61c202309466adaa6486ddacdb803c7989faf151e39e4e577a659d47ddf"
+    },
+    {
+      "bytes": 470,
+      "path": "runs/extrasensory-robust-gated-fold4-seed13-credible/run_summary.md",
+      "sha256": "93db0559483e38f6371bebf9862b21bb3b650fe2a6baa2db33b2af0e4d7fdec1"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-robust-gated-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 8974,
+      "path": "runs/extrasensory-robust-gated-fold4-seed13-credible/test_metrics.json",
+      "sha256": "f74e9906f90f77c6d497eee269da272ea9e40631fbd31c35912d94be9cd5f51e"
+    },
+    {
+      "bytes": 945,
+      "path": "runs/extrasensory-robust-gated-fold4-seed13-credible/thresholds.json",
+      "sha256": "4211ca6968f5c5d4abd0ec75938b85a0fae54ccb33e45e15b77721e290923c46"
+    },
+    {
+      "bytes": 1685,
+      "path": "runs/extrasensory-robust-gated-fold4-seed13-credible/train_log.csv",
+      "sha256": "1f96614f2db8a2d977ff051645c565557a37855d20fc567fcdcd859577599ee9"
+    },
+    {
+      "bytes": 8788,
+      "path": "runs/extrasensory-robust-gated-fold4-seed13-credible/val_metrics.json",
+      "sha256": "f19cf23190c406bf50227a8b4cc4786bc68d9bd81ca8488864ceb51477180213"
+    },
+    {
+      "bytes": 71933,
+      "path": "runs/extrasensory-single-audio-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "7b6951328135949f4c20b62695dc170c9d293a26c5b8a7a977d059b16ac2fafb"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-audio-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-audio-fold0-seed13-credible/environment.json",
+      "sha256": "e37740c9a6ce181928fc878f21fc711ee0f31ab9315e9c9f692a7dba372b4482"
+    },
+    {
+      "bytes": 1434,
+      "path": "runs/extrasensory-single-audio-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "42ba001ab57cf73d4adf3474b1c9f68c9b35dd01389a5014473c08293a172953"
+    },
+    {
+      "bytes": 2601,
+      "path": "runs/extrasensory-single-audio-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "95e5b4e83aa69720624223315b710c77b5617f622906c4670ede9fa20cd1348d"
+    },
+    {
+      "bytes": 361,
+      "path": "runs/extrasensory-single-audio-fold0-seed13-credible/run_summary.md",
+      "sha256": "3578a831bf8d06a619af83bc58f10c9c43d3e347f913feb6f31da8ab73228848"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-audio-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9026,
+      "path": "runs/extrasensory-single-audio-fold0-seed13-credible/test_metrics.json",
+      "sha256": "2c530bbfeff62eeecca96cc9ff824aaa66f7bf42620559c4b8adb19005c5c86a"
+    },
+    {
+      "bytes": 902,
+      "path": "runs/extrasensory-single-audio-fold0-seed13-credible/thresholds.json",
+      "sha256": "87760976b2b200b99bf961662e405b154b40bc50605d4ecc197d67aa761e4f65"
+    },
+    {
+      "bytes": 1118,
+      "path": "runs/extrasensory-single-audio-fold0-seed13-credible/train_log.csv",
+      "sha256": "3fabeeed97c9d78b8c7380122e548c52efaa1ea81bb53c3900e4e1fc481a1812"
+    },
+    {
+      "bytes": 8789,
+      "path": "runs/extrasensory-single-audio-fold0-seed13-credible/val_metrics.json",
+      "sha256": "c092a494890357489fde16c3b801c2406be56256b614717501c2d5f470f859fc"
+    },
+    {
+      "bytes": 71933,
+      "path": "runs/extrasensory-single-audio-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "3f9c1917acbc17fa1cd8759d525d27c9a05c884c7ea5aa972c3d164063b618a7"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-audio-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-audio-fold1-seed13-credible/environment.json",
+      "sha256": "caef7a4547baf3694f4396bc39059633d071745af34cea2a66e21fc58beae4c1"
+    },
+    {
+      "bytes": 1434,
+      "path": "runs/extrasensory-single-audio-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "205680741b20b834d646f5615447bffd6b806f35f5ee435713497fcce70f9d62"
+    },
+    {
+      "bytes": 2602,
+      "path": "runs/extrasensory-single-audio-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "7e6df151e03770f781acac3277dfc0fcb45c784049fd2a54371d18963f5a9959"
+    },
+    {
+      "bytes": 361,
+      "path": "runs/extrasensory-single-audio-fold1-seed13-credible/run_summary.md",
+      "sha256": "82c715dfa8d4b78d8859ad935d48fb7b4adff33827e150a06d8c525f959d973e"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-audio-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 9004,
+      "path": "runs/extrasensory-single-audio-fold1-seed13-credible/test_metrics.json",
+      "sha256": "466a124b817ea2b2b996f85e351a7b786959951f649ab46246664e131eb7337a"
+    },
+    {
+      "bytes": 946,
+      "path": "runs/extrasensory-single-audio-fold1-seed13-credible/thresholds.json",
+      "sha256": "8cae5a86685e5c8311931773309fe2d0bd866af3800a8b591af5741b0002d3ed"
+    },
+    {
+      "bytes": 888,
+      "path": "runs/extrasensory-single-audio-fold1-seed13-credible/train_log.csv",
+      "sha256": "cb9face56548c9d09d494c510343c50115561f96144f19f7808cc0fc0c55d67b"
+    },
+    {
+      "bytes": 8806,
+      "path": "runs/extrasensory-single-audio-fold1-seed13-credible/val_metrics.json",
+      "sha256": "deead0b2715140c0be83a1d4bd74756de91dfa6af0b09a7b1f3a6d52c2581487"
+    },
+    {
+      "bytes": 71933,
+      "path": "runs/extrasensory-single-audio-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "a13ce639d268f03cf48e03e7d183ad72dee7d42d5747ef81c426fcf369918c2e"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-audio-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-audio-fold2-seed13-credible/environment.json",
+      "sha256": "1ccffd79fef9cd5b3b3c090ad1f2683a52fa5eac31580fb1c3970531ecf821b2"
+    },
+    {
+      "bytes": 1433,
+      "path": "runs/extrasensory-single-audio-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "e1b6bb995ae7b63e7bd9415985596d077963dd80e35d8ea855ddfe88ec32e2a5"
+    },
+    {
+      "bytes": 2602,
+      "path": "runs/extrasensory-single-audio-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "9b6bab0ec333f0c7d897673872833521a6b4a1c8c182e764167861efe070dbb0"
+    },
+    {
+      "bytes": 361,
+      "path": "runs/extrasensory-single-audio-fold2-seed13-credible/run_summary.md",
+      "sha256": "56e04395201656abc4b4deec2b25b7c46dc706658b1056af0567a3644917f441"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-audio-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 9015,
+      "path": "runs/extrasensory-single-audio-fold2-seed13-credible/test_metrics.json",
+      "sha256": "3e3cb8eba7d9880fecdb1706efdad7bd5a987631b1ebff0d9938132477a21723"
+    },
+    {
+      "bytes": 946,
+      "path": "runs/extrasensory-single-audio-fold2-seed13-credible/thresholds.json",
+      "sha256": "e95a54f801e8199ff386fb4a220e12178c32aa452b0d90748da27cf6d1bfbd6b"
+    },
+    {
+      "bytes": 1548,
+      "path": "runs/extrasensory-single-audio-fold2-seed13-credible/train_log.csv",
+      "sha256": "780f02a8750658c22031de19dd1cfd1ba4c515f10feefbeb9f64ffcef21cd5a7"
+    },
+    {
+      "bytes": 8799,
+      "path": "runs/extrasensory-single-audio-fold2-seed13-credible/val_metrics.json",
+      "sha256": "cc4b73d6e3686498f1e1b0becf4f0020ccda50b9f7efa0f9e295893303a03843"
+    },
+    {
+      "bytes": 71933,
+      "path": "runs/extrasensory-single-audio-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "bb75ba24a8869f2d1c1abd88ea0dd796ef7b8f665b4ce6a083a02c538f7db3c8"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-audio-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-audio-fold3-seed13-credible/environment.json",
+      "sha256": "309af439419d20ff3f81ea27e93e5e3ea54123182f16e378464f0b63e523d8c6"
+    },
+    {
+      "bytes": 1434,
+      "path": "runs/extrasensory-single-audio-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "0079a90e305b62861ae6fabbdb36a71617e79e6c1248bacd2b005b680a19374e"
+    },
+    {
+      "bytes": 2600,
+      "path": "runs/extrasensory-single-audio-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "9beeafbf138280fda5f16449d9d46403cb79b24b8f9128ae5d22ef5b27077124"
+    },
+    {
+      "bytes": 361,
+      "path": "runs/extrasensory-single-audio-fold3-seed13-credible/run_summary.md",
+      "sha256": "2127ec064d0ff6a5755f5c56e2356312e4e65726834675bba6fea15f35c1eba8"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-audio-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 9009,
+      "path": "runs/extrasensory-single-audio-fold3-seed13-credible/test_metrics.json",
+      "sha256": "eec70c3a452795e8c92e1a5dc2bf7460a70ddad06dce5f7b031971823df46421"
+    },
+    {
+      "bytes": 936,
+      "path": "runs/extrasensory-single-audio-fold3-seed13-credible/thresholds.json",
+      "sha256": "d84ad77faa52484b0be1bb75b1c9f7249548f32a9b0a3c57957f01f3f1526e39"
+    },
+    {
+      "bytes": 1012,
+      "path": "runs/extrasensory-single-audio-fold3-seed13-credible/train_log.csv",
+      "sha256": "4e244ef20ed36c596ab2105504ad52e9ae17d9be6f416ee57d3225e2d8e4cf6b"
+    },
+    {
+      "bytes": 8783,
+      "path": "runs/extrasensory-single-audio-fold3-seed13-credible/val_metrics.json",
+      "sha256": "82fc9253010e09bf4492eec93a3afa5bc54673a0ad57500c650c79c62a10da4f"
+    },
+    {
+      "bytes": 71933,
+      "path": "runs/extrasensory-single-audio-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "fa23e14457b975d40d42dddc09fc03fe3fbee66caa10b70a24120396c7abf17b"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-audio-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-audio-fold4-seed13-credible/environment.json",
+      "sha256": "00d211893235a501cbc198a5a032c196a910d67b533ef99ad41c834fac68fde5"
+    },
+    {
+      "bytes": 1435,
+      "path": "runs/extrasensory-single-audio-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "8c240a07c2a3fe85af0879964f265662d72c48098bed5301092a263edc2ad444"
+    },
+    {
+      "bytes": 2599,
+      "path": "runs/extrasensory-single-audio-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "046f93cf488f97c93e764c3466b5c051b7d2acbec23740c8581bfe57ff7e0317"
+    },
+    {
+      "bytes": 361,
+      "path": "runs/extrasensory-single-audio-fold4-seed13-credible/run_summary.md",
+      "sha256": "b253b2c04b79d984a8189a14dca1c0c42c0d3ead5afa74e1d807ee3c488e84ee"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-audio-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 8996,
+      "path": "runs/extrasensory-single-audio-fold4-seed13-credible/test_metrics.json",
+      "sha256": "0bc5b1f2995596427119316c78b3d5ceb0ce9e1d3735bf6f9268827f4efbf671"
+    },
+    {
+      "bytes": 943,
+      "path": "runs/extrasensory-single-audio-fold4-seed13-credible/thresholds.json",
+      "sha256": "06094c36521017aaff39b7e6e14bea4c04eb1784c0d6f14f349fc44bb5cb4928"
+    },
+    {
+      "bytes": 763,
+      "path": "runs/extrasensory-single-audio-fold4-seed13-credible/train_log.csv",
+      "sha256": "d5bff410e06cf31316672f57c7183d7c5195acb8f169509a7b21b7bed258ab5f"
+    },
+    {
+      "bytes": 8803,
+      "path": "runs/extrasensory-single-audio-fold4-seed13-credible/val_metrics.json",
+      "sha256": "66d043a2ada6eb01112437be71653cabca0b50725aa64d331b7bfe343264dda2"
+    },
+    {
+      "bytes": 60669,
+      "path": "runs/extrasensory-single-location-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "e207566c65fa8cef68a51bd5fe2867767e516f6707dcf588f9d0b92d7868310d"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-location-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-location-fold0-seed13-credible/environment.json",
+      "sha256": "055fb63dc5cbb86621ca978def943fb2c4c44d296608ff39ae687cb6eeaeb1db"
+    },
+    {
+      "bytes": 1440,
+      "path": "runs/extrasensory-single-location-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "a2244e38333d71b06a09656e21718de7a91d169436f395fa80c4fa1bd7dcc134"
+    },
+    {
+      "bytes": 2611,
+      "path": "runs/extrasensory-single-location-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "0b36fd5aed364fb6b84c71e5666c31f28bc79edf92861e9e526c09431ffd7815"
+    },
+    {
+      "bytes": 367,
+      "path": "runs/extrasensory-single-location-fold0-seed13-credible/run_summary.md",
+      "sha256": "58e205838bd3ddbd6c006848e6b485bd2a96155266329dbc191cdf48d0d824ef"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-location-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9011,
+      "path": "runs/extrasensory-single-location-fold0-seed13-credible/test_metrics.json",
+      "sha256": "5c6b1d1a4952813e17de8ce306ba1b96fba0e10f171ed9f652164ef1a401fc08"
+    },
+    {
+      "bytes": 947,
+      "path": "runs/extrasensory-single-location-fold0-seed13-credible/thresholds.json",
+      "sha256": "510d0282150b5eb0864d2a6d5f48b4f68e94de1aea8843ed8068d36a365853db"
+    },
+    {
+      "bytes": 766,
+      "path": "runs/extrasensory-single-location-fold0-seed13-credible/train_log.csv",
+      "sha256": "73008f40d529bc8d2c82f699469c99a3ce5cbbcfc6767e3ffb1c1c949eb38fd0"
+    },
+    {
+      "bytes": 8803,
+      "path": "runs/extrasensory-single-location-fold0-seed13-credible/val_metrics.json",
+      "sha256": "f7985cc471cbaa5d05ba8b3c2cce3999fc471cbd007c00147659c73402cda2ab"
+    },
+    {
+      "bytes": 60669,
+      "path": "runs/extrasensory-single-location-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "3170036dcf8e6c9142cc5a3ad7420fa3dc61cd9b4ff88961e57ebcc628bc87a0"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-location-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-location-fold1-seed13-credible/environment.json",
+      "sha256": "cd3eb68841233687c05f4328dca598eb588e972a2679684f5a0f7afb26a389ce"
+    },
+    {
+      "bytes": 1441,
+      "path": "runs/extrasensory-single-location-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "176e8240f25fbbc8ebe41a8e9bc9dd569c39d43148cc02421fd62c276de73c83"
+    },
+    {
+      "bytes": 2610,
+      "path": "runs/extrasensory-single-location-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "c360dc7e4ae0a1d4f6136a5458b1014912ad13f3ea7351a627f086827dadd901"
+    },
+    {
+      "bytes": 367,
+      "path": "runs/extrasensory-single-location-fold1-seed13-credible/run_summary.md",
+      "sha256": "fbeffc6480de5d4b41a9f7a0e296242fd1c541d6d1687062a2c8326354d47158"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-location-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 9021,
+      "path": "runs/extrasensory-single-location-fold1-seed13-credible/test_metrics.json",
+      "sha256": "96bf2351cdcc23eadfd7370a8b90f4a2f1b623f521a3d8d6ad0b0be32867615d"
+    },
+    {
+      "bytes": 948,
+      "path": "runs/extrasensory-single-location-fold1-seed13-credible/thresholds.json",
+      "sha256": "3e847c23fbbf3fa182616c238a19e0de0e4ef52fbec94f43c0446dfcfce6a88b"
+    },
+    {
+      "bytes": 825,
+      "path": "runs/extrasensory-single-location-fold1-seed13-credible/train_log.csv",
+      "sha256": "0f2c7da80bf2d14185086d8e2a5b612b4d4e1192f8fe69b3d6b45e8aa576804b"
+    },
+    {
+      "bytes": 8796,
+      "path": "runs/extrasensory-single-location-fold1-seed13-credible/val_metrics.json",
+      "sha256": "d11bd5b7de38ea59d10c2cf7609fe6710449f27ae9dcbabb27a7ffa0f2d49778"
+    },
+    {
+      "bytes": 60669,
+      "path": "runs/extrasensory-single-location-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "638b9f8b6a2a8fc1d2316a73798dc50e82b08b66383d65fcb38ec459e4a0d776"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-location-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-location-fold2-seed13-credible/environment.json",
+      "sha256": "ce8c2118d7566481bf3f663ba4a21f7cafa4fe07a9954c0be73df02357781b8d"
+    },
+    {
+      "bytes": 1439,
+      "path": "runs/extrasensory-single-location-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "ae5faac4ccacc964d3d602d6b907b458ec03be7b332bc83585162e9d2a09dca4"
+    },
+    {
+      "bytes": 2607,
+      "path": "runs/extrasensory-single-location-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "2688081ac938eccb998684aee1a60251966ed64aa65a002803906d9667f3920a"
+    },
+    {
+      "bytes": 367,
+      "path": "runs/extrasensory-single-location-fold2-seed13-credible/run_summary.md",
+      "sha256": "8e9e5bfb4fba7ab23675b00f21af7f5ca1588b1309bf622dfe550d74faa21951"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-location-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 9020,
+      "path": "runs/extrasensory-single-location-fold2-seed13-credible/test_metrics.json",
+      "sha256": "d177d022c5b0a4d46969be270610bab79fa9cb09a4ea865f1e84ecfd9193bd78"
+    },
+    {
+      "bytes": 975,
+      "path": "runs/extrasensory-single-location-fold2-seed13-credible/thresholds.json",
+      "sha256": "5fac355c10790b96807f14b622aed200ba39c8553a734bc2dbd624bad866666d"
+    },
+    {
+      "bytes": 767,
+      "path": "runs/extrasensory-single-location-fold2-seed13-credible/train_log.csv",
+      "sha256": "4e88227a31ef4e96d08e8c97698ceb7920093ac90365ad7608aaa7bb27d05f87"
+    },
+    {
+      "bytes": 8778,
+      "path": "runs/extrasensory-single-location-fold2-seed13-credible/val_metrics.json",
+      "sha256": "df768b33c2ed721e99eb69c9b5c8701ca262ffe95b3b9735602636ace0335350"
+    },
+    {
+      "bytes": 60669,
+      "path": "runs/extrasensory-single-location-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "6a68cc2514ceb45b144d1ac760e505bdd0bf027ae76b33d4d36e15c4a4ca5f90"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-location-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-location-fold3-seed13-credible/environment.json",
+      "sha256": "6471729b670866279844d165285a12d24628976d625e4e9d120fb49892f9bca9"
+    },
+    {
+      "bytes": 1441,
+      "path": "runs/extrasensory-single-location-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "7870640dcec23859115ee778882c9cad26d9923be749a8ac328457b911f16930"
+    },
+    {
+      "bytes": 2610,
+      "path": "runs/extrasensory-single-location-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "d2de267f7821a4c15f530ba7ba6aebbae460a7a43ed64b21deb001089c281edf"
+    },
+    {
+      "bytes": 367,
+      "path": "runs/extrasensory-single-location-fold3-seed13-credible/run_summary.md",
+      "sha256": "c159b81f758a66ea730b32905f3bdfbcf2fafdd2feb1b29a625fb208b9a1722e"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-location-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 9018,
+      "path": "runs/extrasensory-single-location-fold3-seed13-credible/test_metrics.json",
+      "sha256": "c6d6025c51e9394e1f593c111fd917d9134fcb238f7e84093aa4bfd988682844"
+    },
+    {
+      "bytes": 949,
+      "path": "runs/extrasensory-single-location-fold3-seed13-credible/thresholds.json",
+      "sha256": "5498558ee7e4535fc349eaee98813135ac256cbe07c1618d960514b717710618"
+    },
+    {
+      "bytes": 1189,
+      "path": "runs/extrasensory-single-location-fold3-seed13-credible/train_log.csv",
+      "sha256": "d9154aec4530826d1c80d1e92be73d341950ca3c551d440129bca7dca36e9403"
+    },
+    {
+      "bytes": 8795,
+      "path": "runs/extrasensory-single-location-fold3-seed13-credible/val_metrics.json",
+      "sha256": "3535ac8da8e550187b1b3f170e4c4de68217810eebf0f2f5eb03169455c3d5a0"
+    },
+    {
+      "bytes": 60669,
+      "path": "runs/extrasensory-single-location-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "7ce27eeacdcf0e0c37c86904f630fbab9fe1d3cb24e2d2330c1d3847516cf276"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-location-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-location-fold4-seed13-credible/environment.json",
+      "sha256": "4353b4cb8951b6307ce6fcbf82c41b283b2bfdec07f099d57f544f0406d967d8"
+    },
+    {
+      "bytes": 1441,
+      "path": "runs/extrasensory-single-location-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "f95dd422d75d08df9f097f7c8fd3314a9f479780e43937000b5de1db7cfd7e6e"
+    },
+    {
+      "bytes": 2610,
+      "path": "runs/extrasensory-single-location-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "b0389111401271999fd95d90ba5fbff92dced78b7f314cb5dbf00eeceacfa540"
+    },
+    {
+      "bytes": 367,
+      "path": "runs/extrasensory-single-location-fold4-seed13-credible/run_summary.md",
+      "sha256": "78fd44beaf2aa63619fb83a65e0c7252e53038b130ff979ea4b13e3c145f558e"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-location-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 9018,
+      "path": "runs/extrasensory-single-location-fold4-seed13-credible/test_metrics.json",
+      "sha256": "489cc2c5b5a54713eb52077e34b0cb022a067d4fe2c2501c2663849012c0951a"
+    },
+    {
+      "bytes": 918,
+      "path": "runs/extrasensory-single-location-fold4-seed13-credible/thresholds.json",
+      "sha256": "b34246a261ac439527d55552c96866e151cef76f63c86672b739698d41ae5004"
+    },
+    {
+      "bytes": 946,
+      "path": "runs/extrasensory-single-location-fold4-seed13-credible/train_log.csv",
+      "sha256": "a3d4fc5e5706b946e1f8ca3a61d1b8b54c0bdd1d68fa407430757fe717022bad"
+    },
+    {
+      "bytes": 8803,
+      "path": "runs/extrasensory-single-location-fold4-seed13-credible/val_metrics.json",
+      "sha256": "678bf126be47518f64f29a0743badd5f1627e588fd9cad2470c0ca70b059ec35"
+    },
+    {
+      "bytes": 69885,
+      "path": "runs/extrasensory-single-phone_acc-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "d0a8a2cf90887cdf2527fdb3af66c18a055f271a453ff3b99d2b5ffbd3afb40d"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_acc-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_acc-fold0-seed13-credible/environment.json",
+      "sha256": "21bda31b8437380e5dd3453f6cf9a0c4d71970f46bb68a9ca1d5d3ab1468c408"
+    },
+    {
+      "bytes": 1442,
+      "path": "runs/extrasensory-single-phone_acc-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "5473235de9317001b7e365b025d4ea2d6b77cd79e3ee77d9ab9160a92fc447f5"
+    },
+    {
+      "bytes": 2618,
+      "path": "runs/extrasensory-single-phone_acc-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "d1af1cb723512e8fef30cffc5f105ceab1365451cbce45bb7ac0a4066a5201e8"
+    },
+    {
+      "bytes": 369,
+      "path": "runs/extrasensory-single-phone_acc-fold0-seed13-credible/run_summary.md",
+      "sha256": "b6b2dabd6256e047ce3ede265a88b8bb9ae84868a5b35f8731709878664d81f2"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_acc-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9016,
+      "path": "runs/extrasensory-single-phone_acc-fold0-seed13-credible/test_metrics.json",
+      "sha256": "fc43eecda09995354f3accafb0274a35d416bfa2cc40102188694925ff904c6f"
+    },
+    {
+      "bytes": 916,
+      "path": "runs/extrasensory-single-phone_acc-fold0-seed13-credible/thresholds.json",
+      "sha256": "ea65a76ea52d220886861d38298db823561d62ab9a23deed54d546b0595df2a2"
+    },
+    {
+      "bytes": 1257,
+      "path": "runs/extrasensory-single-phone_acc-fold0-seed13-credible/train_log.csv",
+      "sha256": "b54906151477d8e283bef33368ad9b5cf51fcd4088606e5504103bb433db87b5"
+    },
+    {
+      "bytes": 8803,
+      "path": "runs/extrasensory-single-phone_acc-fold0-seed13-credible/val_metrics.json",
+      "sha256": "5c98df9ce672eac62020c3f4d231a56f2eeb0a5a784599e58007fe3bfc18366f"
+    },
+    {
+      "bytes": 69885,
+      "path": "runs/extrasensory-single-phone_acc-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "22f89c60e9d1a32ec4c1baebf5ef906151065d38e87655d4c04d90350f98d7e6"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_acc-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_acc-fold1-seed13-credible/environment.json",
+      "sha256": "85b2a9329f6f451b08d3fe8e5355315604e0a351220a0a8318cf5e28ce1f6249"
+    },
+    {
+      "bytes": 1443,
+      "path": "runs/extrasensory-single-phone_acc-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "2bf763f8ffbcb2c800b4dd258c6bcb9e1487c09b5da9423a3692bd03d5180566"
+    },
+    {
+      "bytes": 2614,
+      "path": "runs/extrasensory-single-phone_acc-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "6723bc7d2fb2e0962bb4fdcbc62e6d2356049810b3a277849587dacb247c3751"
+    },
+    {
+      "bytes": 369,
+      "path": "runs/extrasensory-single-phone_acc-fold1-seed13-credible/run_summary.md",
+      "sha256": "ba1743f2c5bf1905ce9de8b05be9b16833608505201e614562b89653d8801b99"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_acc-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 9014,
+      "path": "runs/extrasensory-single-phone_acc-fold1-seed13-credible/test_metrics.json",
+      "sha256": "2f1ec69ad38603089dff981e4b401752454c48ede2cbebbb4fc2487b440b2470"
+    },
+    {
+      "bytes": 919,
+      "path": "runs/extrasensory-single-phone_acc-fold1-seed13-credible/thresholds.json",
+      "sha256": "31d7690bcbbe9a6caa689ff2cfd243f3489d2bb1a9e4c92d27cbfc2524cff264"
+    },
+    {
+      "bytes": 1606,
+      "path": "runs/extrasensory-single-phone_acc-fold1-seed13-credible/train_log.csv",
+      "sha256": "0c944898b840ca659772b8c68378bef72e5a10ae81ca7b6444dab0e9725abaab"
+    },
+    {
+      "bytes": 8810,
+      "path": "runs/extrasensory-single-phone_acc-fold1-seed13-credible/val_metrics.json",
+      "sha256": "459110dda42554f7716f5dd67eb02e1d2cfe427d06b94311fb154b396830850c"
+    },
+    {
+      "bytes": 69885,
+      "path": "runs/extrasensory-single-phone_acc-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "d0fceebdda71406e3bf4eb980e933dd8006f4bb31c2d48d10079d30743fad1bc"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_acc-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_acc-fold2-seed13-credible/environment.json",
+      "sha256": "657d7d681def1595d2872d3b3be2ecb85c19ac675f29fe9699a4e1413dbd2015"
+    },
+    {
+      "bytes": 1442,
+      "path": "runs/extrasensory-single-phone_acc-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "58f18a89ee33a6960b622df8c023ba9af4f94684eafcce932691b4a56b69d2e9"
+    },
+    {
+      "bytes": 2611,
+      "path": "runs/extrasensory-single-phone_acc-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "2cb5ecdd93147f966aad2f71237f266601c79cfd23c87cd03f37c1e27d515fd3"
+    },
+    {
+      "bytes": 369,
+      "path": "runs/extrasensory-single-phone_acc-fold2-seed13-credible/run_summary.md",
+      "sha256": "2ce2dd2e243b114453245f667a49e19b72f56c84bea31aef771f161fca000273"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_acc-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 9021,
+      "path": "runs/extrasensory-single-phone_acc-fold2-seed13-credible/test_metrics.json",
+      "sha256": "38cdbaa1e60b6122e795702151784c212ad00a9bb0c211f8f2d8c581abb6acfc"
+    },
+    {
+      "bytes": 931,
+      "path": "runs/extrasensory-single-phone_acc-fold2-seed13-credible/thresholds.json",
+      "sha256": "4e1c612cd4790dbaec23d6a84e0cdb0d77f9a9495eed578a63bc8b13e71d58e6"
+    },
+    {
+      "bytes": 712,
+      "path": "runs/extrasensory-single-phone_acc-fold2-seed13-credible/train_log.csv",
+      "sha256": "976f7d4c984c6ed0d4a63a9f2c2c6f3e6bf8b756d1bdad5f3f19cf9724a5e519"
+    },
+    {
+      "bytes": 8816,
+      "path": "runs/extrasensory-single-phone_acc-fold2-seed13-credible/val_metrics.json",
+      "sha256": "094e68d4a8980f9ecdd168f30725f65c4ecf3fc24b56c8c6ab4ff05f354cee54"
+    },
+    {
+      "bytes": 69885,
+      "path": "runs/extrasensory-single-phone_acc-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "132ace86080674e20907ff357f08912551ec1211c5092f49390882d588174e76"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_acc-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_acc-fold3-seed13-credible/environment.json",
+      "sha256": "80d5631563ee6303f7517c7b072a108b636ff82fbbb2450253b754a84050cf44"
+    },
+    {
+      "bytes": 1442,
+      "path": "runs/extrasensory-single-phone_acc-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "19b6fcb296e4c56974e1455da0208dab78ff265e173f12c6711de2009703066e"
+    },
+    {
+      "bytes": 2610,
+      "path": "runs/extrasensory-single-phone_acc-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "f54a7274e50d3535439bfc6b5d91f4a13dd86bc27a05de3036fd049b9df29de1"
+    },
+    {
+      "bytes": 369,
+      "path": "runs/extrasensory-single-phone_acc-fold3-seed13-credible/run_summary.md",
+      "sha256": "4f63c869c65708bd52901a07cbe421225ebc680f6e394919b9a3047697a4ce8a"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_acc-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 9022,
+      "path": "runs/extrasensory-single-phone_acc-fold3-seed13-credible/test_metrics.json",
+      "sha256": "4ee07d495aa5b9f370b21e6a907696f757078cf98d1d0b13cb3cf067ee951872"
+    },
+    {
+      "bytes": 962,
+      "path": "runs/extrasensory-single-phone_acc-fold3-seed13-credible/thresholds.json",
+      "sha256": "f7ea4df054dd6c70e8cb33505eb3088eda6cf02391eb5e648e29ba1753086aeb"
+    },
+    {
+      "bytes": 1371,
+      "path": "runs/extrasensory-single-phone_acc-fold3-seed13-credible/train_log.csv",
+      "sha256": "e5ac1a448da63ed219848a0695d541957c34cd57410e24602966f2e79ee0be0f"
+    },
+    {
+      "bytes": 8763,
+      "path": "runs/extrasensory-single-phone_acc-fold3-seed13-credible/val_metrics.json",
+      "sha256": "1725ef2c14d2d7228e885da9217c916b04e42f28d6dd69bdbbaedafb8fb99c11"
+    },
+    {
+      "bytes": 69885,
+      "path": "runs/extrasensory-single-phone_acc-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "31280bc14e1dacbaec0680dfec59d70225870f7f6c08d6b14f81a40f4a6652f1"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_acc-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_acc-fold4-seed13-credible/environment.json",
+      "sha256": "8920349d8ae1a6d94a7763eb0946bd70dfa69377032bd09b6e5f3f8880c23392"
+    },
+    {
+      "bytes": 1442,
+      "path": "runs/extrasensory-single-phone_acc-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "989328b95ff84e101e7deb054a49cbebabb544a0e813a9d6a70fb6fb19d88704"
+    },
+    {
+      "bytes": 2613,
+      "path": "runs/extrasensory-single-phone_acc-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "cf717dd074ee5d89800c1460463a71634ea1cd8532597c0d31026febfde1cfbe"
+    },
+    {
+      "bytes": 369,
+      "path": "runs/extrasensory-single-phone_acc-fold4-seed13-credible/run_summary.md",
+      "sha256": "8e40ad750c5dceebb1da799a0be09280c8717dabd7a090c31820cfa19213a229"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_acc-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 9018,
+      "path": "runs/extrasensory-single-phone_acc-fold4-seed13-credible/test_metrics.json",
+      "sha256": "0a93e8a3ea5bf03416b638a1ea4b4e6db6a5cc3290ab27a879f40a6e9bf679b0"
+    },
+    {
+      "bytes": 943,
+      "path": "runs/extrasensory-single-phone_acc-fold4-seed13-credible/thresholds.json",
+      "sha256": "4ce41a46393b31972f9c54fc89007d86586ac5fe33e460a0bd5b04a026d9cf9c"
+    },
+    {
+      "bytes": 822,
+      "path": "runs/extrasensory-single-phone_acc-fold4-seed13-credible/train_log.csv",
+      "sha256": "01b33f00c1939dbcd89bf83dd1bac2b05a0a1e6371d7722ae1aa79b0b824c807"
+    },
+    {
+      "bytes": 8803,
+      "path": "runs/extrasensory-single-phone_acc-fold4-seed13-credible/val_metrics.json",
+      "sha256": "7ef4b0b2e30e0558c409b6977a068af4f85bd0818c6a490ae65b71e03f129f0e"
+    },
+    {
+      "bytes": 69885,
+      "path": "runs/extrasensory-single-phone_gyro-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "6c0eb0077d80dc3018cb67890c1f1deb07fb7a94eef9d2feff23cb85a14d3330"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_gyro-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_gyro-fold0-seed13-credible/environment.json",
+      "sha256": "d268345d9592db3376b4ccd1eaaf825b0ddf51d19f23ae8a5d1bdeb2ed687cc7"
+    },
+    {
+      "bytes": 1445,
+      "path": "runs/extrasensory-single-phone_gyro-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "f565209bdeb7e65f2d37c7021cb6472563d262f27cfb420c60dc02f7b9cb6d19"
+    },
+    {
+      "bytes": 2615,
+      "path": "runs/extrasensory-single-phone_gyro-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "f1a920b8db741fa224bd0619a8730150fcc8a3c846b0202ea927758d980c0bd4"
+    },
+    {
+      "bytes": 371,
+      "path": "runs/extrasensory-single-phone_gyro-fold0-seed13-credible/run_summary.md",
+      "sha256": "8c98d4e33a7fa83e295364279afc090a17c784d6be25fa618986a840c8b93073"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_gyro-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9022,
+      "path": "runs/extrasensory-single-phone_gyro-fold0-seed13-credible/test_metrics.json",
+      "sha256": "333b5d79a2933601151b3d80a38cb2a87d9361cc8dca885223d9cb07f0ec44a1"
+    },
+    {
+      "bytes": 959,
+      "path": "runs/extrasensory-single-phone_gyro-fold0-seed13-credible/thresholds.json",
+      "sha256": "c710dc8f55756560af2fbfc711fd77f16393d165b9573cd1180881ba1335354e"
+    },
+    {
+      "bytes": 1065,
+      "path": "runs/extrasensory-single-phone_gyro-fold0-seed13-credible/train_log.csv",
+      "sha256": "eb9e25145f6bdea1a24aff395c8e41e9b55d98a8cf4b8bab83033b6fec4d4cb1"
+    },
+    {
+      "bytes": 8809,
+      "path": "runs/extrasensory-single-phone_gyro-fold0-seed13-credible/val_metrics.json",
+      "sha256": "c292acbd1ec911a723f2988e9358f84ecaa696fc6fed14711d6ec36d3a763d65"
+    },
+    {
+      "bytes": 69885,
+      "path": "runs/extrasensory-single-phone_gyro-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "64fcf70a4d480d0bc92e4f3d17c00849194915d5c2b856c90e6055ace1142660"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_gyro-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_gyro-fold1-seed13-credible/environment.json",
+      "sha256": "ed80cc98f8c4295902eba042d1f7fbca7ed006415aadeb54b8d89b14a9f527f5"
+    },
+    {
+      "bytes": 1445,
+      "path": "runs/extrasensory-single-phone_gyro-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "40973bb3fd05876b083f189efc41e469cec770d1e263f0dbdd996d82e7df769a"
+    },
+    {
+      "bytes": 2615,
+      "path": "runs/extrasensory-single-phone_gyro-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "f6c440d3439b140ebd5445ba4c3822f8458e677d5a6a10cfc457a028038b283d"
+    },
+    {
+      "bytes": 371,
+      "path": "runs/extrasensory-single-phone_gyro-fold1-seed13-credible/run_summary.md",
+      "sha256": "8b81d795885f1a85c922922bb9e4bd282a0673c9ec73c3db4b721320f30892bc"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_gyro-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 9015,
+      "path": "runs/extrasensory-single-phone_gyro-fold1-seed13-credible/test_metrics.json",
+      "sha256": "3e8f3fe29359c742542e28e94e9d6ef659cb68b394fd45dcd34059b9c82b4ab4"
+    },
+    {
+      "bytes": 915,
+      "path": "runs/extrasensory-single-phone_gyro-fold1-seed13-credible/thresholds.json",
+      "sha256": "2a2dfde6b975b1c100a380a3063c4bab0a0face915fbea1da682e5e12895ffa8"
+    },
+    {
+      "bytes": 771,
+      "path": "runs/extrasensory-single-phone_gyro-fold1-seed13-credible/train_log.csv",
+      "sha256": "d622e798ac7fed7767d2d36a07e12762fcff1f82cb72e887b1d427225314bcf1"
+    },
+    {
+      "bytes": 8788,
+      "path": "runs/extrasensory-single-phone_gyro-fold1-seed13-credible/val_metrics.json",
+      "sha256": "860d679a283b635ebe20c548bd8f60f42fdbf19ad0c4e4751a235271032fe8f8"
+    },
+    {
+      "bytes": 69885,
+      "path": "runs/extrasensory-single-phone_gyro-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "0452b943d7554bf028e9f6d2dfea81088fb528817d543f3cf8c84d84c6570c7a"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_gyro-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_gyro-fold2-seed13-credible/environment.json",
+      "sha256": "411fe6e62cc2bc13d2a41aa8f98dd88823c39025a2bdb98955535feab2781835"
+    },
+    {
+      "bytes": 1445,
+      "path": "runs/extrasensory-single-phone_gyro-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "23bf1139811d842273ad474ded3b114abe1af43f9bd8e53bb7e493893aa0a19b"
+    },
+    {
+      "bytes": 2614,
+      "path": "runs/extrasensory-single-phone_gyro-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "959660827f738c9980764e6ea8d6a9298ffbcf5dd3794bd237913c5cbd9a9381"
+    },
+    {
+      "bytes": 371,
+      "path": "runs/extrasensory-single-phone_gyro-fold2-seed13-credible/run_summary.md",
+      "sha256": "b8d4b68cbb96d8cfca25005cefaa6984b4f2c4a3815921ffe9d36b20f40aee32"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_gyro-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 9004,
+      "path": "runs/extrasensory-single-phone_gyro-fold2-seed13-credible/test_metrics.json",
+      "sha256": "b99f9f4c72edd7cc0203aa165dd8c002ea10d369bfcea650c56f5f863c1044c7"
+    },
+    {
+      "bytes": 947,
+      "path": "runs/extrasensory-single-phone_gyro-fold2-seed13-credible/thresholds.json",
+      "sha256": "d26f627c7c3e56725de335346ed72c5a44cb3a21bf3a3a88728b0ed821fbbab7"
+    },
+    {
+      "bytes": 952,
+      "path": "runs/extrasensory-single-phone_gyro-fold2-seed13-credible/train_log.csv",
+      "sha256": "c030b87b1c76e71f5c4a326745a8b3c74612cf3e761d429b377854eb4153b796"
+    },
+    {
+      "bytes": 8810,
+      "path": "runs/extrasensory-single-phone_gyro-fold2-seed13-credible/val_metrics.json",
+      "sha256": "86955d08df790bf8c7975b0815b7a2638e7ad56ef52c20a051477570c4eb143e"
+    },
+    {
+      "bytes": 69885,
+      "path": "runs/extrasensory-single-phone_gyro-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "8ee695ab97c3de06b54ccfa127beaa7e904bd9687fb1fc7ee579a0b20b43a58a"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_gyro-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_gyro-fold3-seed13-credible/environment.json",
+      "sha256": "59d298222f23709438fdaf9d7e998bee9d22c5a525030c4f43d97c3b7b554ee0"
+    },
+    {
+      "bytes": 1445,
+      "path": "runs/extrasensory-single-phone_gyro-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "f60382efdece17cfd8e4fbbec5d957e72aaef168b269a6190aa111b4a733a745"
+    },
+    {
+      "bytes": 2616,
+      "path": "runs/extrasensory-single-phone_gyro-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "52dd266a1d41761a723a1305378136034bc5ec6196dd6360056413d2d6c36e3b"
+    },
+    {
+      "bytes": 371,
+      "path": "runs/extrasensory-single-phone_gyro-fold3-seed13-credible/run_summary.md",
+      "sha256": "f7de33007999089ee393e32aaa58c4a9868e53aef5432e8324042ab05ccc0359"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_gyro-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 9025,
+      "path": "runs/extrasensory-single-phone_gyro-fold3-seed13-credible/test_metrics.json",
+      "sha256": "54f10b3e020e28f6d3ffe0b317823d6f7e3f6956d2e0a98968d6c7b080046ca9"
+    },
+    {
+      "bytes": 947,
+      "path": "runs/extrasensory-single-phone_gyro-fold3-seed13-credible/thresholds.json",
+      "sha256": "a9d1338892058fca9e2deea624a9f1908094ff416967b7597fcc5d97d98ab2e4"
+    },
+    {
+      "bytes": 1367,
+      "path": "runs/extrasensory-single-phone_gyro-fold3-seed13-credible/train_log.csv",
+      "sha256": "74e8bbe35dfcf1d04156b4e0f33c01dbc3e450649b9f66b383433402534f1b93"
+    },
+    {
+      "bytes": 8792,
+      "path": "runs/extrasensory-single-phone_gyro-fold3-seed13-credible/val_metrics.json",
+      "sha256": "6266faace11fde3e9ef5c8bcdd5782b10839cbf3a6e85633e052e0af3c6195ee"
+    },
+    {
+      "bytes": 69885,
+      "path": "runs/extrasensory-single-phone_gyro-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "f056a4d32680cdee535bd6889d70e7043dcd96f54ae848daf653cc0615d4dc7e"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_gyro-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_gyro-fold4-seed13-credible/environment.json",
+      "sha256": "6c82ffdfcf5701d28c6bc04415d455630d113cf6849c6623a05e1e44a3c9a2ee"
+    },
+    {
+      "bytes": 1444,
+      "path": "runs/extrasensory-single-phone_gyro-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "5bfe23f318f987ef0007dc50c39b2c24f3d83ef40fc99b6f66cc2e0bbf9e6601"
+    },
+    {
+      "bytes": 2617,
+      "path": "runs/extrasensory-single-phone_gyro-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "f779e98f97a7a2d532d9a5bd204253d51c828ee98a942c16df2f178568708ce0"
+    },
+    {
+      "bytes": 371,
+      "path": "runs/extrasensory-single-phone_gyro-fold4-seed13-credible/run_summary.md",
+      "sha256": "69b2ed74730ef724808b29a048d376321337412df08a0c0ae06b99888f7911bb"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_gyro-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 8987,
+      "path": "runs/extrasensory-single-phone_gyro-fold4-seed13-credible/test_metrics.json",
+      "sha256": "14efa084ed14216635d9b7a0bd07384ee7b13baf9e8a78ccf839572c464bb40e"
+    },
+    {
+      "bytes": 920,
+      "path": "runs/extrasensory-single-phone_gyro-fold4-seed13-credible/thresholds.json",
+      "sha256": "ed5fa29119105b546d6cc5905eb79ca195d8f6d374f94c383f5f1429720ec953"
+    },
+    {
+      "bytes": 883,
+      "path": "runs/extrasensory-single-phone_gyro-fold4-seed13-credible/train_log.csv",
+      "sha256": "5e6b975a16c819d4fea3e192341e62e60e071a0a0e94d9688e38b4df4a920a3d"
+    },
+    {
+      "bytes": 8792,
+      "path": "runs/extrasensory-single-phone_gyro-fold4-seed13-credible/val_metrics.json",
+      "sha256": "575e6a394adf17ac23e37b1f3faf02a4d54a2a2b11628847158421fd0b5513b3"
+    },
+    {
+      "bytes": 78077,
+      "path": "runs/extrasensory-single-phone_state-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "e9a1f7e98de9e46aa080297ffc59d310d0fcdf9267a5ae8dc16003e2aba708b6"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_state-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_state-fold0-seed13-credible/environment.json",
+      "sha256": "a3e1ca2db65e7765ab6884e7f41f1453514e99900c6a317054530e18ac594770"
+    },
+    {
+      "bytes": 1446,
+      "path": "runs/extrasensory-single-phone_state-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "c27979a2db57dcddb7fa04b011aff52b2f5ab4dcac78ca25380755635d9ee6e6"
+    },
+    {
+      "bytes": 2618,
+      "path": "runs/extrasensory-single-phone_state-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "42b1ee363f1b8b8083882a8429e1f3f73beb6538579ea1c2975d6aa100562fd2"
+    },
+    {
+      "bytes": 373,
+      "path": "runs/extrasensory-single-phone_state-fold0-seed13-credible/run_summary.md",
+      "sha256": "890b05c53c7daf0a935118ad9414fb01a8c43e0027cb0f80654ca83e7faae9e9"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_state-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9017,
+      "path": "runs/extrasensory-single-phone_state-fold0-seed13-credible/test_metrics.json",
+      "sha256": "66840b97f1e283223401d20409b0945c46d7aad7aae34a2b2367821ffcc123a3"
+    },
+    {
+      "bytes": 914,
+      "path": "runs/extrasensory-single-phone_state-fold0-seed13-credible/thresholds.json",
+      "sha256": "f1364db5395ea68c3510ecceb93d5b3f5f978f4119b8f1f880166b9044300c57"
+    },
+    {
+      "bytes": 705,
+      "path": "runs/extrasensory-single-phone_state-fold0-seed13-credible/train_log.csv",
+      "sha256": "3b1f8580fc7c8b17c7bf7746d80a61093f7bd418aaf997ffdf17b41186ea85ba"
+    },
+    {
+      "bytes": 8799,
+      "path": "runs/extrasensory-single-phone_state-fold0-seed13-credible/val_metrics.json",
+      "sha256": "54cae90eb27ef78941fcc7c369a4bed7f5f16c9e2d779c71776175f555dfa049"
+    },
+    {
+      "bytes": 78077,
+      "path": "runs/extrasensory-single-phone_state-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "b28afeb46569976831ca391481d9e18c31edb1c60c1e047bcc3a0c63d395049b"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_state-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_state-fold1-seed13-credible/environment.json",
+      "sha256": "ce7f9b7625ed2fc43024e5907a432213c426fef2cdfb534366ccbd8b98621795"
+    },
+    {
+      "bytes": 1446,
+      "path": "runs/extrasensory-single-phone_state-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "9179302996e90d12ae5e7866814aae83ebbdf577f180dc534af447be768f25f4"
+    },
+    {
+      "bytes": 2620,
+      "path": "runs/extrasensory-single-phone_state-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "19be83244e0ce04223792d146a6bf70099cc1305048efad92a0a11b154e98567"
+    },
+    {
+      "bytes": 373,
+      "path": "runs/extrasensory-single-phone_state-fold1-seed13-credible/run_summary.md",
+      "sha256": "c5c1d78c480bc19bd6c785ebca85b87f5a4b188173926d1f61cf0ceaa1efa74e"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_state-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 9022,
+      "path": "runs/extrasensory-single-phone_state-fold1-seed13-credible/test_metrics.json",
+      "sha256": "ec5dc645bca2def7876681d0ba2a91fa072f03293980d0ff018a1a96d869e39c"
+    },
+    {
+      "bytes": 962,
+      "path": "runs/extrasensory-single-phone_state-fold1-seed13-credible/thresholds.json",
+      "sha256": "7ec34a04235467ff0573040044e24bb5d776cc45f7b8f7b02f03a34319d9988c"
+    },
+    {
+      "bytes": 951,
+      "path": "runs/extrasensory-single-phone_state-fold1-seed13-credible/train_log.csv",
+      "sha256": "cbc13e5c0a177fe674037a727adee6b8f58e6ccc202e6ee1d7bde9b8f89167ff"
+    },
+    {
+      "bytes": 8803,
+      "path": "runs/extrasensory-single-phone_state-fold1-seed13-credible/val_metrics.json",
+      "sha256": "e270f882375652773cd693f98437e632da2e104df595a1f79f8d388bfa833c5e"
+    },
+    {
+      "bytes": 78077,
+      "path": "runs/extrasensory-single-phone_state-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "57132b7df38b06835eeae58371970d432ebb007b1b1629acef88b475d5b7111d"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_state-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_state-fold2-seed13-credible/environment.json",
+      "sha256": "4e23939f11bcfbf61cb0d8a5b6a651a223ba79d6702058aaab82d3a64e498b41"
+    },
+    {
+      "bytes": 1446,
+      "path": "runs/extrasensory-single-phone_state-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "24eb6018a9a5979b350c357c6261ddb6fdbd9448b55feeb7d863da6383b26883"
+    },
+    {
+      "bytes": 2617,
+      "path": "runs/extrasensory-single-phone_state-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "13a92f905a4d75535a428841482d8284d79d987bd76eb9f8d609bfdd71837bf0"
+    },
+    {
+      "bytes": 373,
+      "path": "runs/extrasensory-single-phone_state-fold2-seed13-credible/run_summary.md",
+      "sha256": "a4b7a2445f5e31f96ba7e2e371eac9970e1e66a512bded20486b8370bee88f88"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_state-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 9012,
+      "path": "runs/extrasensory-single-phone_state-fold2-seed13-credible/test_metrics.json",
+      "sha256": "3ca034837622b6ebf0617d807967c3587320b78f5e34e233428621b1da5bfab1"
+    },
+    {
+      "bytes": 950,
+      "path": "runs/extrasensory-single-phone_state-fold2-seed13-credible/thresholds.json",
+      "sha256": "1c6475f756b57455c35695a21c58c5d370ee065d7db1ea25bf879ab1a1edbe4f"
+    },
+    {
+      "bytes": 704,
+      "path": "runs/extrasensory-single-phone_state-fold2-seed13-credible/train_log.csv",
+      "sha256": "1476bc6532055367fdab1fee9525010a534abd79ccc1a07e71366419957e6388"
+    },
+    {
+      "bytes": 8794,
+      "path": "runs/extrasensory-single-phone_state-fold2-seed13-credible/val_metrics.json",
+      "sha256": "7e4e31e6ab243beae44131da717acf12d0519626683d4b469558757eb3b0efad"
+    },
+    {
+      "bytes": 78077,
+      "path": "runs/extrasensory-single-phone_state-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "244ee36efa0ed8a8abcd12f47b1b572b38fe508f940a90e7bde870e9f4da4095"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_state-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_state-fold3-seed13-credible/environment.json",
+      "sha256": "be845a214c64d455c07ab041c6b04648cdfda86ef64d89dc652805476d1d3025"
+    },
+    {
+      "bytes": 1446,
+      "path": "runs/extrasensory-single-phone_state-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "63a960d1743a05ace470ab0634e5076acb1be157022185752a1547f65f8f516d"
+    },
+    {
+      "bytes": 2619,
+      "path": "runs/extrasensory-single-phone_state-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "d4f03159a9e6bd051bf39c5a13a484cd96c1bb836a4cc98623b99602c8087705"
+    },
+    {
+      "bytes": 373,
+      "path": "runs/extrasensory-single-phone_state-fold3-seed13-credible/run_summary.md",
+      "sha256": "e54671cda9dd3661c2db51932f927bda96c2e0c473d4c887f829a51032f265c6"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_state-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 9018,
+      "path": "runs/extrasensory-single-phone_state-fold3-seed13-credible/test_metrics.json",
+      "sha256": "1198e6893a71a111b76629181cb9433a8b1014859c01cfc70b1eedecfccbca24"
+    },
+    {
+      "bytes": 915,
+      "path": "runs/extrasensory-single-phone_state-fold3-seed13-credible/thresholds.json",
+      "sha256": "da616a05e514c9a2846962e92c143954164801029149d941a874d1f405a4596c"
+    },
+    {
+      "bytes": 1188,
+      "path": "runs/extrasensory-single-phone_state-fold3-seed13-credible/train_log.csv",
+      "sha256": "f9ff47dc0daf76fd5ec4f311858195587f29f3904a18477f7c42c46a0fa27048"
+    },
+    {
+      "bytes": 8801,
+      "path": "runs/extrasensory-single-phone_state-fold3-seed13-credible/val_metrics.json",
+      "sha256": "48285db216cedbd210ba67806f4d5e0d9f88632f5eb6ffd19532713fa3dc777f"
+    },
+    {
+      "bytes": 78077,
+      "path": "runs/extrasensory-single-phone_state-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "37ed9fbff93aee6bf09b38fa9340060e0f4dde9de5ebb3a9095c40dc3e52a80f"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-phone_state-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-phone_state-fold4-seed13-credible/environment.json",
+      "sha256": "5787efab9eec62c91cde9d110af108ec3ba099e4a31175a2e96bdf2a7b5c14b3"
+    },
+    {
+      "bytes": 1447,
+      "path": "runs/extrasensory-single-phone_state-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "3684cf31bd50f72c8e052ef41d33daee67d96490bbecb216709feb4cc212e7ad"
+    },
+    {
+      "bytes": 2618,
+      "path": "runs/extrasensory-single-phone_state-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "6447a2165c6e01e24bd4bdbe646a2d6691990d635162b17b2fac9d653592c926"
+    },
+    {
+      "bytes": 373,
+      "path": "runs/extrasensory-single-phone_state-fold4-seed13-credible/run_summary.md",
+      "sha256": "f550187e2891cdb2eff77d100b18f849a1a2d3e2903167bd14cd85fe4916a51a"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-phone_state-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 8990,
+      "path": "runs/extrasensory-single-phone_state-fold4-seed13-credible/test_metrics.json",
+      "sha256": "aa86e7f917e79c35c9816b039cf074d09dd1819ae062cbb04116c17a65ec251a"
+    },
+    {
+      "bytes": 960,
+      "path": "runs/extrasensory-single-phone_state-fold4-seed13-credible/thresholds.json",
+      "sha256": "52e91635eaf20dc927a61eee96cb291305114228104fb1a8ba98ea7c46f01c1b"
+    },
+    {
+      "bytes": 824,
+      "path": "runs/extrasensory-single-phone_state-fold4-seed13-credible/train_log.csv",
+      "sha256": "b9e4d4c46d27f8f2d41af486470aacd350f7f43879a2a60186a08c12c94ce5a0"
+    },
+    {
+      "bytes": 8803,
+      "path": "runs/extrasensory-single-phone_state-fold4-seed13-credible/val_metrics.json",
+      "sha256": "aa827751f654387c4207b1081f7e47912228a9c9ba9d8828ef3855051dc27bac"
+    },
+    {
+      "bytes": 90365,
+      "path": "runs/extrasensory-single-watch_acc-fold0-seed13-credible/best_checkpoint.pt",
+      "sha256": "904c4e1fa9287aa251d8d9586f4bbb4e560d877f2a90d563dc5e92cedd01f841"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-watch_acc-fold0-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-watch_acc-fold0-seed13-credible/environment.json",
+      "sha256": "e2c4ebb0233ce9870dc36b550f8a2e5639c747ac65af8377c7fb96961bd08f55"
+    },
+    {
+      "bytes": 1441,
+      "path": "runs/extrasensory-single-watch_acc-fold0-seed13-credible/evaluation_manifest.json",
+      "sha256": "a6501af13269ee4b08d81db82761da2205a45010bda289a25a660ffea1b78c73"
+    },
+    {
+      "bytes": 2615,
+      "path": "runs/extrasensory-single-watch_acc-fold0-seed13-credible/resolved_config.yaml",
+      "sha256": "56a6056bdf4d87b58aa352dfbb0ba4fd295d41573e36bc3ac59450eae8190ebd"
+    },
+    {
+      "bytes": 369,
+      "path": "runs/extrasensory-single-watch_acc-fold0-seed13-credible/run_summary.md",
+      "sha256": "0a53bc5d12d929ab9252b6801ee199299fe5161379b570f4983cab0c1ff2f72a"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-watch_acc-fold0-seed13-credible/split_manifest.json",
+      "sha256": "0253f465c6ad56f13d2a886fd193c12b8d3290823768c525d414c3dbfc8ec684"
+    },
+    {
+      "bytes": 9004,
+      "path": "runs/extrasensory-single-watch_acc-fold0-seed13-credible/test_metrics.json",
+      "sha256": "fc487ae53f0cbe48a561ca1c5c591c474c6507a9391f62b02b8f14626a50019d"
+    },
+    {
+      "bytes": 957,
+      "path": "runs/extrasensory-single-watch_acc-fold0-seed13-credible/thresholds.json",
+      "sha256": "55ae2895e12f654dc3a9396ced3c88fe4764f86852a22f523e8e569cd8229473"
+    },
+    {
+      "bytes": 706,
+      "path": "runs/extrasensory-single-watch_acc-fold0-seed13-credible/train_log.csv",
+      "sha256": "69ed2ffae5beac47cd84a75aed849888d6d0a7b0d32d8c4358692e9a66bebda8"
+    },
+    {
+      "bytes": 8800,
+      "path": "runs/extrasensory-single-watch_acc-fold0-seed13-credible/val_metrics.json",
+      "sha256": "4326077d5eda7ed52f6efe5cf97c436492f52257a1f26e112228f76a6051e82f"
+    },
+    {
+      "bytes": 90365,
+      "path": "runs/extrasensory-single-watch_acc-fold1-seed13-credible/best_checkpoint.pt",
+      "sha256": "f0b685ba5cd360e07e9772775f65b092ea2ae4a4b2253abc110bf16a8330caa9"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-watch_acc-fold1-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-watch_acc-fold1-seed13-credible/environment.json",
+      "sha256": "0fd8c56d51a2825a432552e220332835fe45703626136cff9409928c20282d4f"
+    },
+    {
+      "bytes": 1441,
+      "path": "runs/extrasensory-single-watch_acc-fold1-seed13-credible/evaluation_manifest.json",
+      "sha256": "cab5658c4b5615aa11d2492b1571a9090a8a2658461e590229c909f8c9309c95"
+    },
+    {
+      "bytes": 2617,
+      "path": "runs/extrasensory-single-watch_acc-fold1-seed13-credible/resolved_config.yaml",
+      "sha256": "e6ecfac3a2d6b08734a8e709b89d939749d8e0d9ca3a0715f524691efdb09bd7"
+    },
+    {
+      "bytes": 369,
+      "path": "runs/extrasensory-single-watch_acc-fold1-seed13-credible/run_summary.md",
+      "sha256": "116bc5b84e9d76ecd9312a01a8897303d7cd74ff23103ba6c44ecd826e02bdfc"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-watch_acc-fold1-seed13-credible/split_manifest.json",
+      "sha256": "03066f64a17e9613555fb17e362401d9e6b57fd414a2f831fb9e24927e783444"
+    },
+    {
+      "bytes": 9004,
+      "path": "runs/extrasensory-single-watch_acc-fold1-seed13-credible/test_metrics.json",
+      "sha256": "7d58b47567640fd4c8d404f77992284f9f898e924be2789eb64ff868e15e0429"
+    },
+    {
+      "bytes": 960,
+      "path": "runs/extrasensory-single-watch_acc-fold1-seed13-credible/thresholds.json",
+      "sha256": "09f0247b3d3045bab70ebeb87126ac985a486c70848fb3952b7092b8edb4ca80"
+    },
+    {
+      "bytes": 889,
+      "path": "runs/extrasensory-single-watch_acc-fold1-seed13-credible/train_log.csv",
+      "sha256": "c1bd79b1fcf46d5e612e91662f4ed9240e49922d78c12c9c5a50d7cf1fc8e62b"
+    },
+    {
+      "bytes": 8794,
+      "path": "runs/extrasensory-single-watch_acc-fold1-seed13-credible/val_metrics.json",
+      "sha256": "b5c3b3d435f0acb33435b7332692dacef8056aacca18fe88ed559d726ee864e3"
+    },
+    {
+      "bytes": 90365,
+      "path": "runs/extrasensory-single-watch_acc-fold2-seed13-credible/best_checkpoint.pt",
+      "sha256": "367e21a59d77c369eee2f20ec523cabcf15e8e6b86ae072347d2927bbb7666c0"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-watch_acc-fold2-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-watch_acc-fold2-seed13-credible/environment.json",
+      "sha256": "134dcdaeb58db2d3926c8d25397c381a5dcd19df525acf0098809b3824c6ea2e"
+    },
+    {
+      "bytes": 1442,
+      "path": "runs/extrasensory-single-watch_acc-fold2-seed13-credible/evaluation_manifest.json",
+      "sha256": "cea2dd36e2dce02cd3fc1dbeea5e358a847150ff47f7b657795b327cfa91579d"
+    },
+    {
+      "bytes": 2627,
+      "path": "runs/extrasensory-single-watch_acc-fold2-seed13-credible/resolved_config.yaml",
+      "sha256": "fbad53baef8b90064fac87c40f698dc0eb0171291e574d1b03bc37a1d57d9b94"
+    },
+    {
+      "bytes": 369,
+      "path": "runs/extrasensory-single-watch_acc-fold2-seed13-credible/run_summary.md",
+      "sha256": "7393c5c60ab17f71ce0970463ffeabcada5f3ad31017a11fab20729ee1def6be"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-watch_acc-fold2-seed13-credible/split_manifest.json",
+      "sha256": "50412d7516dce22e5230a319f86d4d82217ae799ad6f82a216f7b6c460827890"
+    },
+    {
+      "bytes": 9005,
+      "path": "runs/extrasensory-single-watch_acc-fold2-seed13-credible/test_metrics.json",
+      "sha256": "43e05be600d5162b9aebe1871e5e7a2415c0759698f71dc1a4c2635003e4eaf2"
+    },
+    {
+      "bytes": 959,
+      "path": "runs/extrasensory-single-watch_acc-fold2-seed13-credible/thresholds.json",
+      "sha256": "dfeee91b1fbf26ea9a2c902520fb4d41954a83fe58fc504878b9b1a84f8ed249"
+    },
+    {
+      "bytes": 820,
+      "path": "runs/extrasensory-single-watch_acc-fold2-seed13-credible/train_log.csv",
+      "sha256": "03d943836634d916cc371948e407e05e29297535631b5facb939b3111d994908"
+    },
+    {
+      "bytes": 8798,
+      "path": "runs/extrasensory-single-watch_acc-fold2-seed13-credible/val_metrics.json",
+      "sha256": "69dd92462e6c2d54ae0dc198a600fb098e51be7d41e31416ecd508612a0856a6"
+    },
+    {
+      "bytes": 90365,
+      "path": "runs/extrasensory-single-watch_acc-fold3-seed13-credible/best_checkpoint.pt",
+      "sha256": "bade3ab75b09d6cb808e59c0b73bed741d9ab0726882d23c70ee6958a2980fd1"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-watch_acc-fold3-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-watch_acc-fold3-seed13-credible/environment.json",
+      "sha256": "d7dc16c1d0106401c963d26ac1dab992c96e6c27e75f097e20353517056ca9c2"
+    },
+    {
+      "bytes": 1443,
+      "path": "runs/extrasensory-single-watch_acc-fold3-seed13-credible/evaluation_manifest.json",
+      "sha256": "cf3532a0e3000c11f41dda2f996bec2ebe662f09c90e1df34802438efe212d4f"
+    },
+    {
+      "bytes": 2614,
+      "path": "runs/extrasensory-single-watch_acc-fold3-seed13-credible/resolved_config.yaml",
+      "sha256": "cc07af24f872ea4cb5f314a0bcbe5cdb0a7b9dbb61ef0e9783739a7b9466f5d7"
+    },
+    {
+      "bytes": 369,
+      "path": "runs/extrasensory-single-watch_acc-fold3-seed13-credible/run_summary.md",
+      "sha256": "3bef059fe33c94f9702414a5e6a2cdbd19ad892c018cfd6b3f6444cdb64ed676"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-watch_acc-fold3-seed13-credible/split_manifest.json",
+      "sha256": "572753f8f499d486b7648f9a0d9e0d9c4ab6135dd756b98451df4cbf30cc4fb3"
+    },
+    {
+      "bytes": 8989,
+      "path": "runs/extrasensory-single-watch_acc-fold3-seed13-credible/test_metrics.json",
+      "sha256": "0fc231e11f690124b25f7f079ca851cf9311fdda16638003de053456f8789a35"
+    },
+    {
+      "bytes": 944,
+      "path": "runs/extrasensory-single-watch_acc-fold3-seed13-credible/thresholds.json",
+      "sha256": "785102d973eefa7fe58ce6bf91917a26ced9d84a591b92fe1c264ee0a10953b8"
+    },
+    {
+      "bytes": 826,
+      "path": "runs/extrasensory-single-watch_acc-fold3-seed13-credible/train_log.csv",
+      "sha256": "4e915bd5d9b3b8d8eb60776b2063e074aaf2c953cc2757c614ee455508bd5129"
+    },
+    {
+      "bytes": 8777,
+      "path": "runs/extrasensory-single-watch_acc-fold3-seed13-credible/val_metrics.json",
+      "sha256": "41c4f9dc4a2ae18795994b4ed3add03a167f044084e9e3a41b98bb3454bf7bf5"
+    },
+    {
+      "bytes": 90365,
+      "path": "runs/extrasensory-single-watch_acc-fold4-seed13-credible/best_checkpoint.pt",
+      "sha256": "45c53a807088ded07fd0ceec517ee3f61643ed1c19825bba3c9cf957f7acb9fe"
+    },
+    {
+      "bytes": 19317,
+      "path": "runs/extrasensory-single-watch_acc-fold4-seed13-credible/data_manifest.json",
+      "sha256": "02c556caf60bf396938b47ab22667e16a9415fd38c27a6eb2e3c754e4f62279b"
+    },
+    {
+      "bytes": 389,
+      "path": "runs/extrasensory-single-watch_acc-fold4-seed13-credible/environment.json",
+      "sha256": "b69c322323d2a7922c7108b3236366fff0079f91239114e878a5ad807504bcb8"
+    },
+    {
+      "bytes": 1442,
+      "path": "runs/extrasensory-single-watch_acc-fold4-seed13-credible/evaluation_manifest.json",
+      "sha256": "25506f052496e8ec1589528a144fc0e039098691d0381e7afc824c3e9349c595"
+    },
+    {
+      "bytes": 2611,
+      "path": "runs/extrasensory-single-watch_acc-fold4-seed13-credible/resolved_config.yaml",
+      "sha256": "a69663dd1ad0ec8e24da14cd7f9ed4f65e69b87bba8107343fa0b12bc0f8e72b"
+    },
+    {
+      "bytes": 369,
+      "path": "runs/extrasensory-single-watch_acc-fold4-seed13-credible/run_summary.md",
+      "sha256": "b16825b787add4a4445d045195add48811fe4b1632d4ca8a0ea72c06e249e608"
+    },
+    {
+      "bytes": 3076,
+      "path": "runs/extrasensory-single-watch_acc-fold4-seed13-credible/split_manifest.json",
+      "sha256": "56c5f632b2be2fe64d2fcc9218a062946e054803d35a52e6d4eea1f9cd029084"
+    },
+    {
+      "bytes": 8998,
+      "path": "runs/extrasensory-single-watch_acc-fold4-seed13-credible/test_metrics.json",
+      "sha256": "c07e4b09f7762419fb59c27c4cd760ec8d9c7b7746649527f1729847dccda56c"
+    },
+    {
+      "bytes": 963,
+      "path": "runs/extrasensory-single-watch_acc-fold4-seed13-credible/thresholds.json",
+      "sha256": "4a91a0f2847dec04ac7bd280affe27d61f5bfe21cde78c63ab8888feba7a1d5c"
+    },
+    {
+      "bytes": 1550,
+      "path": "runs/extrasensory-single-watch_acc-fold4-seed13-credible/train_log.csv",
+      "sha256": "b67ffbe68cddbfdf342b20770066be6e012c7066c76774e5e7cb7c5d860d5489"
+    },
+    {
+      "bytes": 8799,
+      "path": "runs/extrasensory-single-watch_acc-fold4-seed13-credible/val_metrics.json",
+      "sha256": "636db31dcefb58b00f7ac2b9adb290fdb0d6cce58d5bf02ef218d316ef8574c0"
+    }
+  ],
+  "frozen_at_utc": "2026-09-17T08:47:36.470109+00:00",
+  "git": {
+    "head": null,
+    "history_available": false,
+    "note": "Git repository has no commit yet; file hashes are authoritative.",
+    "repository_present": true
+  },
+  "scope": {
+    "excluded": [
+      "large run Parquet prediction/diagnostic files",
+      "logs, caches, environments, and raw/processed array payloads"
+    ],
+    "included": [
+      "V1 configs and protocol lock",
+      "data and preprocessing manifests",
+      "authoritative reports, tables, and PNG figures",
+      "successful-run checkpoints and compact identity artifacts"
+    ],
+    "reason": "Large payload integrity is represented by frozen manifests and authoritative aggregates; V2 never overwrites runs/ or reports/ V1 paths."
+  },
+  "successful_registry_runs": 66,
+  "v1_protocol_sha256": "91a4e5fd7547ecf347d7fb3d7ee101d7389ac71f77386d4301e1bc1ec8929a7b",
+  "version": 1
+}

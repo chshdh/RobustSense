@@ -1,0 +1,239 @@
+"""Run the frozen, resumable 25-unit V2-3 seed-13 experiment matrix."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import subprocess
+import sys
+from datetime import UTC, datetime
+from pathlib import Path
+from typing import Any
+
+from robustsense.experiments.v2_phase0 import verify_file_entries
+from robustsense.experiments.v2_phase3 import (
+    V2Phase3Registry,
+    aggregate_v2_phase3,
+    build_v2_phase3_plan,
+)
+from robustsense.utils.io import read_json
+
+
+def _now() -> str:
+    return datetime.now(UTC).isoformat()
+
+
+def _safe_key(value: str) -> str:
+    return "".join(
+        character if character.isalnum() or character in "-_" else "_"
+        for character in value
+    )
+
+
+def _run_logged(command: list[str], root: Path, log_path: Path, heading: str) -> int:
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    with log_path.open("a", encoding="utf-8") as stream:
+        stream.write(f"\n[{_now()}] {heading}\n")
+        stream.write(subprocess.list2cmdline(command) + "\n")
+        stream.flush()
+        completed = subprocess.run(
+            command,
+            cwd=root,
+            stdout=stream,
+            stderr=subprocess.STDOUT,
+            text=True,
+            check=False,
+        )
+        stream.write(f"[{_now()}] return_code={completed.returncode}\n")
+    return completed.returncode
+
+
+def _verified_lock(root: Path) -> dict[str, Any]:
+    lock_path = root / "reports/v2/phase_v2_3_protocol_lock.json"
+    lock = read_json(lock_path)
+    if lock.get("phase") != "V2-3" or lock.get("status") != "frozen_before_first_test_run":
+        raise ValueError("V2-3 protocol lock is absent or not frozen")
+    problems = verify_file_entries(root, lock["files"])
+    if problems:
+        raise ValueError(f"V2-3 protocol lock is invalid: {problems}")
+    return lock
+
+
+def _unit_command(
+    root: Path,
+    row: dict[str, str],
+    protocol_sha256: str,
+    mode: str,
+) -> list[str]:
+    return [
+        sys.executable,
+        str(root / "scripts/run_v2_phase3_unit.py"),
+        mode,
+        "--project-root",
+        str(root),
+        "--variant",
+        row["model_name"],
+        "--fold",
+        row["fold"],
+        "--seed",
+        row["seed"],
+        "--protocol-sha256",
+        protocol_sha256,
+    ]
+
+
+def _verify_outputs(root: Path, row: dict[str, str]) -> None:
+    run_path = root / row["run_dir"]
+    required = (
+        "best_checkpoint.pt",
+        "resolved_config.yaml",
+        "thresholds.json",
+        "val_metrics.json",
+        "train_log.csv",
+        "run_manifest.json",
+        "test_metrics.json",
+        "predictions.parquet",
+        "evaluation_manifest.json",
+    )
+    missing = [name for name in required if not (run_path / name).is_file()]
+    if row["model_name"] != "P2-A4":
+        missing.extend(
+            name
+            for name in ("abstention_threshold.json", "risk_coverage.json")
+            if not (run_path / name).is_file()
+        )
+    elif (run_path / "abstention_threshold.json").exists():
+        raise ValueError("P2-A4 must not contain an abstention threshold")
+    if missing:
+        raise ValueError(f"V2-3 output contract is incomplete: {sorted(set(missing))}")
+    resolved = read_json(run_path / "resolved_config.yaml")
+    evaluation = read_json(run_path / "evaluation_manifest.json")
+    for name, expected in (
+        ("variant", row["model_name"]),
+        ("fold", int(row["fold"])),
+        ("seed", int(row["seed"])),
+        ("protocol_sha256", row["protocol_sha256"]),
+    ):
+        if resolved.get(name) != expected or evaluation.get(name) != expected:
+            raise ValueError(f"V2-3 {name} mismatch in run outputs")
+
+
+def execute(arguments: argparse.Namespace) -> dict[str, Any]:
+    root = Path(arguments.project_root).resolve()
+    lock = _verified_lock(root)
+    planned = build_v2_phase3_plan(root, arguments.plan)
+    registry = V2Phase3Registry(root)
+    recovered = registry.recover_interrupted()
+    registry.register(planned, lock["protocol_sha256"])
+    if arguments.plan_only:
+        return {
+            "phase": "V2-3",
+            "protocol_sha256": lock["protocol_sha256"],
+            "registered_unit_count": len(planned),
+            "recovered_interrupted_units": recovered,
+            "registry": str(registry.path),
+            "launched": 0,
+        }
+    desired_status = "failed" if arguments.retry_failed else "pending"
+    rows_by_key = {row["run_key"]: row for row in registry.rows()}
+    rows = [rows_by_key[row["run_key"]] for row in planned]
+    rows = [row for row in rows if row["status"] == desired_status]
+    if arguments.variant:
+        rows = [row for row in rows if row["model_name"] in set(arguments.variant)]
+    if arguments.fold:
+        rows = [row for row in rows if int(row["fold"]) in set(arguments.fold)]
+    if arguments.max_units is not None:
+        if arguments.max_units < 0:
+            raise ValueError("--max-units must be non-negative")
+        rows = rows[: arguments.max_units]
+    outcomes = []
+    for index, row in enumerate(rows, start=1):
+        print(
+            f"[{_now()}] V2-3 unit {index}/{len(rows)} starting: {row['run_key']}",
+            flush=True,
+        )
+        attempt = int(row["attempt_count"]) + 1
+        log_relative = (
+            Path("runs/v2/_phase_v2_3_logs")
+            / _safe_key(row["run_key"])
+            / f"attempt-{attempt}.log"
+        )
+        log_path = root / log_relative
+        mode = "derive-a4" if row["model_name"] == "P2-A4" else "train"
+        train_command = _unit_command(root, row, lock["protocol_sha256"], mode)
+        started = _now()
+        registry.update(
+            row["run_key"],
+            status="running",
+            attempt_count=attempt,
+            command=subprocess.list2cmdline(train_command),
+            reason="",
+            error_log=str(log_relative),
+        )
+        return_code = _run_logged(train_command, root, log_path, mode)
+        reason = f"{mode}_exit_{return_code}" if return_code else ""
+        if return_code == 0:
+            evaluation_command = _unit_command(
+                root, row, lock["protocol_sha256"], "evaluate"
+            )
+            return_code = _run_logged(evaluation_command, root, log_path, "evaluate")
+            if return_code:
+                reason = f"evaluation_exit_{return_code}"
+        if return_code == 0:
+            try:
+                refreshed = next(
+                    item for item in registry.rows() if item["run_key"] == row["run_key"]
+                )
+                _verify_outputs(root, refreshed)
+            except Exception as exc:
+                return_code = 1
+                reason = f"output_contract_error: {exc}"
+        status = "success" if return_code == 0 else "failed"
+        registry.update(row["run_key"], status=status, reason=reason)
+        registry.append_attempt(
+            run_key=row["run_key"],
+            attempt=attempt,
+            status=status,
+            started_at=started,
+            finished_at=_now(),
+            return_code=return_code,
+            log_path=str(log_relative),
+            reason=reason,
+        )
+        outcomes.append({"run_key": row["run_key"], "status": status, "reason": reason})
+        print(f"[{_now()}] V2-3 unit finished: {row['run_key']} -> {status}", flush=True)
+    aggregate = None
+    if registry.profile_complete("v2_seed13"):
+        aggregate = aggregate_v2_phase3(root, registry)
+    failures = [row for row in outcomes if row["status"] == "failed"]
+    if failures:
+        raise RuntimeError(
+            f"{len(failures)} V2-3 units failed; logs and successful units were retained"
+        )
+    return {
+        "phase": "V2-3",
+        "protocol_sha256": lock["protocol_sha256"],
+        "registered_unit_count": len(planned),
+        "recovered_interrupted_units": recovered,
+        "launched": len(rows),
+        "outcomes": outcomes,
+        "status_counts": registry.terminal_counts("v2_seed13"),
+        "aggregate": aggregate,
+    }
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--project-root", default=".")
+    parser.add_argument("--plan", default="configs/v2/phase_v2_3_plan.yaml")
+    parser.add_argument("--plan-only", action="store_true")
+    parser.add_argument("--retry-failed", action="store_true")
+    parser.add_argument("--max-units", type=int, default=None)
+    parser.add_argument("--variant", action="append", default=None)
+    parser.add_argument("--fold", action="append", type=int, default=None)
+    result = execute(parser.parse_args())
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()

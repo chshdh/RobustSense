@@ -1,0 +1,126 @@
+{
+  "files": [
+    {
+      "bytes": 256,
+      "path": "configs/v2/corruption/exhaustive_masks.yaml",
+      "sha256": "8746d93a128b2bf1dd00d8309fe8f743fcce416d20e3a8c9abfa216a484381ae"
+    },
+    {
+      "bytes": 261,
+      "path": "configs/v2/corruption/mixed_failures.yaml",
+      "sha256": "05cf2af2fe34df8b07e0e8cfeb6e55b2bed31729f3112ad76729d4043af24192"
+    },
+    {
+      "bytes": 224,
+      "path": "configs/v2/corruption/persistent_failures.yaml",
+      "sha256": "95d8f75336953708764b45552628b77aa099340090e9be0fbafe38dc423681f9"
+    },
+    {
+      "bytes": 329,
+      "path": "configs/v2/evaluation/extended_dev.yaml",
+      "sha256": "7db75cda7c434bf6b4a7ce778a8777da39e363922a32cb7b658694734c35fe39"
+    },
+    {
+      "bytes": 32737,
+      "path": "docs/RobustSense_V2_\u53ef\u6267\u884c\u9879\u76ee\u603b\u89c4\u7ea6.md",
+      "sha256": "c0623d25a803aa1e672d3d8eff15ae2c9cdd4734249a689c057fe15a4d3b01ac"
+    },
+    {
+      "bytes": 2581,
+      "path": "docs/v2/ADR-0003-\u6269\u5c55\u8bc4\u4f30\u5408\u540c.md",
+      "sha256": "98d97c39c899b2855eaae6f3d873fef8d17e4a633e0d06d0282a47744d17c9f2"
+    },
+    {
+      "bytes": 3658,
+      "path": "docs/v2/EXPERIMENT_PROTOCOL_V2_2.md",
+      "sha256": "f705df4e18a84172445e3b92f3decf178c65252ded9cd33a345cd2cce6265bf1"
+    },
+    {
+      "bytes": 3466,
+      "path": "reports/v2/phase_v2_1_protocol_lock.json",
+      "sha256": "0ea0280cb09913c757f3b6c69f399a4d359effac84a58491e2dc7a47b076925a"
+    },
+    {
+      "bytes": 11467,
+      "path": "reports/v2/scenarios/availability_masks.jsonl",
+      "sha256": "cec55ec801baa8c385ee141a13038b2daa50f44c9456c4054f9e63f1f2841e2e"
+    },
+    {
+      "bytes": 8560,
+      "path": "reports/v2/scenarios/mixed_failures.jsonl",
+      "sha256": "8077e02d8747e4a733b29673f1aeb649b0ee926cc72eb40c00599f94adae1ac3"
+    },
+    {
+      "bytes": 744,
+      "path": "reports/v2/scenarios/scenario_contract.json",
+      "sha256": "fabb12ee05942802dcfbc2b4b06fabe2c0c4b1f6afd1aa0a8732aa27de03ed80"
+    },
+    {
+      "bytes": 2061,
+      "path": "scripts/build_v2_phase2_contract.py",
+      "sha256": "1c8620fa59b8841f60db48f197901dc5ec5772623cf19a8904042a2c01767453"
+    },
+    {
+      "bytes": 3139,
+      "path": "src/robustsense/evaluation/v2_aggregate.py",
+      "sha256": "792d4ae199b3ff3a442b4442a72d9a7852cc03f3b39fd301bc84af3d480aac0f"
+    },
+    {
+      "bytes": 2304,
+      "path": "src/robustsense/evaluation/v2_artifacts.py",
+      "sha256": "8eea151fddcd9fd8c50caedb1c6254d7ffb9ca569e513f042877cd31604c233a"
+    },
+    {
+      "bytes": 14469,
+      "path": "src/robustsense/evaluation/v2_metrics.py",
+      "sha256": "b8ed094d1e1f5e67cee61a6883c462249a8ca7b62879ff614bc38354251fe803"
+    },
+    {
+      "bytes": 9463,
+      "path": "src/robustsense/evaluation/v2_scenarios.py",
+      "sha256": "3826270c1b7b03a61d6b0bacd86118cf1fd46a6bc1bb0d21787d18e5b0f9d291"
+    },
+    {
+      "bytes": 2799,
+      "path": "src/robustsense/models/mask_only.py",
+      "sha256": "70fcfe7b6b4b34a82443d9d0cacc699b9a94e076ec0ce941bbcb3db7f9dad6d2"
+    },
+    {
+      "bytes": 2124,
+      "path": "tests/unit/test_mask_only.py",
+      "sha256": "bdafb741a6a40c2f53125ddd25b898d70687a689499bdf55afc02b0a524473e2"
+    },
+    {
+      "bytes": 1551,
+      "path": "tests/unit/test_v2_aggregate.py",
+      "sha256": "9c2d8d802689f18dc8f0c794b42eb0eafdcf3989c4536269965a1b74dee635be"
+    },
+    {
+      "bytes": 1579,
+      "path": "tests/unit/test_v2_artifacts.py",
+      "sha256": "e41b94c2bd3fee38313166525605743bb9d5306e8cbe3c982321868e3fa33462"
+    },
+    {
+      "bytes": 4386,
+      "path": "tests/unit/test_v2_metrics.py",
+      "sha256": "b7c185e2537c21de431f370916fa8c3cb9880fb01725483db4c5ffccef7858c0"
+    },
+    {
+      "bytes": 4880,
+      "path": "tests/unit/test_v2_scenarios.py",
+      "sha256": "3ae17ce674dd94eafd34c240f0f236bcf81210e0fce1dbf75b127d8cb6932095"
+    }
+  ],
+  "forbidden": [
+    "formal credible training",
+    "test-derived model, classification, calibration, or abstention selection",
+    "treating scenario contract artifacts as model results"
+  ],
+  "frozen_at_utc": "2026-09-17T09:28:37.557514+00:00",
+  "parent_protocol_sha256": "558b0082dd40932847e04c30e9af3f237514a78ee38168abc7def5dcbae2e4ad",
+  "phase": "V2-2",
+  "protocol_sha256": "8d3159316822bd368e8fa155887d277e7055c385457a6a403d7ff785e7561ff5",
+  "scope": "extended evaluation scenarios, metrics, diagnostics, and lineage contracts",
+  "status": "frozen_phase_v2_2_extended_evaluation",
+  "version": 3
+}

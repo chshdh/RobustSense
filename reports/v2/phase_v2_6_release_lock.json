@@ -1,0 +1,125 @@
+{
+  "core_success": 60,
+  "demo_gif": {
+    "duration_ms": 45000,
+    "frames": 7
+  },
+  "documentation_language": "zh-CN",
+  "environment_recreation_required": false,
+  "extended_success": 60,
+  "files": [
+    {
+      "bytes": 641,
+      "path": "configs/v2/phase_v2_6_plan.yaml",
+      "sha256": "511075450664fc84ac4ded7d5ea9ccec38f9299a6afb487beb2e56abe2a69c8c"
+    },
+    {
+      "bytes": 1302,
+      "path": "docs/v2/DEMO_RECORDING_SCRIPT.md",
+      "sha256": "25a54402c6752c50535d4f9546f4d02f770d0f9ddd10cc0a831d87681799ee8d"
+    },
+    {
+      "bytes": 2419,
+      "path": "docs/v2/EXPERIMENT_PROTOCOL_V2_FINAL.md",
+      "sha256": "967137efea89f869e49a4db75f5668b752fab09388347b7ee3eafd84c92d6c4d"
+    },
+    {
+      "bytes": 6730,
+      "path": "docs/v2/INTERVIEW_QA_V2.md",
+      "sha256": "e05171d627c1d4c415ccb25ceb04b0cb01c1788a158c5f3f2927c683b6af255e"
+    },
+    {
+      "bytes": 2766,
+      "path": "docs/v2/MODEL_CARD_V2.md",
+      "sha256": "a6c1fd708b84412021bb120631f13ee4d4df3344dec004c550f4b7543cc20d2d"
+    },
+    {
+      "bytes": 2018,
+      "path": "docs/v2/ORAL_SCRIPT_2MIN_V2.md",
+      "sha256": "00f01880bdae77816b9168589dfaeaab86663ac31190c6db4fdd0cd5336e9f0a"
+    },
+    {
+      "bytes": 5502,
+      "path": "docs/v2/ORAL_SCRIPT_8MIN_V2.md",
+      "sha256": "5d59687ea004c869b7d8785fed7562b0d8202f70d37cfb5636ef6da31dbb1288"
+    },
+    {
+      "bytes": 2224,
+      "path": "docs/v2/PERFORMANCE_OPTIMIZATION_CASE.md",
+      "sha256": "5dd48e3db83902c35d94846c8ef52654daa52d8fd0d48761c4a238f48ce2a29e"
+    },
+    {
+      "bytes": 4991,
+      "path": "docs/v2/PHASE_V2_6_REPORT.md",
+      "sha256": "6be940d6c460e328270235d99335777bdc0adc31a6c86ec1280245d7d01286e3"
+    },
+    {
+      "bytes": 2455,
+      "path": "docs/v2/README.md",
+      "sha256": "4c8ff3101bfe1d95bdf844d1fd515fc3d0aa70860055666cbfc20338604325d2"
+    },
+    {
+      "bytes": 1974,
+      "path": "docs/v2/RELEASE_REVIEW_V2.md",
+      "sha256": "04f45711ea003cdb82712b24fd088dcf0484fbabe5b46c4770e83eb0cdee4589"
+    },
+    {
+      "bytes": 7473,
+      "path": "docs/v2/TECHNICAL_REPORT_V2.md",
+      "sha256": "838532735906d9195dd55c17dea14759a73bacd7c77997c2617e796504725716"
+    },
+    {
+      "bytes": 296016,
+      "path": "reports/v2/demo_v2_walkthrough.gif",
+      "sha256": "8f0e0a65b4d63c73b9baa21d5eec58f606ed4fc70836648cb5e8fbc26834fe1f"
+    },
+    {
+      "bytes": 1331,
+      "path": "reports/v2/phase_v2_5_acceptance.json",
+      "sha256": "4ab5e996001f6703557e87ab1c6bf95876fa0dc78057abbff24d01a13995df36"
+    },
+    {
+      "bytes": 245,
+      "path": "reports/v2/phase_v2_5_streamlit_health.json",
+      "sha256": "244360f7e9d94e3adcbedbcf11f9e116b7ed00c6bdddc6ac4ce4acc9979a6281"
+    },
+    {
+      "bytes": 10282,
+      "path": "reports/v2/phase_v2_6_pytest.xml",
+      "sha256": "88ba33a8f36cb2825c4a964efc18ebf98ca555c82aa58fcf47c4d93a494a083f"
+    },
+    {
+      "bytes": 2794,
+      "path": "reports/v2/source_map.csv",
+      "sha256": "d983bb28b8c73b4ee8fd83f25c327c31c6d9b7c9b20154b3b788965ea00173b8"
+    },
+    {
+      "bytes": 12845,
+      "path": "scripts/build_v2_demo_gif.py",
+      "sha256": "75e3476a650e08dbd1f8161eef7d37e8996b6340eaefc71af24a85ab75587cae"
+    },
+    {
+      "bytes": 4974,
+      "path": "scripts/lock_v2_phase6_release.py",
+      "sha256": "e11a7d765148031151b196b1eea57d57d676f196a3b1a2860fbddbf2fc748093"
+    }
+  ],
+  "locked_at_utc": "2026-09-19T03:37:48.162097+00:00",
+  "parent_protocol_sha256": "d3d2a7254304686f8f67e234c92c8e49d44035f365ce7a87df593565c9b0b09f",
+  "phase": "V2-6",
+  "ppt_required": false,
+  "public_release_blockers": [
+    "choose_code_license",
+    "complete_real_author_metadata"
+  ],
+  "pytest": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 78
+  },
+  "release_sha256": "4809e638958ee02cc168392932cb0a0c74bbf165189e6909ef3a0a29e767799a",
+  "status": "internal_release_complete_public_release_blocked",
+  "v1_verified_files": 813,
+  "version": 1
+}

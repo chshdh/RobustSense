@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "phase": "V2-5",
+  "status": "frozen_before_first_demo_acceptance_run",
+  "parent_protocol_lock": "reports/v2/phase_v2_4_protocol_lock.json",
+  "core_registry": "reports/v2/phase_v2_4_run_registry.csv",
+  "core_report": "reports/v2/phase_v2_4_core_report.json",
+  "extended_report": "reports/v2/phase_v2_4_extended_report.json",
+  "natural_bootstrap": "reports/v2/phase_v2_4_natural_bootstrap.json",
+  "models": ["B4", "B5", "P", "P2"],
+  "folds": [0, 1, 2, 3, 4],
+  "seeds": [13, 29, 47],
+  "default_model": "P2",
+  "default_fold": 0,
+  "default_seed": 29,
+  "replay_boundary": "offline_precomputed_feature_test_split",
+  "require_real_checkpoint": true,
+  "require_validation_thresholds": true,
+  "require_extended_artifacts": true,
+  "allow_random_prediction_fallback": false,
+  "allow_contract_mismatch_fallback": false
+}

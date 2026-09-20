@@ -1,0 +1,11 @@
+{
+  "drop_count": 1,
+  "noisy_count": 1,
+  "noise_type": "gaussian",
+  "gaussian_sigma": [1.0, 2.0],
+  "require_distinct_modalities": true,
+  "expected_scenario_count": 60,
+  "source_population": "controlled_complete_subset",
+  "status": "frozen_phase_v2_2"
+}
+

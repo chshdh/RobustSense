@@ -1,0 +1,96 @@
+{
+  "files": [
+    {
+      "bytes": 464,
+      "path": "configs/v2/models/reliability_constrained.yaml",
+      "sha256": "65d26b53a05ecd2e73babf80bdf21625fb1227e1b79f46c377a0671aac7b2ea6"
+    },
+    {
+      "bytes": 453,
+      "path": "configs/v2/corruption/train.yaml",
+      "sha256": "34ee48d3c97fc77ca6f9d2907dd42324ba71769499dd2a84be9ee5a921645dc6"
+    },
+    {
+      "bytes": 359,
+      "path": "configs/v2/evaluation/dev.yaml",
+      "sha256": "c77947cd70f33ad433679905a1073aa4c5722e5651d4feb16814f17535f4109e"
+    },
+    {
+      "bytes": 32737,
+      "path": "docs/RobustSense_V2_\u53ef\u6267\u884c\u9879\u76ee\u603b\u89c4\u7ea6.md",
+      "sha256": "c0623d25a803aa1e672d3d8eff15ae2c9cdd4734249a689c057fe15a4d3b01ac"
+    },
+    {
+      "bytes": 1919,
+      "path": "docs/v2/ADR-0002-P2\u95e8\u63a7\u4e0e\u9a8c\u8bc1\u96c6\u62d2\u7edd.md",
+      "sha256": "9111de01190b18bb8548d32422a9280b28ab546934b5dc7ff0484435f4fad1bd"
+    },
+    {
+      "bytes": 1806,
+      "path": "docs/v2/EXPERIMENT_PROTOCOL_V2_1.md",
+      "sha256": "a3a800461e6eae9fe355bd1aec62cd33dcb560520293679f343fa0702473179f"
+    },
+    {
+      "bytes": 2542,
+      "path": "reports/v2/phase_v2_0_protocol_lock.json",
+      "sha256": "425f50d08b1f4a1a9d3b9a0a6a4160d7aa7a2c2b3ec14c4e887d2e9ece918f3f"
+    },
+    {
+      "bytes": 24372,
+      "path": "src/robustsense/evaluation/suite.py",
+      "sha256": "9e20475e5e217e8ba85d978bd22713d7b2b8ea4323deb0fba8e69dc2f0b8daa0"
+    },
+    {
+      "bytes": 15165,
+      "path": "src/robustsense/models/fusion.py",
+      "sha256": "9078edcef72b7168109599c75382e5074df0aaa19949b2ec657606a848a500df"
+    },
+    {
+      "bytes": 11783,
+      "path": "src/robustsense/pipeline.py",
+      "sha256": "cfd823b45442f6a390da30d5e3d2cd9489d0f727defae59764edc701e9fbfe4c"
+    },
+    {
+      "bytes": 1918,
+      "path": "src/robustsense/training/phase3_losses.py",
+      "sha256": "eccc5e66b04fa53f526f3852b295cd53ce79d9993f43e8048a1560b8970fcb15"
+    },
+    {
+      "bytes": 30311,
+      "path": "src/robustsense/training/phase3_trainer.py",
+      "sha256": "36ec68f26651883a886e812d44c64e6ab24b9d0dbdb9a4f3174437e5efc09769"
+    },
+    {
+      "bytes": 1884,
+      "path": "src/robustsense/training/selective.py",
+      "sha256": "0dc26c102e6a9a94ee8c53489af4b90e93c4acd8771f40c34e4b935aad9437a3"
+    },
+    {
+      "bytes": 21559,
+      "path": "src/robustsense/training/trainer.py",
+      "sha256": "9d12996b59a23829f9b0663ab78430cfc0353c9c2b0ec70bdf81d7ccece0b837"
+    },
+    {
+      "bytes": 12271,
+      "path": "tests/integration/test_phase1_audit.py",
+      "sha256": "6ca34e09cdf5fabefdf8afd67a1797be560c0c1dd7cbdd66f88faffc77b2d070"
+    },
+    {
+      "bytes": 5149,
+      "path": "tests/unit/test_v2_p2.py",
+      "sha256": "e5330b9e0ceac2030de22ef8fb174d33212a40dd5d6ab82383a12f055318fc0a"
+    }
+  ],
+  "forbidden": [
+    "formal credible training",
+    "test-derived model or threshold selection",
+    "Phase V2-2 extended evaluation claims"
+  ],
+  "frozen_at_utc": "2026-09-17T09:09:38.902103+00:00",
+  "parent_protocol_sha256": "fd5be4f32144e6186bf1c88912a8b5b76fdfdef6c908204a84bafd8501269c55",
+  "phase": "V2-1",
+  "protocol_sha256": "558b0082dd40932847e04c30e9af3f237514a78ee38168abc7def5dcbae2e4ad",
+  "scope": "P2 minimum implementation and train/validation development validation",
+  "status": "frozen_phase_v2_1_development",
+  "version": 2
+}

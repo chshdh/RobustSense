@@ -1,0 +1,171 @@
+{
+  "aggregation_order": "seeds_within_fold_then_folds",
+  "expected_core_unit_count": 60,
+  "expected_extended_unit_count": 60,
+  "expected_new_training_unit_count": 40,
+  "expected_optional_ablation_unit_count": 20,
+  "expected_reused_unit_count": 20,
+  "files": [
+    {
+      "bytes": 492,
+      "path": "configs/experiment/full.yaml",
+      "sha256": "d1b8c3abe702d0ba597048e458551f14f1f66e6e5927be7afbcd5a45331ab704"
+    },
+    {
+      "bytes": 453,
+      "path": "configs/v2/corruption/train.yaml",
+      "sha256": "34ee48d3c97fc77ca6f9d2907dd42324ba71769499dd2a84be9ee5a921645dc6"
+    },
+    {
+      "bytes": 796,
+      "path": "configs/v2/evaluation/extended_core.yaml",
+      "sha256": "c43ab77eb1eca0f5bbc007b7de48e3af1a429ab41a37f7468a8c0afe7a710efb"
+    },
+    {
+      "bytes": 635,
+      "path": "configs/v2/evaluation/multiseed_core.yaml",
+      "sha256": "bc66a33826ad18cb61f56cbba96043911c322eb9b62f141cdc65b678ec13119a"
+    },
+    {
+      "bytes": 464,
+      "path": "configs/v2/models/reliability_constrained.yaml",
+      "sha256": "65d26b53a05ecd2e73babf80bdf21625fb1227e1b79f46c377a0671aac7b2ea6"
+    },
+    {
+      "bytes": 1571,
+      "path": "configs/v2/phase_v2_4_plan.yaml",
+      "sha256": "56c50f384b64044d83c35b5cec4136cae61e06203ff83ea348d7e9838f50f4d3"
+    },
+    {
+      "bytes": 32737,
+      "path": "docs/RobustSense_V2_\u53ef\u6267\u884c\u9879\u76ee\u603b\u89c4\u7ea6.md",
+      "sha256": "c0623d25a803aa1e672d3d8eff15ae2c9cdd4734249a689c057fe15a4d3b01ac"
+    },
+    {
+      "bytes": 2100,
+      "path": "docs/v2/ADR-0005-V2-4\u591a\u79cd\u5b50\u590d\u7528\u4e0e\u538b\u529b\u8bc4\u4f30.md",
+      "sha256": "fc0863de240d0ef1d19adaff33cbecf6f1b4be687bbec96ad0e189574102b9e8"
+    },
+    {
+      "bytes": 3022,
+      "path": "docs/v2/EXPERIMENT_PROTOCOL_V2_4.md",
+      "sha256": "a20c7ccd857ef20d449e23e03a88e923ac2a4f7c08bcccf65f765064a116902e"
+    },
+    {
+      "bytes": 3010,
+      "path": "reports/phase5_protocol_lock.json",
+      "sha256": "51ca028146337717bc38a2213abf151198a8eaaa71070e5d140767dba487d5ae"
+    },
+    {
+      "bytes": 4611,
+      "path": "reports/v2/phase_v2_2_protocol_lock.json",
+      "sha256": "7455ec46a0f5cb6c2706d610b8ee25e1f5ec5ed175e59c1d3aba448592e2d39d"
+    },
+    {
+      "bytes": 4556,
+      "path": "reports/v2/phase_v2_3_protocol_lock.json",
+      "sha256": "991eef65d9e0d06e091041f9286fcaf4cfb2286e3b340b992d8e0aec71226650"
+    },
+    {
+      "bytes": 1947,
+      "path": "reports/v2/phase_v2_3_selection_for_v2_4.json",
+      "sha256": "aa36f512b464af006031d934db1e450295af8b1aba1eeafdc06c3d2981ea61c6"
+    },
+    {
+      "bytes": 17726,
+      "path": "reports/v2/phase_v2_4_reuse_manifest.json",
+      "sha256": "ff1a023379fbac1e8fa1c36c7ab3fc17ebf84a08fb8446a5d4a26d90acbc5214"
+    },
+    {
+      "bytes": 11467,
+      "path": "reports/v2/scenarios/availability_masks.jsonl",
+      "sha256": "cec55ec801baa8c385ee141a13038b2daa50f44c9456c4054f9e63f1f2841e2e"
+    },
+    {
+      "bytes": 8560,
+      "path": "reports/v2/scenarios/mixed_failures.jsonl",
+      "sha256": "8077e02d8747e4a733b29673f1aeb649b0ee926cc72eb40c00599f94adae1ac3"
+    },
+    {
+      "bytes": 744,
+      "path": "reports/v2/scenarios/scenario_contract.json",
+      "sha256": "fabb12ee05942802dcfbc2b4b06fabe2c0c4b1f6afd1aa0a8732aa27de03ed80"
+    },
+    {
+      "bytes": 1253,
+      "path": "scripts/build_v2_phase4_reuse_manifest.py",
+      "sha256": "1af591416455626e79fe631fab8948beaa99f155841c0963a4c9845029c3a6fe"
+    },
+    {
+      "bytes": 4572,
+      "path": "scripts/lock_v2_phase4_protocol.py",
+      "sha256": "9b7f14cfe966116c29d3bf12783f0baf8368a6be549edd59b0c4d96de5412f80"
+    },
+    {
+      "bytes": 10459,
+      "path": "scripts/run_v2_phase4.py",
+      "sha256": "675337dd61fe75cded5ac3e7e5013e9ba2671eab45b7010fb551e990d6f0dd50"
+    },
+    {
+      "bytes": 7954,
+      "path": "scripts/run_v2_phase4_extended.py",
+      "sha256": "d4308c3e17fb3e14e8e589e6fa7df22927ea9e9d567b7eb920872b565f5144c8"
+    },
+    {
+      "bytes": 846,
+      "path": "scripts/run_v2_phase4_extended_unit.py",
+      "sha256": "b977b3cbb5dcd905fc0a331a3dcbf0db4d9c8e0fd8fd431fa9e28c0d2b91b90d"
+    },
+    {
+      "bytes": 5506,
+      "path": "scripts/run_v2_phase4_optional.py",
+      "sha256": "9f44b2503989fc26cbdd2d6b8876a814f2eb26bd1a7bf0b5343037caf22584b6"
+    },
+    {
+      "bytes": 2613,
+      "path": "scripts/run_v2_phase4_unit.py",
+      "sha256": "30f1e38803d16d3fa5e37f6b279ae1dad5b9b0b86f4d5f0d5b7a675903ec1c53"
+    },
+    {
+      "bytes": 29454,
+      "path": "src/robustsense/evaluation/v2_phase4.py",
+      "sha256": "200a199eee39d2a73d9ac43a1324bf787b16744accd93042d152d4691733656a"
+    },
+    {
+      "bytes": 30725,
+      "path": "src/robustsense/experiments/v2_phase4.py",
+      "sha256": "2cd72965f10f0c3a94005b1e99a810f3a1e51a43d1610e8fbe0151e619d82db5"
+    },
+    {
+      "bytes": 10505,
+      "path": "src/robustsense/training/v2_phase4_trainer.py",
+      "sha256": "66a2ac85ec636f6b0d68d870a40bfc1ca1e798b4bca332c95b42bf2f52a45772"
+    },
+    {
+      "bytes": 5932,
+      "path": "tests/integration/test_v2_phase4_fixture.py",
+      "sha256": "91636880ff402b646ad8d6dc58bb50d7753b004fa73c0ca0b0e3441005547a33"
+    },
+    {
+      "bytes": 6135,
+      "path": "tests/unit/test_v2_phase4_governance.py",
+      "sha256": "9bd8d120ddc1e04e88d6729697bbfacbfa3a2fe7c40273860cdf21464ee439aa"
+    }
+  ],
+  "forbidden": [
+    "changing training or threshold rules after new-seed test visibility",
+    "replacing validation-selected optional ablations using test results",
+    "changing scenario sets, Bootstrap repeats, or aggregation order",
+    "deleting failed attempts or aggregating failed units",
+    "storing full per-scenario extended predictions"
+  ],
+  "frozen_at_utc": "2026-09-18T12:22:34.577694+00:00",
+  "parent_protocol_sha256": "2d0aa3040711373d5db25ce22a7ea07812e03b218356545ce54c35173ae1ea90",
+  "phase": "V2-4",
+  "protocol_sha256": "35035f18ccb129c1f3b5d8b70f724d9059bf4f5d433259ba586b477d30bd9d34",
+  "reuse_metric_values_read_at_freeze": false,
+  "scope": "B4/B5/P/P2 five-fold three-seed core and extended pressure matrix",
+  "status": "frozen_before_first_test_run",
+  "test_results_visible_at_freeze": false,
+  "version": 1
+}

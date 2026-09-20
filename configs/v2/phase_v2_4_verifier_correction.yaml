@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "phase": "V2-4",
+  "kind": "artifact_verifier_field_correction",
+  "parent_amendment_sha256": "802b40efe005d09fb97c907a04e144c680a7ac75219c1286867053c1a5b56957",
+  "incorrect_lookup": "evaluation_manifest.threshold_source_split",
+  "authoritative_lookup": "thresholds.source_split",
+  "required_value": "val",
+  "training_rerun_required": false,
+  "metric_values_used": false,
+  "status": "frozen_before_corrected_reconciliation"
+}

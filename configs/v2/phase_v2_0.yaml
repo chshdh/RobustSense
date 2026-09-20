@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "phase": "V2-0",
+  "status": "frozen_phase_v2_0",
+  "namespace": {
+    "configs": "configs/v2",
+    "docs": "docs/v2",
+    "reports": "reports/v2",
+    "runs": "runs/v2"
+  },
+  "v1_protection": {
+    "manifest": "reports/v2/v1_baseline_manifest.json",
+    "protocol_lock": "reports/phase5_protocol_lock.json",
+    "expected_credible_runs": 60,
+    "overwrite_v1_artifacts": false
+  },
+  "performance_baseline": {
+    "model": "quality-aware",
+    "fold": 0,
+    "seed": 13,
+    "batch_size": 512,
+    "warmup_steps": 2,
+    "measured_steps": 10,
+    "device": "auto",
+    "allowed_splits": ["train", "val"],
+    "read_test_split": false,
+    "compute_accuracy_metrics": false
+  },
+  "phase_boundaries": {
+    "implement_p2": false,
+    "start_credible_training": false,
+    "use_new_test_results_for_decisions": false
+  }
+}
+

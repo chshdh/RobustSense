@@ -1,0 +1,20 @@
+{
+  "name": "reliability-constrained",
+  "model_id": "P2",
+  "hidden_dim": 128,
+  "embedding_dim": 64,
+  "quality_dim": 5,
+  "reliability_hidden_dim": 32,
+  "utility_hidden_dim": 32,
+  "classifier_hidden_dim": 128,
+  "dropout": 0.2,
+  "reliability_loss_weight": 0.1,
+  "consistency_loss_weight": 0.1,
+  "ranking_loss_weight": 0.05,
+  "ranking_margin": 0.1,
+  "beta_init": 1.0,
+  "epsilon": 1.0e-6,
+  "target_coverage": 0.9,
+  "status": "implemented_phase_v2_1"
+}
+

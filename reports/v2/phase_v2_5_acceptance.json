@@ -1,0 +1,47 @@
+{
+  "checked_at_utc": "2026-09-19T02:35:47.629850+00:00",
+  "contract_mismatch_fallback": false,
+  "fold": 0,
+  "mixed_replay": {
+    "disabled_modalities": [
+      "phone_acc"
+    ],
+    "fault": "gaussian",
+    "severity": 2.0,
+    "target_modality": "phone_gyro"
+  },
+  "models": [
+    "B4",
+    "B5",
+    "P",
+    "P2"
+  ],
+  "p2": {
+    "abstention_threshold": 0.9478780031204224,
+    "acceptance": "\u63a5\u53d7",
+    "reliability_finite": true,
+    "system_reliability": 0.9844098091125488,
+    "utility_finite": true
+  },
+  "phase": "V2-5",
+  "protocol_sha256": "35035f18ccb129c1f3b5d8b70f724d9059bf4f5d433259ba586b477d30bd9d34",
+  "random_prediction_fallback": false,
+  "report_contracts": {
+    "mask_rows": 252,
+    "mixed_rows": 240,
+    "persistent_episode_id": "episode.00068e58f4e20b71",
+    "persistent_episode_points": 3,
+    "persistent_phase_rows": 12
+  },
+  "run_ids": {
+    "B4": "extrasensory-gated-fold0-seed29-full",
+    "B5": "extrasensory-robust-gated-fold0-seed29-full",
+    "P": "extrasensory-quality-aware-fold0-seed29-full",
+    "P2": "extrasensory-p2-fold0-seed29-v2_multiseed"
+  },
+  "same_test_split_sha256": "25ef008914f920caecbbf385bad5f1ab99ba8faf385016333a7338fb4f57502a",
+  "sample_index": 0,
+  "seed": 29,
+  "status": "passed",
+  "version": 1
+}

@@ -1,0 +1,14 @@
+phase: V2-2
+mode: development
+formal_test_results: false
+scenario_sample_seed: 13
+calibration_bins: 10
+risk_coverage_grid: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+bootstrap:
+  sampling_unit: user
+  paired: true
+  repeats: 2000
+  seed: 13
+artifact_contract:
+  preserve_empty_as: NaN
+  require_source_run_ids: true

@@ -1,0 +1,26 @@
+{
+  "cuda_available": true,
+  "cuda_runtime": "12.8",
+  "gpu": {
+    "compute_capability": "7.5",
+    "memory_bytes": 6442123264,
+    "name": "NVIDIA GeForce RTX 2060"
+  },
+  "packages": {
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "plotly": "7.0.0",
+    "pyarrow": "25.0.1",
+    "pytest": "9.1.1",
+    "scikit-learn": "1.9.0",
+    "seaborn": "0.13.2",
+    "streamlit": "1.63.0",
+    "torch": "2.11.0+cu128"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "tensor_smoke_sum": 3.0,
+  "torch_device": "cuda"
+}

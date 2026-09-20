@@ -1,0 +1,19 @@
+claim_id,claim,value,evidence_artifact,selector,source_run_keys
+v2_core_complete,V2-4核心逻辑单元全部成功,60,reports/v2/phase_v2_4_run_registry.csv,status=success,V2-4全部60个run_key
+v2_extended_complete,V2-4扩展压力评估单元全部成功,60,reports/v2/phase_v2_4_extended_registry.csv,status=success,V2-4-EXT全部60个run_key
+natural_b4_macro_f1,B4自然缺失Macro-F1,0.565134846927,reports/v2/phase_v2_4_core_summary.csv,model_id=B4,V2-4|B4|全部fold与seed
+natural_b5_macro_f1,B5自然缺失Macro-F1,0.57860487669,reports/v2/phase_v2_4_core_summary.csv,model_id=B5,V2-4|B5|全部fold与seed
+natural_p_macro_f1,P自然缺失Macro-F1,0.57667826075,reports/v2/phase_v2_4_core_summary.csv,model_id=P,V2-4|P|全部fold与seed
+natural_p2_macro_f1,P2自然缺失Macro-F1,0.577684096444,reports/v2/phase_v2_4_core_summary.csv,model_id=P2,V2-4|P2|全部fold与seed
+bootstrap_p2_minus_p_mean,P2-P用户级配对Bootstrap均值,0.0011843317474112367,reports/v2/phase_v2_4_natural_bootstrap.json,comparison=P2_minus_P,V2-4|P2与P|全部fold与seed
+bootstrap_p2_minus_p_ci_low,P2-P的95%区间下界,-0.0017319164649794699,reports/v2/phase_v2_4_natural_bootstrap.json,ci_2_5,V2-4|P2与P|全部fold与seed
+bootstrap_p2_minus_p_ci_high,P2-P的95%区间上界,0.00434478831728024,reports/v2/phase_v2_4_natural_bootstrap.json,ci_97_5,V2-4|P2与P|全部fold与seed
+mask_b5_mean,B5在63-mask上的平均Macro-F1,0.517801,reports/v2/phase_v2_4_mask_summary.csv,model_id=B5后对63场景等权平均,V2-4-EXT|B5|全部fold与seed
+mixed_p2_mean,P2在混合故障上的平均Macro-F1,0.565422,reports/v2/phase_v2_4_mixed_summary.csv,model_id=P2后对60场景等权平均,V2-4-EXT|P2|全部fold与seed
+persistent_b5_fault_mean,B5在持续故障fault阶段的平均Macro-F1,0.594575,reports/v2/phase_v2_4_persistent_summary.csv,model_id=B5且phase=fault后等权平均,V2-4-EXT|B5|全部fold与seed
+demo_same_split,Demo四模型共享测试split,25ef008914f920caecbbf385bad5f1ab99ba8faf385016333a7338fb4f57502a,reports/v2/phase_v2_5_acceptance.json,same_test_split_sha256,V2-4 fold0 seed29四模型
+demo_no_random_fallback,Demo不存在随机预测回退,false,reports/v2/phase_v2_5_acceptance.json,random_prediction_fallback,V2-4 fold0 seed29四模型
+v1_unchanged,V1冻结文件保持不变,813,reports/v2/v1_baseline_manifest.json,verified_file_count=813,V1 frozen artifact set
+v2_demo_gif_frames,V2中文讲解动图帧数,7,reports/v2/demo_v2_walkthrough.gif,Pillow n_frames,来自V2-4与V2-5权威报告
+v2_demo_gif_duration_seconds,V2中文讲解动图总时长秒,45,reports/v2/demo_v2_walkthrough.gif,逐帧duration求和,来自V2-4与V2-5权威报告
+v2_final_tests,V2最终自动测试通过数,78,reports/v2/phase_v2_6_pytest.xml,tests=78且failures=0且errors=0,全项目测试集

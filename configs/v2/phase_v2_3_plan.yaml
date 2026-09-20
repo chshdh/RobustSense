@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "phase": "V2-3",
+  "status": "frozen_before_first_v2_phase3_test_run",
+  "data_config": "configs/data/extrasensory.yaml",
+  "model_config": "configs/v2/models/reliability_constrained.yaml",
+  "corruption_config": "configs/v2/corruption/train.yaml",
+  "experiment_config": "configs/v2/evaluation/seed13_credible.yaml",
+  "ablation_config": "configs/v2/ablations/phase_v2_3.yaml",
+  "variants": ["P2", "P2-A1", "P2-A2", "P2-A3", "P2-A4"],
+  "folds": [0, 1, 2, 3, 4],
+  "seeds": [13],
+  "expected_unit_count": 25,
+  "selection_for_v2_4": {
+    "source_split": "val",
+    "eligible_ablations": ["P2-A1", "P2-A2", "P2-A3", "P2-A4"],
+    "rule": "top_two_mean_absolute_paired_validation_macro_f1_delta_vs_P2",
+    "tie_break": "variant_id_ascending",
+    "maximum_selected": 2
+  },
+  "a4_derivation": {
+    "source": "matching_fold_seed_P2_checkpoint",
+    "reason": "A4 only removes inference-time abstention and does not change training",
+    "requires_identical_state_sha256": true
+  }
+}

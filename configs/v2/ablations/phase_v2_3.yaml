@@ -1,0 +1,38 @@
+{
+  "P2": {
+    "description": "完整 Reliability-Constrained Fusion",
+    "reliability_constraint": true,
+    "ranking_loss": true,
+    "reliability_quality_input": true,
+    "selective_prediction": true
+  },
+  "P2-A1": {
+    "description": "移除可靠度约束，融合权重只由 utility 决定",
+    "reliability_constraint": false,
+    "ranking_loss": true,
+    "reliability_quality_input": true,
+    "selective_prediction": true
+  },
+  "P2-A2": {
+    "description": "移除 reliability ranking loss",
+    "reliability_constraint": true,
+    "ranking_loss": false,
+    "reliability_quality_input": true,
+    "selective_prediction": true
+  },
+  "P2-A3": {
+    "description": "ReliabilityNet 只读取内容编码，不读取五维质量特征",
+    "reliability_constraint": true,
+    "ranking_loss": true,
+    "reliability_quality_input": false,
+    "selective_prediction": true
+  },
+  "P2-A4": {
+    "description": "移除选择性预测，只报告强制预测",
+    "reliability_constraint": true,
+    "ranking_loss": true,
+    "reliability_quality_input": true,
+    "selective_prediction": false,
+    "training": "deterministically_derived_from_matching_P2_checkpoint"
+  }
+}

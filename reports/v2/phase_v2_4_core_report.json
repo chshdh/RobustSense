@@ -1,0 +1,18 @@
+{
+  "aggregation_order": "seeds_within_fold_then_folds",
+  "fold_seed_aggregation": {
+    "path": "C:\\Users\\Cs060\\Documents\\Codex\\2026-09-10\\zi-a\\outputs\\robustsense\\reports\\v2\\phase_v2_4_fold_seed_aggregation.csv",
+    "sha256": "473c46381b26c0466ba27726912c55642897ff9d82c6831135f13819e40d99f7"
+  },
+  "phase": "V2-4",
+  "results": {
+    "path": "C:\\Users\\Cs060\\Documents\\Codex\\2026-09-10\\zi-a\\outputs\\robustsense\\reports\\v2\\phase_v2_4_core_results.csv",
+    "sha256": "b98a47aae53071974846ebf4f3e3471bef0c4edf230a39d2af90689cb5149ae3"
+  },
+  "status": "core_natural_matrix_complete",
+  "successful_core_unit_count": 60,
+  "summary": {
+    "path": "C:\\Users\\Cs060\\Documents\\Codex\\2026-09-10\\zi-a\\outputs\\robustsense\\reports\\v2\\phase_v2_4_core_summary.csv",
+    "sha256": "fe5de8986eebbc74baf80c11ef1aec0ca52779b0f68bdbc2011261463dc756d8"
+  }
+}

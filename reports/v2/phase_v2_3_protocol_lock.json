@@ -1,0 +1,124 @@
+{
+  "expected_unit_count": 25,
+  "files": [
+    {
+      "bytes": 1188,
+      "path": "configs/v2/ablations/phase_v2_3.yaml",
+      "sha256": "bc932fbdc84835c3f9f9d4ddff47cda04066cea9b610ba9962b43df06eac988e"
+    },
+    {
+      "bytes": 453,
+      "path": "configs/v2/corruption/train.yaml",
+      "sha256": "34ee48d3c97fc77ca6f9d2907dd42324ba71769499dd2a84be9ee5a921645dc6"
+    },
+    {
+      "bytes": 590,
+      "path": "configs/v2/evaluation/seed13_credible.yaml",
+      "sha256": "346e00882f38801b46b2a7399638bd2aac1b08ed124f7edc089387243840e397"
+    },
+    {
+      "bytes": 464,
+      "path": "configs/v2/models/reliability_constrained.yaml",
+      "sha256": "65d26b53a05ecd2e73babf80bdf21625fb1227e1b79f46c377a0671aac7b2ea6"
+    },
+    {
+      "bytes": 1005,
+      "path": "configs/v2/phase_v2_3_plan.yaml",
+      "sha256": "d517d3783b5a69e17a87ed26139b9944e87a2f6bbd975ec19d069277e2ccfe02"
+    },
+    {
+      "bytes": 32737,
+      "path": "docs/RobustSense_V2_\u53ef\u6267\u884c\u9879\u76ee\u603b\u89c4\u7ea6.md",
+      "sha256": "c0623d25a803aa1e672d3d8eff15ae2c9cdd4734249a689c057fe15a4d3b01ac"
+    },
+    {
+      "bytes": 2842,
+      "path": "docs/v2/ADR-0004-seed13\u4e94\u6298\u4e0e\u6d88\u878d\u6cbb\u7406.md",
+      "sha256": "9f2068e5b878058f4dd396e5f2a7f3cf96f6b7df31b70bda1c0d191d17e43801"
+    },
+    {
+      "bytes": 3721,
+      "path": "docs/v2/EXPERIMENT_PROTOCOL_V2_3.md",
+      "sha256": "ba605d3171a9bec52d4cd1c43de41e0d25b57119232168f7b692ab2387eedf6d"
+    },
+    {
+      "bytes": 4611,
+      "path": "reports/v2/phase_v2_2_protocol_lock.json",
+      "sha256": "7455ec46a0f5cb6c2706d610b8ee25e1f5ec5ed175e59c1d3aba448592e2d39d"
+    },
+    {
+      "bytes": 2258,
+      "path": "reports/v2/phase_v2_3_performance_preflight.json",
+      "sha256": "667519d3d48e45ae5ff8d57375146b3de1a23b49a4c1953e4db729b44e6cf5f9"
+    },
+    {
+      "bytes": 8222,
+      "path": "scripts/profile_v2_phase3_training.py",
+      "sha256": "3cd34c250d61d9740ea182825496862729a701a4e1efe523c4bfe50d29f8a1cc"
+    },
+    {
+      "bytes": 8680,
+      "path": "scripts/run_v2_phase3.py",
+      "sha256": "f03c73a2616e06d34161c2794e883994f28f31ee9e4ce5a0a42dfacb6814a1cd"
+    },
+    {
+      "bytes": 2212,
+      "path": "scripts/run_v2_phase3_unit.py",
+      "sha256": "d9803b24374ee202fc726604ad0502a6bcda62a34d8d9eed7095b0a4c05d70aa"
+    },
+    {
+      "bytes": 6540,
+      "path": "src/robustsense/corruption/vectorized.py",
+      "sha256": "6f5847cebddb8dfd86797df92a370d92e992bd86a3735e1d575808911ff22d0c"
+    },
+    {
+      "bytes": 8571,
+      "path": "src/robustsense/experiments/v2_phase3.py",
+      "sha256": "71f6fd7a64a15d3f23771588a2bf67c5ccc5196554dfbf7bd66a9e32224839d8"
+    },
+    {
+      "bytes": 7122,
+      "path": "src/robustsense/models/v2_phase3.py",
+      "sha256": "2463b62b2f55ed925ef3c063c5a99c0e4a96e24a268e5a4b9c956db4c932fc74"
+    },
+    {
+      "bytes": 28034,
+      "path": "src/robustsense/training/v2_phase3_trainer.py",
+      "sha256": "c6db534631b5735fc1b72c2347489b0a5852c2e154377b39d3d36885ea1ac95f"
+    },
+    {
+      "bytes": 5141,
+      "path": "tests/integration/test_v2_phase3_fixture.py",
+      "sha256": "52a7fa32db2ba593471e1a21852103c7745851d80b807f92af7dea086c14f082"
+    },
+    {
+      "bytes": 2580,
+      "path": "tests/unit/test_v2_phase3_governance.py",
+      "sha256": "57fc749efbae1ac7f300642a1d33a081553d41d3f3a23cf652597b5f9da17235"
+    },
+    {
+      "bytes": 3425,
+      "path": "tests/unit/test_v2_phase3_models.py",
+      "sha256": "16ecc22622cf145be2eab9ce397bfac6b99d9a6c90c6e25cf8f79579bea46cc1"
+    },
+    {
+      "bytes": 2392,
+      "path": "tests/unit/test_vectorized_corruption.py",
+      "sha256": "3234604e8a377c0d5fa3771bafdb0cbe97b5ab4100db75314f63a3a20b9897f6"
+    }
+  ],
+  "forbidden": [
+    "changing training or selection rules after test visibility",
+    "using test metrics for V2-4 ablation selection",
+    "deleting failed attempts or skipping registered units",
+    "running V2-4 extended stress tests in this phase"
+  ],
+  "frozen_at_utc": "2026-09-17T13:34:44.837313+00:00",
+  "parent_protocol_sha256": "8d3159316822bd368e8fa155887d277e7055c385457a6a403d7ff785e7561ff5",
+  "phase": "V2-3",
+  "protocol_sha256": "2d0aa3040711373d5db25ce22a7ea07812e03b218356545ce54c35173ae1ea90",
+  "scope": "seed-13 five-fold P2 and P2-A1 through P2-A4 formal matrix",
+  "status": "frozen_before_first_test_run",
+  "test_results_visible_at_freeze": false,
+  "version": 4
+}

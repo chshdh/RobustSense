@@ -1,0 +1,208 @@
+{
+  "analysis": {
+    "cuda_peak_allocated_bytes": 34057728,
+    "estimated_training_samples_per_second": 1397.1133019605884,
+    "estimated_training_step_ms": 366.4699199996903,
+    "largest_training_phase": "corruption",
+    "largest_training_phase_share": 0.7365002835709459,
+    "measured_all_operations_samples_per_second": 1188.560173330961
+  },
+  "environment": {
+    "cuda_runtime": "12.8",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 2060",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "torch": "2.11.0+cu128"
+  },
+  "guardrails": {
+    "accuracy_metrics_computed": false,
+    "persistent_training_run_created": false,
+    "source_splits": [
+      "train",
+      "val"
+    ],
+    "test_split_read": false
+  },
+  "measured_at_utc": "2026-09-17T08:48:23.713698+00:00",
+  "phase": "V2-0",
+  "purpose": "V1 performance baseline before any P2 implementation",
+  "raw_steps": [
+    {
+      "backward_optimizer": 42.69199999907869,
+      "batch_transfer": 2.3172999990492826,
+      "controlled_evaluation": 34.427999999024905,
+      "corruption": 281.6824999990786,
+      "dataloader_wait": 9.806699999899138,
+      "forward": 40.18519999954151,
+      "step": 0,
+      "validation": 26.418700001158868
+    },
+    {
+      "backward_optimizer": 49.799000000348315,
+      "batch_transfer": 1.972899999600486,
+      "controlled_evaluation": 41.797500000029686,
+      "corruption": 291.05380000146397,
+      "dataloader_wait": 10.13050000074145,
+      "forward": 30.706400000781287,
+      "step": 1,
+      "validation": 25.280199999542674
+    },
+    {
+      "backward_optimizer": 56.61069999950996,
+      "batch_transfer": 5.212199999732547,
+      "controlled_evaluation": 40.38519999994605,
+      "corruption": 280.2157000005536,
+      "dataloader_wait": 10.77160000022559,
+      "forward": 36.10420000040904,
+      "step": 2,
+      "validation": 25.799900000492926
+    },
+    {
+      "backward_optimizer": 46.44619999999122,
+      "batch_transfer": 5.156799999895156,
+      "controlled_evaluation": 33.94230000048992,
+      "corruption": 275.22510000017064,
+      "dataloader_wait": 10.816599999088794,
+      "forward": 37.2774000006757,
+      "step": 3,
+      "validation": 28.09999999954016
+    },
+    {
+      "backward_optimizer": 48.143800000616466,
+      "batch_transfer": 1.1504999984026654,
+      "controlled_evaluation": 35.68999999879452,
+      "corruption": 251.96130000040284,
+      "dataloader_wait": 8.21890000042913,
+      "forward": 28.475900000557886,
+      "step": 4,
+      "validation": 31.861100000242004
+    },
+    {
+      "backward_optimizer": 42.46210000019346,
+      "batch_transfer": 5.7250999998359475,
+      "controlled_evaluation": 33.04519999983313,
+      "corruption": 257.7339999988908,
+      "dataloader_wait": 9.44100000015169,
+      "forward": 35.789999999906286,
+      "step": 5,
+      "validation": 30.970000001616427
+    },
+    {
+      "backward_optimizer": 49.49779999878956,
+      "batch_transfer": 3.083100000367267,
+      "controlled_evaluation": 33.711699999912526,
+      "corruption": 269.40819999981613,
+      "dataloader_wait": 8.490300000630668,
+      "forward": 37.46499999942898,
+      "step": 6,
+      "validation": 25.064100000236067
+    },
+    {
+      "backward_optimizer": 40.478800001437776,
+      "batch_transfer": 2.928599998995196,
+      "controlled_evaluation": 32.30019999864453,
+      "corruption": 249.85620000006747,
+      "dataloader_wait": 10.104800001499825,
+      "forward": 27.145000000018626,
+      "step": 7,
+      "validation": 26.53160000045318
+    },
+    {
+      "backward_optimizer": 40.539399999033776,
+      "batch_transfer": 1.9986999996035593,
+      "controlled_evaluation": 41.74059999968449,
+      "corruption": 253.56359999932465,
+      "dataloader_wait": 9.866899999906309,
+      "forward": 37.807900000188965,
+      "step": 8,
+      "validation": 26.107700001375633
+    },
+    {
+      "backward_optimizer": 64.15339999875869,
+      "batch_transfer": 6.032799999957206,
+      "controlled_evaluation": 35.34190000027593,
+      "corruption": 288.3516000001691,
+      "dataloader_wait": 13.617500000691507,
+      "forward": 37.024199998995755,
+      "step": 9,
+      "validation": 25.128200000835932
+    }
+  ],
+  "timings": {
+    "backward_optimizer": {
+      "max_ms": 64.15339999875869,
+      "mean_ms": 48.08231999977579,
+      "median_ms": 47.295000000303844,
+      "min_ms": 40.478800001437776,
+      "p95_ms": 64.15339999875869
+    },
+    "batch_transfer": {
+      "max_ms": 6.032799999957206,
+      "mean_ms": 3.5577999995439313,
+      "median_ms": 3.0058499996812316,
+      "min_ms": 1.1504999984026654,
+      "p95_ms": 6.032799999957206
+    },
+    "controlled_evaluation": {
+      "max_ms": 41.797500000029686,
+      "mean_ms": 36.23825999966357,
+      "median_ms": 34.884949999650416,
+      "min_ms": 32.30019999864453,
+      "p95_ms": 41.797500000029686
+    },
+    "corruption": {
+      "max_ms": 291.05380000146397,
+      "mean_ms": 269.9051999999938,
+      "median_ms": 272.3166499999934,
+      "min_ms": 249.85620000006747,
+      "p95_ms": 291.05380000146397
+    },
+    "dataloader_wait": {
+      "max_ms": 13.617500000691507,
+      "mean_ms": 10.12648000032641,
+      "median_ms": 9.985850000703067,
+      "min_ms": 8.21890000042913,
+      "p95_ms": 13.617500000691507
+    },
+    "forward": {
+      "max_ms": 40.18519999954151,
+      "mean_ms": 34.7981200000504,
+      "median_ms": 36.564199999702396,
+      "min_ms": 27.145000000018626,
+      "p95_ms": 40.18519999954151
+    },
+    "json_write": {
+      "max_ms": 4.091600001629558,
+      "mean_ms": 4.091600001629558,
+      "median_ms": 4.091600001629558,
+      "min_ms": 4.091600001629558,
+      "p95_ms": 4.091600001629558
+    },
+    "parquet_write": {
+      "max_ms": 30.813499999567284,
+      "mean_ms": 30.813499999567284,
+      "median_ms": 30.813499999567284,
+      "min_ms": 30.813499999567284,
+      "p95_ms": 30.813499999567284
+    },
+    "validation": {
+      "max_ms": 31.861100000242004,
+      "mean_ms": 27.126150000549387,
+      "median_ms": 26.26320000126725,
+      "min_ms": 25.064100000236067,
+      "p95_ms": 31.861100000242004
+    }
+  },
+  "version": 1,
+  "workload": {
+    "batch_size": 512,
+    "fold": 0,
+    "measured_steps": 10,
+    "model": "quality-aware (V1 P)",
+    "seed": 13,
+    "train_samples": 232827,
+    "validation_samples": 74282,
+    "warmup_steps": 2
+  }
+}

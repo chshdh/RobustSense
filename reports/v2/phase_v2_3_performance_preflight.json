@@ -1,0 +1,72 @@
+{
+  "corruption": {
+    "batch_size": 512,
+    "exact_equivalence_test": "tests/unit/test_vectorized_corruption.py",
+    "measured_batches": 2,
+    "reference_seconds": 0.27906550000079733,
+    "speedup": 1.3684692384928958,
+    "vectorized_seconds": 0.20392530000026454
+  },
+  "fold": 0,
+  "measured_at_utc": "2026-09-17T09:38:26.710745+00:00",
+  "phase": "V2-3",
+  "seed": 13,
+  "source_split": "train",
+  "test_split_read": false,
+  "throughput": [
+    {
+      "batch_size": 512,
+      "mean_corruption_seconds": 0.11481614999956946,
+      "mean_step_seconds": 0.15828985000007378,
+      "measured_samples": 1024,
+      "measured_steps": 2,
+      "peak_allocated_mib": 42.87646484375,
+      "samples_per_second": 3234.572526284922
+    },
+    {
+      "batch_size": 1024,
+      "mean_corruption_seconds": 0.2153881000003821,
+      "mean_step_seconds": 0.2589309499999217,
+      "measured_samples": 2048,
+      "measured_steps": 2,
+      "peak_allocated_mib": 67.62109375,
+      "samples_per_second": 3954.72229179366
+    },
+    {
+      "batch_size": 2048,
+      "mean_corruption_seconds": 0.39431560000048194,
+      "mean_step_seconds": 0.43945165000059205,
+      "measured_samples": 4096,
+      "measured_steps": 2,
+      "peak_allocated_mib": 115.8447265625,
+      "samples_per_second": 4660.3534199888445
+    },
+    {
+      "batch_size": 4096,
+      "mean_corruption_seconds": 0.759355350000078,
+      "mean_step_seconds": 0.8929375500001697,
+      "measured_samples": 8192,
+      "measured_steps": 2,
+      "peak_allocated_mib": 224.1826171875,
+      "samples_per_second": 4587.106903499826
+    },
+    {
+      "batch_size": 8192,
+      "mean_corruption_seconds": 1.5391038500001741,
+      "mean_step_seconds": 1.6908103999994637,
+      "measured_samples": 16384,
+      "measured_steps": 2,
+      "peak_allocated_mib": 407.9365234375,
+      "samples_per_second": 4845.013964902628
+    },
+    {
+      "batch_size": 16384,
+      "mean_corruption_seconds": 2.871901800001069,
+      "mean_step_seconds": 3.1817685500009247,
+      "measured_samples": 32768,
+      "measured_steps": 2,
+      "peak_allocated_mib": 796.2412109375,
+      "samples_per_second": 5149.337465163907
+    }
+  ]
+}

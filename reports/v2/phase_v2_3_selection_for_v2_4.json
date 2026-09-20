@@ -1,0 +1,66 @@
+{
+  "decision_for": "V2-4 optional ablation seed expansion",
+  "maximum_selected": 2,
+  "phase": "V2-3",
+  "ranking": [
+    {
+      "mean_absolute_paired_delta": 0.005236219108995366,
+      "mean_validation_macro_f1_delta_vs_P2": -0.003310381398316009,
+      "paired_fold_count": 5,
+      "variant": "P2-A3"
+    },
+    {
+      "mean_absolute_paired_delta": 0.003459310302599339,
+      "mean_validation_macro_f1_delta_vs_P2": -0.001675229097498332,
+      "paired_fold_count": 5,
+      "variant": "P2-A1"
+    },
+    {
+      "mean_absolute_paired_delta": 0.0016856458135071418,
+      "mean_validation_macro_f1_delta_vs_P2": -0.001227283533928425,
+      "paired_fold_count": 5,
+      "variant": "P2-A2"
+    },
+    {
+      "mean_absolute_paired_delta": 0.0,
+      "mean_validation_macro_f1_delta_vs_P2": 0.0,
+      "paired_fold_count": 5,
+      "variant": "P2-A4"
+    }
+  ],
+  "rule": "top_two_mean_absolute_paired_validation_macro_f1_delta_vs_P2",
+  "selected_variants": [
+    "P2-A3",
+    "P2-A1"
+  ],
+  "source_run_keys": [
+    "V2-3|P2-A1|fold0|seed13",
+    "V2-3|P2-A1|fold1|seed13",
+    "V2-3|P2-A1|fold2|seed13",
+    "V2-3|P2-A1|fold3|seed13",
+    "V2-3|P2-A1|fold4|seed13",
+    "V2-3|P2-A2|fold0|seed13",
+    "V2-3|P2-A2|fold1|seed13",
+    "V2-3|P2-A2|fold2|seed13",
+    "V2-3|P2-A2|fold3|seed13",
+    "V2-3|P2-A2|fold4|seed13",
+    "V2-3|P2-A3|fold0|seed13",
+    "V2-3|P2-A3|fold1|seed13",
+    "V2-3|P2-A3|fold2|seed13",
+    "V2-3|P2-A3|fold3|seed13",
+    "V2-3|P2-A3|fold4|seed13",
+    "V2-3|P2-A4|fold0|seed13",
+    "V2-3|P2-A4|fold1|seed13",
+    "V2-3|P2-A4|fold2|seed13",
+    "V2-3|P2-A4|fold3|seed13",
+    "V2-3|P2-A4|fold4|seed13",
+    "V2-3|P2|fold0|seed13",
+    "V2-3|P2|fold1|seed13",
+    "V2-3|P2|fold2|seed13",
+    "V2-3|P2|fold3|seed13",
+    "V2-3|P2|fold4|seed13"
+  ],
+  "source_split": "val",
+  "test_metrics_read": false,
+  "tie_break": "variant_id_ascending"
+}

@@ -1,0 +1,62 @@
+{
+  "contract_mismatch_fallback": false,
+  "files": [
+    {
+      "bytes": 17237,
+      "path": "app/streamlit_app.py",
+      "sha256": "b33eea1fce40b1d925b0818d1f6552309bfc26a756e54abd7ce73ea54ae0cfce"
+    },
+    {
+      "bytes": 846,
+      "path": "configs/v2/phase_v2_5_plan.yaml",
+      "sha256": "7c8093bb4c2a97977bfdacbc198df1d430fb2ee27fa89120c32d61fb26effa68"
+    },
+    {
+      "bytes": 1235,
+      "path": "docs/v2/ADR-0009-Demo2\u771f\u5b9e\u4ea7\u7269\u4e0e\u5931\u8d25\u5173\u95ed.md",
+      "sha256": "c8f5ba382ad04a8c4a07b657c61e2bedc597da4a4f805b83ad53124d9c5a4fbf"
+    },
+    {
+      "bytes": 2117,
+      "path": "docs/v2/EXPERIMENT_PROTOCOL_V2_5.md",
+      "sha256": "192550d233ec1dafa027d7f506f151b0a947eea2b2499ce0c62d8a1c71a75429"
+    },
+    {
+      "bytes": 6377,
+      "path": "reports/v2/phase_v2_4_protocol_lock.json",
+      "sha256": "e85f248ba5c66106c0e236ff9d8bc39755fec9fd2e2be7751aeac8e124b99fa9"
+    },
+    {
+      "bytes": 4629,
+      "path": "scripts/accept_v2_phase5_demo.py",
+      "sha256": "91c1af57fa9a911c560e044b74db9fc79615d067bae12c6d82f88f24df83851e"
+    },
+    {
+      "bytes": 2633,
+      "path": "scripts/lock_v2_phase5_protocol.py",
+      "sha256": "36a14dbeaef4355235fbca8ad99ff6b372bb50d16d4b3ba0eae6f834cd224219"
+    },
+    {
+      "bytes": 452,
+      "path": "scripts/run_demo.ps1",
+      "sha256": "89dc2c6a1916b82b0615b47f48deceff6c3cdb832e67ea3ecc9c4ed79793d7f9"
+    },
+    {
+      "bytes": 20767,
+      "path": "src/robustsense/v2_demo.py",
+      "sha256": "f5480492a9b852b4514870fee1235cab6085a0e0768945fd5d3bf6f7330afa35"
+    },
+    {
+      "bytes": 801,
+      "path": "tests/unit/test_v2_demo.py",
+      "sha256": "9cbbf5bd6eb879c84f9a19265baa68e14b7f3a46bced51a1e87cca41284fe608"
+    }
+  ],
+  "frozen_at_utc": "2026-09-19T02:35:25.145827+00:00",
+  "parent_protocol_sha256": "35035f18ccb129c1f3b5d8b70f724d9059bf4f5d433259ba586b477d30bd9d34",
+  "phase": "V2-5",
+  "protocol_sha256": "d3d2a7254304686f8f67e234c92c8e49d44035f365ce7a87df593565c9b0b09f",
+  "random_prediction_fallback": false,
+  "status": "frozen_before_first_demo_acceptance_run",
+  "version": 1
+}

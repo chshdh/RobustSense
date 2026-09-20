@@ -1,0 +1,68 @@
+{
+  "deferred": "P2 model and all V2 result-producing experiment configs",
+  "files": [
+    {
+      "bytes": 845,
+      "path": "configs/v2/phase_v2_0.yaml",
+      "sha256": "481bf8623ad65179ca9a217030b617a979c40c67910de6b73701be50279d4e6e"
+    },
+    {
+      "bytes": 32737,
+      "path": "docs/RobustSense_V2_\u53ef\u6267\u884c\u9879\u76ee\u603b\u89c4\u7ea6.md",
+      "sha256": "c0623d25a803aa1e672d3d8eff15ae2c9cdd4734249a689c057fe15a4d3b01ac"
+    },
+    {
+      "bytes": 1773,
+      "path": "docs/v2/ADR-0001-V1\u4fdd\u62a4\u4e0eV2\u9694\u79bb.md",
+      "sha256": "81b01cd552cb07af61d76d2fe67f8181c1e3f75b5dc7530edd8f7aee7accf8f7"
+    },
+    {
+      "bytes": 2654,
+      "path": "docs/v2/EXPERIMENT_PROTOCOL_DRAFT.md",
+      "sha256": "933269c3583f9c0b8c6890ed88c7234eb998102eb5b4a72b3331565d37997adf"
+    },
+    {
+      "bytes": 3010,
+      "path": "reports/phase5_protocol_lock.json",
+      "sha256": "51ca028146337717bc38a2213abf151198a8eaaa71070e5d140767dba487d5ae"
+    },
+    {
+      "bytes": 169877,
+      "path": "reports/v2/v1_baseline_manifest.json",
+      "sha256": "b66c5b73f70482bfecabfc8d6087696851ea73dfe50dfe59fd3a0afda041fddb"
+    },
+    {
+      "bytes": 1423,
+      "path": "scripts/freeze_v1_baseline.py",
+      "sha256": "ebfcd484410a35cc4023211a7e721829d17222986651bc17a9e3a503bc56594b"
+    },
+    {
+      "bytes": 11919,
+      "path": "scripts/profile_v2_baseline.py",
+      "sha256": "e3b0a41786e78505f4e272934c383b9bebd9950006bbb296e47c9f6ee3a5c51a"
+    },
+    {
+      "bytes": 2819,
+      "path": "scripts/verify_v1_report_rebuild.py",
+      "sha256": "6f6a9d0a871b3ae9894ebe7ca1f929d6fd459341e7c58df8db2e86b06e85d10f"
+    },
+    {
+      "bytes": 7174,
+      "path": "src/robustsense/experiments/v2_phase0.py",
+      "sha256": "86d84b67270521dafe9e982e030e6fe8d84b64a6158a78a157d7a49a5d51d917"
+    },
+    {
+      "bytes": 1065,
+      "path": "tests/unit/test_v2_phase0.py",
+      "sha256": "ffde66da0fbe26d9eb30cdccec06d7c3f62f09edad6635c49758513a77df16a6"
+    }
+  ],
+  "frozen_at_utc": "2026-09-17T08:48:52.369276+00:00",
+  "phase": "V2-0",
+  "protocol_sha256": "fd5be4f32144e6186bf1c88912a8b5b76fdfdef6c908204a84bafd8501269c55",
+  "scope": "V1 protection, namespace isolation, and performance baseline only",
+  "status": "frozen_phase_v2_0",
+  "v1_content_sha256": "1c6278235f1687f962d426b134498d7884009db2005b386e6330304e3f23952f",
+  "v1_protocol_sha256": "91a4e5fd7547ecf347d7fb3d7ee101d7389ac71f77386d4301e1bc1ec8929a7b",
+  "version": 1
+}

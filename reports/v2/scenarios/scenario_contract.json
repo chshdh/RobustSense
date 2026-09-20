@@ -1,0 +1,29 @@
+{
+  "artifact_kind": "scenario_contract_not_model_results",
+  "artifacts": {
+    "availability_masks": {
+      "bytes": 11467,
+      "path": "reports/v2/scenarios/availability_masks.jsonl",
+      "sha256": "cec55ec801baa8c385ee141a13038b2daa50f44c9456c4054f9e63f1f2841e2e"
+    },
+    "mixed_failures": {
+      "bytes": 8560,
+      "path": "reports/v2/scenarios/mixed_failures.jsonl",
+      "sha256": "8077e02d8747e4a733b29673f1aeb649b0ee926cc72eb40c00599f94adae1ac3"
+    }
+  },
+  "availability_mask_count": 63,
+  "maximum_adjacent_gap_seconds": 90,
+  "mixed_failure_count": 60,
+  "persistent_episode_lengths": [
+    5,
+    15,
+    30
+  ],
+  "persistent_faults": [
+    "drop",
+    "gaussian_sigma_2",
+    "bias_1"
+  ],
+  "protocol_id": "V2-2"
+}

@@ -1,0 +1,42 @@
+{
+  "correction_sha256": "8ea4f460ff4f3df2ee186869d9dee3d431e587a0888f43ab3ce78fc192c6282f",
+  "files": [
+    {
+      "bytes": 452,
+      "path": "configs/v2/phase_v2_4_verifier_correction.yaml",
+      "sha256": "cfd030f3066d6be1b115571ce18906b923bdba710adfec0cd4a5dcbf1cc7b41e"
+    },
+    {
+      "bytes": 1578,
+      "path": "docs/v2/ADR-0007-V2-4\u4ea7\u7269\u6821\u9a8c\u5b57\u6bb5\u4fee\u6b63.md",
+      "sha256": "5d78eb593eff94e4c91c62c66882edbabe3b94ea5c45616a0564207e8b559883"
+    },
+    {
+      "bytes": 1392,
+      "path": "reports/v2/phase_v2_4_execution_amendment_lock.json",
+      "sha256": "90b1d6aae8f2c7ace0a2b16e5b002ab17cba88e2a661aa63f4e9832ed28d5118"
+    },
+    {
+      "bytes": 2244,
+      "path": "scripts/lock_v2_phase4_verifier_correction.py",
+      "sha256": "1f6fba80eb52054e13b49b0c0e6ed83636b3f172836e1a101bcc845f37423310"
+    },
+    {
+      "bytes": 5246,
+      "path": "scripts/reconcile_v2_phase4_artifacts.py",
+      "sha256": "19f2e06b47740df874858b1c9dd664bb1d9e92664679f56f4302f82a22c90d3c"
+    },
+    {
+      "bytes": 1728,
+      "path": "scripts/run_v2_phase4_parallel_v2.py",
+      "sha256": "e0d5cb1357bb80857a95c3f9e8a2cbc46fc5bbc1e718ca561414601e267e3b4a"
+    }
+  ],
+  "frozen_at_utc": "2026-09-18T15:46:16.945949+00:00",
+  "kind": "artifact_verifier_field_correction",
+  "metric_values_used": false,
+  "parent_amendment_sha256": "802b40efe005d09fb97c907a04e144c680a7ac75219c1286867053c1a5b56957",
+  "phase": "V2-4",
+  "status": "frozen_before_corrected_reconciliation",
+  "version": 1
+}

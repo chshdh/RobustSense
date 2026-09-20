@@ -1,0 +1,49 @@
+{
+  "aggregation_order": "seeds_within_fold_then_folds",
+  "all_scenarios_share_samples_across_models": true,
+  "artifacts": {
+    "mask_fold_seed_mean": {
+      "path": "C:/Users/Cs060/Documents/Codex/2026-09-10/zi-a/outputs/robustsense/reports/v2/phase_v2_4_mask_fold_seed_mean.csv",
+      "row_count": 1260,
+      "sha256": "332b227a225155280986dfa54d628d7b2837190d176ec28f5b4c3dd7c9bdec56"
+    },
+    "mask_summary": {
+      "path": "C:/Users/Cs060/Documents/Codex/2026-09-10/zi-a/outputs/robustsense/reports/v2/phase_v2_4_mask_summary.csv",
+      "row_count": 252,
+      "sha256": "290d876ce029f09a36ca45ae1ce750017749796c53b50424307cb4d5215355e7"
+    },
+    "mixed_fold_seed_mean": {
+      "path": "C:/Users/Cs060/Documents/Codex/2026-09-10/zi-a/outputs/robustsense/reports/v2/phase_v2_4_mixed_fold_seed_mean.csv",
+      "row_count": 1200,
+      "sha256": "8cb2d4e4530e36c1236468482a2e879bedc0d8db910f7aa8b01569508bac519e"
+    },
+    "mixed_summary": {
+      "path": "C:/Users/Cs060/Documents/Codex/2026-09-10/zi-a/outputs/robustsense/reports/v2/phase_v2_4_mixed_summary.csv",
+      "row_count": 240,
+      "sha256": "99d489ce98a9f731e1fb80d132b455db715dda8c46307de7c2d7b4acb356b003"
+    },
+    "persistent_fold_seed_mean": {
+      "path": "C:/Users/Cs060/Documents/Codex/2026-09-10/zi-a/outputs/robustsense/reports/v2/phase_v2_4_persistent_fold_seed_mean.csv",
+      "row_count": 2160,
+      "sha256": "5c19e6c1c5225f3c6104a9d23c5fb7b0343caf52bbc81d1ae23640857588c4eb"
+    },
+    "persistent_summary": {
+      "path": "C:/Users/Cs060/Documents/Codex/2026-09-10/zi-a/outputs/robustsense/reports/v2/phase_v2_4_persistent_summary.csv",
+      "row_count": 432,
+      "sha256": "8631faf188c64d05a6146f21a504c1b2dfe4cb444944320dd5476f9c51314ed6"
+    }
+  },
+  "mask_row_count": 3780,
+  "mixed_row_count": 3600,
+  "persistent_classification_row_count": 6480,
+  "phase": "V2-4",
+  "scenario_sample_hashes": [
+    "331c44ec55c6ee9244fe3b78b7a0b38e81bde52540a5321ad70b02beb3b676d8",
+    "39a7ae3d267296352149e2a161a8b8c9a2d2d12e6d0ec15a2ea0801f6f12fd71",
+    "4a7cdd26b88bc027067fbcd79c25d077fff050de6760123b7f4c41a374571756",
+    "90bb821510de0c9a4556555576394c1180ef58201d3d8fcbd476ac86e7be2bc6",
+    "cacb9327cc115bc58d4d669c244d114ed00c4daee3950ef7358333de1d372a50"
+  ],
+  "status": "extended_matrix_complete",
+  "successful_unit_count": 60
+}

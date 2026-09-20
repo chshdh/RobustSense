@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "phase": "V2-4",
+  "kind": "execution_only_parallelism_amendment",
+  "parent_protocol_sha256": "35035f18ccb129c1f3b5d8b70f724d9059bf4f5d433259ba586b477d30bd9d34",
+  "reason": "reduce wall-clock time after observed low single-run GPU occupancy",
+  "decision_inputs": ["elapsed_time", "gpu_utilization", "cpu_utilization", "gpu_memory"],
+  "metric_values_used": false,
+  "max_parallel_units": 2,
+  "handoff_run_key": "V2-4|P|fold0|seed29",
+  "handoff_poll_seconds": 5,
+  "handoff_timeout_seconds": 10800,
+  "single_registry_writer": true,
+  "worker_mutates_registry": false,
+  "unchanged": [
+    "datasets",
+    "folds",
+    "seeds",
+    "models",
+    "training_hyperparameters",
+    "batch_size",
+    "precision",
+    "deterministic_algorithms",
+    "early_stopping",
+    "threshold_selection",
+    "test_evaluation",
+    "aggregation"
+  ],
+  "status": "frozen_before_parallel_launch"
+}

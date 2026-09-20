@@ -1,0 +1,10 @@
+{
+  "modality_order": [
+    "phone_acc", "phone_gyro", "watch_acc", "location", "audio", "phone_state"
+  ],
+  "include_empty_mask": false,
+  "expected_mask_count": 63,
+  "source_population": "controlled_complete_subset",
+  "status": "frozen_phase_v2_2"
+}
+

@@ -1,0 +1,9 @@
+{
+  "max_adjacent_gap_seconds": 90,
+  "episode_lengths": [5, 15, 30],
+  "phases": ["pre", "fault", "post"],
+  "faults": ["drop", "gaussian_sigma_2", "bias_1"],
+  "require_same_user": true,
+  "status": "frozen_phase_v2_2"
+}
+

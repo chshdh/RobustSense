@@ -1,0 +1,17 @@
+{
+  "profile": "dev",
+  "folds": [0],
+  "seeds": [13],
+  "epochs": 2,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip_norm": 5.0,
+  "pos_weight_cap": 20.0,
+  "early_stopping_patience": 2,
+  "threshold_grid": [0.25, 0.5, 0.75],
+  "device": "auto",
+  "run_root": "runs/v2",
+  "status": "development_only_phase_v2_1"
+}
+

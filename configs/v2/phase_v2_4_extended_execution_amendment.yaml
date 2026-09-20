@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "phase": "V2-4",
+  "kind": "extended_evaluation_parallelism_amendment",
+  "parent_protocol_sha256": "35035f18ccb129c1f3b5d8b70f724d9059bf4f5d433259ba586b477d30bd9d34",
+  "reason": "reduce wall-clock time after a one-unit execution benchmark",
+  "decision_inputs": ["elapsed_time", "gpu_utilization", "cpu_utilization", "gpu_memory"],
+  "metric_values_used": false,
+  "max_parallel_units": 2,
+  "single_registry_writer": true,
+  "worker_mutates_registry": false,
+  "unchanged": [
+    "checkpoints",
+    "folds",
+    "seeds",
+    "models",
+    "scenario_definitions",
+    "scenario_group_size",
+    "classification_thresholds",
+    "abstention_thresholds",
+    "sample_order",
+    "aggregation"
+  ],
+  "status": "frozen_before_parallel_launch"
+}
